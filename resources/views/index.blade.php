@@ -31,7 +31,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-6 portfolio-item">
-                    <a href="{{ route('materi.index') }}" class="portfolio-link">
+                    <a href="{{ route('materi.index', 1) }}" class="portfolio-link">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -42,7 +42,7 @@
                     </a>
                 </div>
                 <div class="col-sm-6 portfolio-item">
-                    <a href="#" class="portfolio-link">
+                    <a href="{{ route('materi.index', 2) }}" id="materi_kedua" class="portfolio-link">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -66,7 +66,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-6 portfolio-item">
-                    <a href="{{ route('permainan.index', 1) }}" class="portfolio-link"  id="ronde_pertama">
+                    <a href="{{ route('permainan.index', 1) }}" class="portfolio-link"  id="level_pertama">
                         <div class="caption portfolio-link">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -77,7 +77,7 @@
                     </a>
                 </div>
                 <div class="col-sm-6 portfolio-item">
-                    <a href="{{ route('permainan.index', 2) }}" class="portfolio-link" id="ronde_kedua">
+                    <a href="{{ route('permainan.index', 2) }}" class="portfolio-link" id="level_kedua">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -96,51 +96,50 @@
 @section('js')
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#ronde_pertama').click(function (e) { 
+            $('#materi_kedua').click(function (e) { 
                 e.preventDefault();
                 const href = $(this).attr('href');
 
-                if ("{{ Auth()->user()->status_materi }}" == 0) {
+                if ("{{ Auth()->user()->status_materi_1 }}" == 0) {
                     Swal.fire({
                         icon: 'error',
-                        title: 'GAGAL MEMULAI RONDE 1',
-                        text: 'Silahkan Membaca dan Selesaikan Materi Terlebih Dahulu',
+                        title: 'GAGAL MEMULAI <br>MATERI PAPAN PITA',
+                        text: 'Silahkan Membaca dan Selesaikan Materi Perkalian Dahulu !',
                         });
                 } else {
                     document.location.href = href;
                 }
             });
 
-            $('#ronde_kedua').click(function (e) { 
+            $('#level_pertama').click(function (e) { 
                 e.preventDefault();
                 const href = $(this).attr('href');
 
-                if ("{{ Auth()->user()->status_ronde_1 }}" == 0) {
+                if ("{{ Auth()->user()->status_materi_2 }}" == 0) {
                     Swal.fire({
                         icon: 'error',
-                        title: 'GAGAL MEMULAI RONDE 2',
-                        text: 'Silahkan Selesaikan Ronde 1 Terlebih Dahulu',
+                        title: 'GAGAL MEMULAI <br>QUIZ LEVEL 1',
+                        text: 'Silahkan Membaca dan Selesaikan Materi Papan Pita Perkalia Dahulu !',
                         });
                 } else {
                     document.location.href = href;
                 }
             });
 
-            $('#menu_angket').click(function (e) { 
+            $('#level_kedua').click(function (e) { 
                 e.preventDefault();
                 const href = $(this).attr('href');
 
-                if ("{{ Auth()->user()->status_ronde_2 }}" == 0) {
+                if ("{{ Auth()->user()->status_level_1 }}" == 0) {
                     Swal.fire({
                         icon: 'error',
-                        title: 'GAGAL MEMULAI ANGKET RESPON',
-                        text: 'Silahkan Selesaikan Ronde 2 Terlebih Dahulu',
+                        title: 'GAGAL MEMULAI <br>QUIZ LEVEL 2',
+                        text: 'Silahkan Selesaikan Quiz Level 1 Terlebih Dahulu',
                         });
                 } else {
                     document.location.href = href;
                 }
             });
-
         });
     </script>
 @endsection
