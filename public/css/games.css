@@ -1,0 +1,259 @@
+
+* {
+    /* untuk seluruh page agar dimanesi kotak tepat tanpa di pengaruhi padding dan border*/
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    padding: 10px;
+    overflow: auto; /* untuk menghilangkan sifat float sehingga di anggap normal content*/
+}
+
+.card {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);       
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#content {
+    float: center;
+    text-align: center;
+    width: 100%;
+}
+
+
+#header-game {
+    position: relative;
+    max-width: 1285px;
+    margin: 0 auto;
+}
+
+/* HUD */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.hud-main-text {
+    text-align: center;
+    margin: 5px 0;
+}
+
+
+#papan, #papan th, #papan td {
+    border: 1px solid black;
+}
+
+#papan {
+    border-collapse: collapse;
+    width: 1285px;
+}
+
+#papan th {
+    height: 60px;
+}
+
+#papan th, #papan td {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header_row {
+    height: 270px;
+    background-color: gray;
+}
+
+.first_row {
+    height: 50px;
+}
+
+.first_column {
+    width: 100px;
+    background-color: red;
+}
+
+.last_column {
+    width: 130px;
+}
+
+.header_column {
+    width: 350px;
+    background-color: gray;
+}
+
+.hasil_row {
+    background-color: yellowgreen; 
+    padding: 5px !important;
+    vertical-align: top;
+}
+
+#hasil_number {
+    list-style-type: none;
+    margin: 5px 5px 0 5px;
+    text-align: right;
+}
+
+#hasil_total {
+    float: right;
+    margin: 0;
+}
+
+.hr_large {
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-top: 0;
+}
+
+.hr_small {
+    display: inline-block; 
+    width: 100%;
+    border: 2px solid black;
+    margin-top: 0;
+}
+
+
+/* CANVAS */
+#canvas {
+	width:1048px;
+	height:841px;
+	border:1px solid #ccc;
+	position:relative;
+	background-color:#fff;
+
+	display: flex;
+	flex-direction: column;
+}
+
+#flex-row {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+}
+
+.box {
+    flex-basis: 33.34%;
+    height: 280px;
+}
+
+.sepuluh-ribu {
+	background-color: blue;
+}
+
+.seribu {
+	background-color: green;
+}
+
+.seratus {
+	background-color: orange;
+}
+
+.sepuluh {
+	background-color: brown;
+}
+
+.satu {
+	background-color: yellow;
+}
+
+.input-col {
+	margin: 4px 0px;
+	width: 50px;
+	border: 1px;
+	padding: 2px;
+	float: right;
+	clear: right;
+}
+
+.total-col {
+    margin: 10px 0 0 0;
+    width: 75px;
+}
+
+.btn-col {
+    position: relative;
+    float: right;
+    margin: 9px 8px 0 0;
+    padding: 1px 3px;
+}
+
+
+/* TITIK */
+.point {position:absolute;height:1px;width:1px;background-color:#c00;}
+.dot_container {position:absolute;padding:1px;padding:1px;}
+
+.dot {position:relative;height:8px;width:8px;background-color:#000;border-radius:4px;float:left;margin:12px -3px 0 0 ;}
+.dot_number {position:relative;float:left;}
+
+.line {
+	height:3px;
+	position:absolute;
+	background-color:#000;
+}
+
+.first_dot:hover {cursor:crosshair;}
+
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size:14px;
+    }
+
+    #downloads {
+        display: none;
+    }
+
+    .inner {
+        min-width: 320px;
+        max-width: 480px;
+    }
+  
+    #project_title {
+        font-size: 32px;
+    }
+  
+    h1 {
+        font-size: 28px;
+    }
+  
+    h2 {
+        font-size: 24px;
+    }
+  
+    h3 {
+        font-size: 21px;
+    }
+  
+    h4 {
+        font-size: 18px;
+    }
+  
+    h5 {
+        font-size: 14px;
+    }
+  
+    h6 {
+        font-size: 12px;
+    }
+  
+    code, pre {
+        min-width: 320px;
+        max-width: 480px;
+        font-size: 11px;
+    }
+  
+}
+

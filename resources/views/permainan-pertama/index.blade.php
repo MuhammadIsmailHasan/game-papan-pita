@@ -1,78 +1,33 @@
-@extends('layouts.frontend')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Papan Pita Perkalian</title>
 
-@section('css')
-    <link href="{{ asset('css/app-game.css') }}" rel="stylesheet">
-@endsection
-
-@section('content')
-    <section id="permainan_pertama" style="padding: 100px 30px 30px 30px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center" style="margin-top: 20px;">
-                    <h2>QUIZ LEVEL 1</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="justify-center">
-                <table id="papan" class="table table-bordered ">
-                    <thead>
-                        <tr>
-                            <th colspan="5">PAPAN PITA PERKALIAN</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>31 x 73</th>
-                            <th>RATUSAN</th>
-                            <th>PULUHAN</th>
-                            <th>SATUAN</th>
-                            <th rowspan="3">a</th>
-                        </tr>
-                        <tr>
-                            <td>RATUSAN</td>
-                            <td class="bagan">
-                                <div id="wrapper">
-                                    <canvas id="canvasTemp" width=300 height=200></canvas>
-                                    <canvas id="canvas" width=300 height=200></canvas>
-                                </div>
-                            </td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>PULUHAN</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>SATUAN</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <hr>
-
-            <div id="game" class="justify-center flex-column custom-card">
+    <link href="{{ asset('css/games.css') }}" rel="stylesheet">
+    <link href="{{ asset('frontend/vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <main>
+        <div id="content">
+            <div id="game" class="card">
+                <h1 style="margin: 0"><u>QUIZ LEVEL 1</u></h1>
                 <div id="hud">
                     <div id="hud-item">
                         <p class="hud-prefix">
                         Soal
                         </p>
-                        <h1 class="hud-main-text" id="questionCounter">0/5</h1>
+                        <h2 class="hud-main-text" id="questionCounter">0/5</h2>
                     </div>
                     <div id="hud-item">
                         <p class="hud-prefix">
                         Waktu
                         </p>
-                        <div class="hud-main-text" id="timer">
-                            <h1>2:00</h1>
-                        </div>
+                        <h2 class="hud-main-text" id="timer">
+                            2:00
+                        </h2>
                     </div>
                     <div class="audio" style="display: none;">
                         <audio id="audio-soal" controls loop>
@@ -85,106 +40,201 @@
                         <button id="btn_simpan" style="display: none;" type="button" class="btn btn-success hud-prefix"> SELESAI</button>   
                     </div>
                 </div>
+
                 <hr>
+                
                 <div id="header-game" class="text-center">
-                    <h3>Ronde ini terdiri dari beberapa pernyataan. Jika menurutmu pernyataan itu benar, pilihlah <u>BENAR</u> dan jika menurutmu pertanyaan itu salah, pilihlah <u>SALAH</u></h3>
-                    <h1> SILAHKAN KLIK MULAI</h1>
+                    {{-- <h1> SILAHKAN KLIK MULAI</h1> --}}
+                    <table id="papan">
+                        <tr style="background-color: dimgray;">
+                            <th colspan="5"><h1 style="margin: 5px;">PAPAN PITA PERKALIAN</h1></th>
+                        </tr>
+                        <tr class="first_row">
+                            <td class="first_column">31x73 : ...</td>
+                            <td class="header_column">RATUSAN</td>
+                            <td class="header_column">PULUHAN</td>
+                            <td class="header_column">SATUAN</td>
+                            <td rowspan="3" class="last_column">Tutorial</td>
+                        </tr>
+                        <tr class="header_row">
+                            <td>RATUSAN</td>
+                            <td colspan="3" rowspan="3" style="padding: 0;">
+                                <div id="canvas">
+                                    <div id="flex-row">
+                                        <div id="rara" class="sepuluh-ribu box">
+                                            <input type="text" id="rara-1" class="input-col input-1">
+                                            <input type="text" id="rara-2" class="input-col input-2">
+                                            <input type="text" id="rara-3" class="input-col input-3">
+                                            <input type="text" id="rara-4" class="input-col input-4">
+                                            <input type="text" id="rara-5" class="input-col input-5">
+                                            <input type="text" id="rara-6" class="input-col input-6">
+                                            <input type="text" id="rara-7" class="input-col input-7">
+                                            <input type="text" id="rara-8" class="input-col input-8">
+                                            <input type="text" id="rara-9" class="input-col input-9">
+                                            <span>
+                                                <input id="total-rara" type="text" class="input-col total-col">
+                                                <button type="button" class="btn-col btn-total" tipe="rara"><i class="fa fa-check"></i></button>
+                                            </span>
+                                            
+                                        </div>
+                                        <div id="rapu" class="seribu box">
+                                            <input type="text" id="rapu-1" class="input-col input-1">
+                                            <input type="text" id="rapu-2" class="input-col input-2">
+                                            <input type="text" id="rapu-3" class="input-col input-3">
+                                            <input type="text" id="rapu-4" class="input-col input-4">
+                                            <input type="text" id="rapu-5" class="input-col input-5">
+                                            <input type="text" id="rapu-6" class="input-col input-6">
+                                            <input type="text" id="rapu-7" class="input-col input-7">
+                                            <input type="text" id="rapu-8" class="input-col input-8">
+                                            <input type="text" id="rapu-9" class="input-col input-9">
+                                            <span>
+                                                <input id="total-rapu" type="text" class="input-col total-col">
+                                                <button type="button" class="btn-col btn-total" tipe="rapu"><i class="fa fa-check"></i></button>
+                                            </span>
+                                        </div>
+                                        <div id="rasa" class="seratus box">
+                                            <input type="text" id="rasa-1" class="input-col input-1">
+                                            <input type="text" id="rasa-2" class="input-col input-2">
+                                            <input type="text" id="rasa-3" class="input-col input-3">
+                                            <input type="text" id="rasa-4" class="input-col input-4">
+                                            <input type="text" id="rasa-5" class="input-col input-5">
+                                            <input type="text" id="rasa-6" class="input-col input-6">
+                                            <input type="text" id="rasa-7" class="input-col input-7">
+                                            <input type="text" id="rasa-8" class="input-col input-8">
+                                            <input type="text" id="rasa-9" class="input-col input-9">
+                                            <span>
+                                                <input id="total-rasa" type="text" class="input-col total-col">
+                                                <button type="button" class="btn-col btn-total" tipe="rasa"><i class="fa fa-check"></i></button>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div id="flex-row">
+                                        <div id="pura" class="seribu box">
+                                            <input type="text" id="pura-1" class="input-col input-1">
+                                            <input type="text" id="pura-2" class="input-col input-2">
+                                            <input type="text" id="pura-3" class="input-col input-3">
+                                            <input type="text" id="pura-4" class="input-col input-4">
+                                            <input type="text" id="pura-5" class="input-col input-5">
+                                            <input type="text" id="pura-6" class="input-col input-6">
+                                            <input type="text" id="pura-7" class="input-col input-7">
+                                            <input type="text" id="pura-8" class="input-col input-8">
+                                            <input type="text" id="pura-9" class="input-col input-9">
+                                            <span>
+                                                <input id="total-pura" type="text" class="input-col total-col">
+                                                <button type="button" class="btn-col btn-total" tipe="pura"><i class="fa fa-check"></i></button>
+                                            </span>
+                                        </div>
+                                        <div id="pupu" class="seratus box">
+                                            <input type="text" id="pupu-1" class="input-col input-1">
+                                            <input type="text" id="pupu-2" class="input-col input-2">
+                                            <input type="text" id="pupu-3" class="input-col input-3">
+                                            <input type="text" id="pupu-4" class="input-col input-4">
+                                            <input type="text" id="pupu-5" class="input-col input-5">
+                                            <input type="text" id="pupu-6" class="input-col input-6">
+                                            <input type="text" id="pupu-7" class="input-col input-7">
+                                            <input type="text" id="pupu-8" class="input-col input-8">
+                                            <input type="text" id="pupu-9" class="input-col input-9">
+                                            <span>
+                                                <input id="total-pupu" type="text" class="input-col total-col">
+                                                <button type="button" class="btn-col btn-total" tipe="pupu"><i class="fa fa-check"></i></button>
+                                            </span>
+                                        </div>
+                                        <div id="pusa" class="sepuluh box">
+                                            <input type="text" id="pusa-1" class="input-col input-1">
+                                            <input type="text" id="pusa-2" class="input-col input-2">
+                                            <input type="text" id="pusa-3" class="input-col input-3">
+                                            <input type="text" id="pusa-4" class="input-col input-4">
+                                            <input type="text" id="pusa-5" class="input-col input-5">
+                                            <input type="text" id="pusa-6" class="input-col input-6">
+                                            <input type="text" id="pusa-7" class="input-col input-7">
+                                            <input type="text" id="pusa-8" class="input-col input-8">
+                                            <input type="text" id="pusa-9" class="input-col input-9">
+                                            <span>
+                                                <input id="total-pusa" type="text" class="input-col total-col">
+                                                <button type="button" class="btn-col btn-total" tipe="pusa"><i class="fa fa-check"></i></button>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div id="flex-row">
+                                        <div id="sara" class="seratus box">
+                                            <input type="text" id="sara-1" class="input-col input-1">
+                                            <input type="text" id="sara-2" class="input-col input-2">
+                                            <input type="text" id="sara-3" class="input-col input-3">
+                                            <input type="text" id="sara-4" class="input-col input-4">
+                                            <input type="text" id="sara-5" class="input-col input-5">
+                                            <input type="text" id="sara-6" class="input-col input-6">
+                                            <input type="text" id="sara-7" class="input-col input-7">
+                                            <input type="text" id="sara-8" class="input-col input-8">
+                                            <input type="text" id="sara-9" class="input-col input-9">
+                                            <span>
+                                                <input id="total-sara" type="text" class="input-col total-col">
+                                                <button type="button" class="btn-col btn-total" tipe="sara"><i class="fa fa-check"></i></button>
+                                            </span>
+                                        </div>
+                                        <div id="sapu" class="sepuluh box">
+                                            <input type="text" id="sapu-1" class="input-col input-1">
+                                            <input type="text" id="sapu-2" class="input-col input-2">
+                                            <input type="text" id="sapu-3" class="input-col input-3">
+                                            <input type="text" id="sapu-4" class="input-col input-4">
+                                            <input type="text" id="sapu-5" class="input-col input-5">
+                                            <input type="text" id="sapu-6" class="input-col input-6">
+                                            <input type="text" id="sapu-7" class="input-col input-7">
+                                            <input type="text" id="sapu-8" class="input-col input-8">
+                                            <input type="text" id="sapu-9" class="input-col input-9">
+                                            <span>
+                                                <input id="total-sapu" type="text" class="input-col total-col">
+                                                <button type="button" class="btn-col btn-total" tipe="sapu"><i class="fa fa-check"></i></button>
+                                            </span>
+                                        </div>
+                                        <div id="sasa" class="satu box">
+                                            <input type="text" id="sasa-1" class="input-col input-1">
+                                            <input type="text" id="sasa-2" class="input-col input-2">
+                                            <input type="text" id="sasa-3" class="input-col input-3">
+                                            <input type="text" id="sasa-4" class="input-col input-4">
+                                            <input type="text" id="sasa-5" class="input-col input-5">
+                                            <input type="text" id="sasa-6" class="input-col input-6">
+                                            <input type="text" id="sasa-7" class="input-col input-7">
+                                            <input type="text" id="sasa-8" class="input-col input-8">
+                                            <input type="text" id="sasa-9" class="input-col input-9">
+                                            <span>
+                                                <input id="total-sasa" type="text" class="input-col total-col">
+                                                <button type="button" class="btn-col btn-total" tipe="sasa"><i class="fa fa-check"></i></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="header_row">
+                            <td>PULUHAN</td>
+                        </tr>
+                        <tr class="header_row">
+                            <td>SATUAN</td>
+                            <td class="hasil_row">
+                                <h4 style="margin: 0;">HASIL AKHIR</h4>
+                                <hr class="hr_large">
+                                <div id="hasil_section">
+                                    <ul id="hasil_number">
+                                    </ul>
+                                    <div style='overflow:hidden; white-space:nowrap;'>
+                                        <i class="fa fa-plus"></i>
+                                        <hr class="hr_small"/>
+                                    </div>
+                                    <h3 id="hasil_total">
+                                        100000
+                                    </h3>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-                <div id="soal-game" style="display: none;">
-                    <div id="question" class="text-center" style="margin-bottom: 20px;">
-                        <h3>ini soal</h3>
-                    </div>
-                    <div class="choice-container" data-number="1">
-                        <p class="choice-prefix">A</p>
-                        <p class="choice-text">Benar</p>
-                    </div>
-                    <div class="choice-container" data-number="2">
-                        <p class="choice-prefix">B</p>
-                        <p class="choice-text">Salah</p>
-                    </div>
-                </div>
+
             </div>
         </div>
-    </section>
-@endsection
-
-@section('js')
-    <script type="text/javascript">
-        $(function(){
-
-            var canvas=document.getElementById("canvas");
-            var ctx=canvas.getContext("2d");
-            var canvasTemp=document.getElementById("canvasTemp");
-            var ctxTemp=canvasTemp.getContext("2d");
-            var canvasOffset=$("#canvas").offset();
-            var offsetX=canvasOffset.left;
-            var offsetY=canvasOffset.top;
-            console.log(offsetX);
-            console.log(offsetY);
-            
-
-            var startX;
-            var startY;
-            var isDown=false;
-
-            $("#canvasTemp").css({ left: 0, top:0 });
-
-            function drawLine(toX,toY,context){
-                context.beginPath();
-                context.moveTo(startX, startY);
-                context.lineTo(toX,toY);
-                context.stroke();
-            }
-
-            function handleMouseDown(e){
-            e.preventDefault();
-            mouseX=parseInt(e.clientX-offsetX);
-            mouseY=parseInt((e.clientY + 200)-offsetY);
-            console.log(`clientX ${e.clientX}`);
-            console.log(`clientY ${e.clientY}`);
-            console.log(`OffsetX ${offsetX}`);
-            console.log(`OffsetY ${offsetY}`);
-            
-
-            // save drag-startXY, 
-            // move temp canvas over main canvas,
-            // set dragging flag
-            startX=mouseX;
-            startY=mouseY;
-            ctxTemp.clearRect(0,0,canvasTemp.width,canvasTemp.height);
-            $("#canvasTemp").css({ left:0, top:0 });
-            isDown=true;
-            }
-
-            function handleMouseUp(e){
-            e.preventDefault();
-            if(!isDown){return;}
-            // clear dragging flag
-            // move temp canvas offscreen
-            // draw the user's line on the main canvas
-            isDown=false;
-            mouseX=parseInt(e.clientX-offsetX);
-            mouseY=parseInt((e.clientY + 200)-offsetY);
-            $("#canvasTemp").css({ left: 0, top:0 });
-            drawLine(mouseX,mouseY,ctx);
-            }
-
-            function handleMouseMove(e){
-            e.preventDefault();        
-            if(!isDown){return;}
-            mouseX=parseInt(e.clientX-offsetX);
-            mouseY=parseInt((e.clientY + 200)-offsetY);
-            // clear the temp canvas
-            // on temp canvas draw a line from drag-start to mouseXY
-            ctxTemp.clearRect(0,0,canvasTemp.width,canvasTemp.height);
-            drawLine(mouseX,mouseY,ctxTemp);
-            }
-
-            $("#canvas").mousedown(function(e){handleMouseDown(e);});
-            $("#canvas").mousemove(function(e){handleMouseMove(e);});
-            $("#canvas").mouseup(function(e){handleMouseUp(e);});
-            $("#canvas").mouseout(function(e){handleMouseUp(e);});
-
-            }); // end $(function(){});
-    </script>
-@endsection
+    </main>
+    <script src="{{ asset('frontend/vendor/jquery/jquery-3.4.1.min.js') }}"></script>
+    <script src="{{ asset('js/games.js') }}"></script>
+</body>
+</html>
