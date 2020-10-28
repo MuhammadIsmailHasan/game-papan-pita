@@ -52,6 +52,49 @@ main {
     margin: 5px 0;
 }
 
+/* Elements */
+.btn-game {
+    display:inline-block;
+    padding:0.7em 1.4em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.15em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    text-transform:uppercase;
+    font-weight:400;
+    color:#FFFFFF;
+    box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+    text-align:center;
+    position:relative;
+    width: 95px;
+}
+
+.btn-blue {
+    background-color:#3369ff;
+}
+
+.btn-green {
+    background-color: darkgreen;
+}
+
+.btn-gray {
+    background-color:darkslategray;
+}
+
+.btn-chocolate {
+    background-color: chocolate;
+}
+
+.btn-red {
+    background-color:red;
+}
+
+
+.btn-game:hover{
+    top: 0.1em;
+    cursor: pointer;
+}
 
 #papan, #papan th, #papan td {
     border: 1px solid black;
@@ -170,12 +213,14 @@ main {
 }
 
 .input-col {
+    border-radius: 5px;
 	margin: 4px 0px;
 	width: 50px;
 	border: 1px;
 	padding: 2px;
 	float: right;
-	clear: right;
+    clear: right;
+    text-align: center;
 }
 
 .total-col {
@@ -183,11 +228,13 @@ main {
     width: 75px;
 }
 
-.btn-col {
+.btn-total {
     position: relative;
     float: right;
     margin: 9px 8px 0 0;
     padding: 1px 3px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 

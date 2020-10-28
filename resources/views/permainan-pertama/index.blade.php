@@ -36,8 +36,8 @@
                         <audio id="audio-jawab" src="{{ asset('audio/jawab.mp3') }}"></audio>
                     </div>
                     <div id="hud-item">
-                        <button id="btn_mulai" type="button" class="btn btn-primary hud-prefix"> MULAI</button>   
-                        <button id="btn_simpan" style="display: none;" type="button" class="btn btn-success hud-prefix"> SELESAI</button>   
+                        <button id="btn_mulai" type="button" class="btn-game btn-blue"> MULAI</button>   
+                        <button id="btn_simpan" style="display: none;" type="button" class="btn-game btn-gray"> SELESAI</button>   
                     </div>
                 </div>
 
@@ -54,7 +54,10 @@
                             <td class="header_column">RATUSAN</td>
                             <td class="header_column">PULUHAN</td>
                             <td class="header_column">SATUAN</td>
-                            <td rowspan="3" class="last_column">Tutorial</td>
+                            <td rowspan="3" class="last_column">
+                                <button id="btn_selesai" type="button" class="btn-game btn-green"> SELESAI</button> 
+                                {{-- <button id="btn_reset" type="button" class="btn-game btn-chocolate"> RESET</button>  --}}
+                            </td>
                         </tr>
                         <tr class="header_row">
                             <td>RATUSAN</td>
@@ -73,7 +76,7 @@
                                             <input type="text" id="rara-9" class="input-col input-9 input-number" tipe="rara">
                                             <span>
                                                 <input id="total-rara" type="text" class="input-col total-col">
-                                                <button type="button" class="btn-col btn-total" tipe="rara"><i class="fa fa-check"></i></button>
+                                                <button type="button" class="btn-total" style="display: none;" tipe="rara"><i class="fa fa-check"></i></button>
                                             </span>
                                             
                                         </div>
@@ -89,7 +92,7 @@
                                             <input type="text" id="rapu-9" class="input-col input-9 input-number" tipe="rapu">
                                             <span>
                                                 <input id="total-rapu" type="text" class="input-col total-col">
-                                                <button type="button" class="btn-col btn-total" tipe="rapu"><i class="fa fa-check"></i></button>
+                                                <button type="button" class="btn-total" style="display: none;" tipe="rapu"><i class="fa fa-check"></i></button>
                                             </span>
                                         </div>
                                         <div id="rasa" class="seratus box">
@@ -104,7 +107,7 @@
                                             <input type="text" id="rasa-9" class="input-col input-9 input-number" tipe="rasa">
                                             <span>
                                                 <input id="total-rasa" type="text" class="input-col total-col">
-                                                <button type="button" class="btn-col btn-total" tipe="rasa"><i class="fa fa-check"></i></button>
+                                                <button type="button" class="btn-total" style="display: none;" tipe="rasa"><i class="fa fa-check"></i></button>
                                             </span>
                                         </div>
                                     </div>
@@ -122,7 +125,7 @@
                                             <input type="text" id="pura-9" class="input-col input-9 input-number" tipe="pura">
                                             <span>
                                                 <input id="total-pura" type="text" class="input-col total-col">
-                                                <button type="button" class="btn-col btn-total" tipe="pura"><i class="fa fa-check"></i></button>
+                                                <button type="button" class="btn-total" style="display: none;" tipe="pura"><i class="fa fa-check"></i></button>
                                             </span>
                                         </div>
                                         <div id="pupu" class="seratus box">
@@ -137,7 +140,7 @@
                                             <input type="text" id="pupu-9" class="input-col input-9 input-number" tipe="pupu">
                                             <span>
                                                 <input id="total-pupu" type="text" class="input-col total-col">
-                                                <button type="button" class="btn-col btn-total" tipe="pupu"><i class="fa fa-check"></i></button>
+                                                <button type="button" class="btn-total" style="display: none;" tipe="pupu"><i class="fa fa-check"></i></button>
                                             </span>
                                         </div>
                                         <div id="pusa" class="sepuluh box">
@@ -152,7 +155,7 @@
                                             <input type="text" id="pusa-9" class="input-col input-9 input-number" tipe="pusa">
                                             <span>
                                                 <input id="total-pusa" type="text" class="input-col total-col">
-                                                <button type="button" class="btn-col btn-total" tipe="pusa"><i class="fa fa-check"></i></button>
+                                                <button type="button" class="btn-total" style="display: none;" tipe="pusa"><i class="fa fa-check"></i></button>
                                             </span>
                                         </div>
                                     </div>
@@ -170,7 +173,7 @@
                                             <input type="text" id="sara-9" class="input-col input-9 input-number" tipe="sara">
                                             <span>
                                                 <input id="total-sara" type="text" class="input-col total-col">
-                                                <button type="button" class="btn-col btn-total" tipe="sara"><i class="fa fa-check"></i></button>
+                                                <button type="button" class="btn-total" style="display: none;" tipe="sara"><i class="fa fa-check"></i></button>
                                             </span>
                                         </div>
                                         <div id="sapu" class="sepuluh box">
@@ -185,7 +188,7 @@
                                             <input type="text" id="sapu-9" class="input-col input-9 input-number" tipe="sapu">
                                             <span>
                                                 <input id="total-sapu" type="text" class="input-col total-col">
-                                                <button type="button" class="btn-col btn-total" tipe="sapu"><i class="fa fa-check"></i></button>
+                                                <button type="button" class="btn-total" style="display: none;" tipe="sapu"><i class="fa fa-check"></i></button>
                                             </span>
                                         </div>
                                         <div id="sasa" class="satu box">
@@ -200,7 +203,7 @@
                                             <input type="text" id="sasa-9" class="input-col input-9 input-number" tipe="sasa">
                                             <span>
                                                 <input id="total-sasa" type="text" class="input-col total-col">
-                                                <button type="button" class="btn-col btn-total" tipe="sasa"><i class="fa fa-check"></i></button>
+                                                <button type="button" class="btn-total" style="display: none;" tipe="sasa"><i class="fa fa-check"></i></button>
                                             </span>
                                         </div>
                                     </div>
@@ -222,8 +225,8 @@
                                         <i class="fa fa-plus"></i>
                                         <hr class="hr_small"/>
                                     </div>
-                                    <h3 id="hasil_total">
-                                    </h3>
+                                    <h3 id="hasil_total">100000
+                                    </h3> 
                                 </div>
                             </td>
                         </tr>

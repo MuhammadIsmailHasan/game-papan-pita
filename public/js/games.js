@@ -16,12 +16,18 @@ $(document).ready(function() {
 	});
 
 	$('.input-number').change(function (e) { 
-		let dataNumber = parseInt($(this).val());
 		let tipe = $(this).attr('tipe');
-		let dataTotalNumber = $(`#total-${tipe}`).val() == "" ? 0 : parseInt($(`#total-${tipe}`).val());
-		let newDataTotal = dataTotalNumber + dataNumber;
+		let listInput = Array.from($(`input[tipe='${tipe}']`));
+		let jmlInput = listInput.map(number => {
+									const num = number.value == "" ? 0 :  parseInt(number.value);
+									return num;
+								})
+								.reduce((total, number) => {
+									return total += number;
+								});
 
-		$(`#total-${tipe}`).val(newDataTotal);
+		$(`#total-${tipe}`).val(jmlInput);
+		$(`.btn-total[tipe=${tipe}]`).css('display', 'block');
 	});
 
     let coords2 = [
