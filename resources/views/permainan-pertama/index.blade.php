@@ -62,15 +62,15 @@
                                 <div id="canvas">
                                     <div id="flex-row">
                                         <div id="rara" class="sepuluh-ribu box">
-                                            <input type="text" id="rara-1" class="input-col input-1">
-                                            <input type="text" id="rara-2" class="input-col input-2">
-                                            <input type="text" id="rara-3" class="input-col input-3">
-                                            <input type="text" id="rara-4" class="input-col input-4">
-                                            <input type="text" id="rara-5" class="input-col input-5">
-                                            <input type="text" id="rara-6" class="input-col input-6">
-                                            <input type="text" id="rara-7" class="input-col input-7">
-                                            <input type="text" id="rara-8" class="input-col input-8">
-                                            <input type="text" id="rara-9" class="input-col input-9">
+                                            <input type="text" id="rara-1" class="input-col input-1 input-number" tipe="rara">
+                                            <input type="text" id="rara-2" class="input-col input-2 input-number" tipe="rara">
+                                            <input type="text" id="rara-3" class="input-col input-3 input-number" tipe="rara">
+                                            <input type="text" id="rara-4" class="input-col input-4 input-number" tipe="rara">
+                                            <input type="text" id="rara-5" class="input-col input-5 input-number" tipe="rara">
+                                            <input type="text" id="rara-6" class="input-col input-6 input-number" tipe="rara">
+                                            <input type="text" id="rara-7" class="input-col input-7 input-number" tipe="rara">
+                                            <input type="text" id="rara-8" class="input-col input-8 input-number" tipe="rara">
+                                            <input type="text" id="rara-9" class="input-col input-9 input-number" tipe="rara">
                                             <span>
                                                 <input id="total-rara" type="text" class="input-col total-col">
                                                 <button type="button" class="btn-col btn-total" tipe="rara"><i class="fa fa-check"></i></button>
@@ -78,30 +78,30 @@
                                             
                                         </div>
                                         <div id="rapu" class="seribu box">
-                                            <input type="text" id="rapu-1" class="input-col input-1">
-                                            <input type="text" id="rapu-2" class="input-col input-2">
-                                            <input type="text" id="rapu-3" class="input-col input-3">
-                                            <input type="text" id="rapu-4" class="input-col input-4">
-                                            <input type="text" id="rapu-5" class="input-col input-5">
-                                            <input type="text" id="rapu-6" class="input-col input-6">
-                                            <input type="text" id="rapu-7" class="input-col input-7">
-                                            <input type="text" id="rapu-8" class="input-col input-8">
-                                            <input type="text" id="rapu-9" class="input-col input-9">
+                                            <input type="text" id="rapu-1" class="input-col input-1 input-number" tipe="rapu">
+                                            <input type="text" id="rapu-2" class="input-col input-2 input-number" tipe="rapu">
+                                            <input type="text" id="rapu-3" class="input-col input-3 input-number" tipe="rapu">
+                                            <input type="text" id="rapu-4" class="input-col input-4 input-number" tipe="rapu">
+                                            <input type="text" id="rapu-5" class="input-col input-5 input-number" tipe="rapu">
+                                            <input type="text" id="rapu-6" class="input-col input-6 input-number" tipe="rapu">
+                                            <input type="text" id="rapu-7" class="input-col input-7 input-number" tipe="rapu">
+                                            <input type="text" id="rapu-8" class="input-col input-8 input-number" tipe="rapu">
+                                            <input type="text" id="rapu-9" class="input-col input-9 input-number" tipe="rapu">
                                             <span>
                                                 <input id="total-rapu" type="text" class="input-col total-col">
                                                 <button type="button" class="btn-col btn-total" tipe="rapu"><i class="fa fa-check"></i></button>
                                             </span>
                                         </div>
                                         <div id="rasa" class="seratus box">
-                                            <input type="text" id="rasa-1" class="input-col input-1">
-                                            <input type="text" id="rasa-2" class="input-col input-2">
-                                            <input type="text" id="rasa-3" class="input-col input-3">
-                                            <input type="text" id="rasa-4" class="input-col input-4">
-                                            <input type="text" id="rasa-5" class="input-col input-5">
-                                            <input type="text" id="rasa-6" class="input-col input-6">
-                                            <input type="text" id="rasa-7" class="input-col input-7">
-                                            <input type="text" id="rasa-8" class="input-col input-8">
-                                            <input type="text" id="rasa-9" class="input-col input-9">
+                                            <input type="text" id="rasa-1" class="input-col input-1 input-number" tipe="rasa">
+                                            <input type="text" id="rasa-2" class="input-col input-2 input-number" tipe="rasa">
+                                            <input type="text" id="rasa-3" class="input-col input-3 input-number" tipe="rasa">
+                                            <input type="text" id="rasa-4" class="input-col input-4 input-number" tipe="rasa">
+                                            <input type="text" id="rasa-5" class="input-col input-5 input-number" tipe="rasa">
+                                            <input type="text" id="rasa-6" class="input-col input-6 input-number" tipe="rasa">
+                                            <input type="text" id="rasa-7" class="input-col input-7 input-number" tipe="rasa">
+                                            <input type="text" id="rasa-8" class="input-col input-8 input-number" tipe="rasa">
+                                            <input type="text" id="rasa-9" class="input-col input-9 input-number" tipe="rasa">
                                             <span>
                                                 <input id="total-rasa" type="text" class="input-col total-col">
                                                 <button type="button" class="btn-col btn-total" tipe="rasa"><i class="fa fa-check"></i></button>
@@ -111,45 +111,45 @@
 
                                     <div id="flex-row">
                                         <div id="pura" class="seribu box">
-                                            <input type="text" id="pura-1" class="input-col input-1">
-                                            <input type="text" id="pura-2" class="input-col input-2">
-                                            <input type="text" id="pura-3" class="input-col input-3">
-                                            <input type="text" id="pura-4" class="input-col input-4">
-                                            <input type="text" id="pura-5" class="input-col input-5">
-                                            <input type="text" id="pura-6" class="input-col input-6">
-                                            <input type="text" id="pura-7" class="input-col input-7">
-                                            <input type="text" id="pura-8" class="input-col input-8">
-                                            <input type="text" id="pura-9" class="input-col input-9">
+                                            <input type="text" id="pura-1" class="input-col input-1 input-number" tipe="pura">
+                                            <input type="text" id="pura-2" class="input-col input-2 input-number" tipe="pura">
+                                            <input type="text" id="pura-3" class="input-col input-3 input-number" tipe="pura">
+                                            <input type="text" id="pura-4" class="input-col input-4 input-number" tipe="pura">
+                                            <input type="text" id="pura-5" class="input-col input-5 input-number" tipe="pura">
+                                            <input type="text" id="pura-6" class="input-col input-6 input-number" tipe="pura">
+                                            <input type="text" id="pura-7" class="input-col input-7 input-number" tipe="pura">
+                                            <input type="text" id="pura-8" class="input-col input-8 input-number" tipe="pura">
+                                            <input type="text" id="pura-9" class="input-col input-9 input-number" tipe="pura">
                                             <span>
                                                 <input id="total-pura" type="text" class="input-col total-col">
                                                 <button type="button" class="btn-col btn-total" tipe="pura"><i class="fa fa-check"></i></button>
                                             </span>
                                         </div>
                                         <div id="pupu" class="seratus box">
-                                            <input type="text" id="pupu-1" class="input-col input-1">
-                                            <input type="text" id="pupu-2" class="input-col input-2">
-                                            <input type="text" id="pupu-3" class="input-col input-3">
-                                            <input type="text" id="pupu-4" class="input-col input-4">
-                                            <input type="text" id="pupu-5" class="input-col input-5">
-                                            <input type="text" id="pupu-6" class="input-col input-6">
-                                            <input type="text" id="pupu-7" class="input-col input-7">
-                                            <input type="text" id="pupu-8" class="input-col input-8">
-                                            <input type="text" id="pupu-9" class="input-col input-9">
+                                            <input type="text" id="pupu-1" class="input-col input-1 input-number" tipe="pupu">
+                                            <input type="text" id="pupu-2" class="input-col input-2 input-number" tipe="pupu">
+                                            <input type="text" id="pupu-3" class="input-col input-3 input-number" tipe="pupu">
+                                            <input type="text" id="pupu-4" class="input-col input-4 input-number" tipe="pupu">
+                                            <input type="text" id="pupu-5" class="input-col input-5 input-number" tipe="pupu">
+                                            <input type="text" id="pupu-6" class="input-col input-6 input-number" tipe="pupu">
+                                            <input type="text" id="pupu-7" class="input-col input-7 input-number" tipe="pupu">
+                                            <input type="text" id="pupu-8" class="input-col input-8 input-number" tipe="pupu">
+                                            <input type="text" id="pupu-9" class="input-col input-9 input-number" tipe="pupu">
                                             <span>
                                                 <input id="total-pupu" type="text" class="input-col total-col">
                                                 <button type="button" class="btn-col btn-total" tipe="pupu"><i class="fa fa-check"></i></button>
                                             </span>
                                         </div>
                                         <div id="pusa" class="sepuluh box">
-                                            <input type="text" id="pusa-1" class="input-col input-1">
-                                            <input type="text" id="pusa-2" class="input-col input-2">
-                                            <input type="text" id="pusa-3" class="input-col input-3">
-                                            <input type="text" id="pusa-4" class="input-col input-4">
-                                            <input type="text" id="pusa-5" class="input-col input-5">
-                                            <input type="text" id="pusa-6" class="input-col input-6">
-                                            <input type="text" id="pusa-7" class="input-col input-7">
-                                            <input type="text" id="pusa-8" class="input-col input-8">
-                                            <input type="text" id="pusa-9" class="input-col input-9">
+                                            <input type="text" id="pusa-1" class="input-col input-1 input-number" tipe="pusa">
+                                            <input type="text" id="pusa-2" class="input-col input-2 input-number" tipe="pusa">
+                                            <input type="text" id="pusa-3" class="input-col input-3 input-number" tipe="pusa">
+                                            <input type="text" id="pusa-4" class="input-col input-4 input-number" tipe="pusa">
+                                            <input type="text" id="pusa-5" class="input-col input-5 input-number" tipe="pusa">
+                                            <input type="text" id="pusa-6" class="input-col input-6 input-number" tipe="pusa">
+                                            <input type="text" id="pusa-7" class="input-col input-7 input-number" tipe="pusa">
+                                            <input type="text" id="pusa-8" class="input-col input-8 input-number" tipe="pusa">
+                                            <input type="text" id="pusa-9" class="input-col input-9 input-number" tipe="pusa">
                                             <span>
                                                 <input id="total-pusa" type="text" class="input-col total-col">
                                                 <button type="button" class="btn-col btn-total" tipe="pusa"><i class="fa fa-check"></i></button>
@@ -159,45 +159,45 @@
 
                                     <div id="flex-row">
                                         <div id="sara" class="seratus box">
-                                            <input type="text" id="sara-1" class="input-col input-1">
-                                            <input type="text" id="sara-2" class="input-col input-2">
-                                            <input type="text" id="sara-3" class="input-col input-3">
-                                            <input type="text" id="sara-4" class="input-col input-4">
-                                            <input type="text" id="sara-5" class="input-col input-5">
-                                            <input type="text" id="sara-6" class="input-col input-6">
-                                            <input type="text" id="sara-7" class="input-col input-7">
-                                            <input type="text" id="sara-8" class="input-col input-8">
-                                            <input type="text" id="sara-9" class="input-col input-9">
+                                            <input type="text" id="sara-1" class="input-col input-1 input-number" tipe="sara">
+                                            <input type="text" id="sara-2" class="input-col input-2 input-number" tipe="sara">
+                                            <input type="text" id="sara-3" class="input-col input-3 input-number" tipe="sara">
+                                            <input type="text" id="sara-4" class="input-col input-4 input-number" tipe="sara">
+                                            <input type="text" id="sara-5" class="input-col input-5 input-number" tipe="sara">
+                                            <input type="text" id="sara-6" class="input-col input-6 input-number" tipe="sara">
+                                            <input type="text" id="sara-7" class="input-col input-7 input-number" tipe="sara">
+                                            <input type="text" id="sara-8" class="input-col input-8 input-number" tipe="sara">
+                                            <input type="text" id="sara-9" class="input-col input-9 input-number" tipe="sara">
                                             <span>
                                                 <input id="total-sara" type="text" class="input-col total-col">
                                                 <button type="button" class="btn-col btn-total" tipe="sara"><i class="fa fa-check"></i></button>
                                             </span>
                                         </div>
                                         <div id="sapu" class="sepuluh box">
-                                            <input type="text" id="sapu-1" class="input-col input-1">
-                                            <input type="text" id="sapu-2" class="input-col input-2">
-                                            <input type="text" id="sapu-3" class="input-col input-3">
-                                            <input type="text" id="sapu-4" class="input-col input-4">
-                                            <input type="text" id="sapu-5" class="input-col input-5">
-                                            <input type="text" id="sapu-6" class="input-col input-6">
-                                            <input type="text" id="sapu-7" class="input-col input-7">
-                                            <input type="text" id="sapu-8" class="input-col input-8">
-                                            <input type="text" id="sapu-9" class="input-col input-9">
+                                            <input type="text" id="sapu-1" class="input-col input-1 input-number" tipe="sapu">
+                                            <input type="text" id="sapu-2" class="input-col input-2 input-number" tipe="sapu">
+                                            <input type="text" id="sapu-3" class="input-col input-3 input-number" tipe="sapu">
+                                            <input type="text" id="sapu-4" class="input-col input-4 input-number" tipe="sapu">
+                                            <input type="text" id="sapu-5" class="input-col input-5 input-number" tipe="sapu">
+                                            <input type="text" id="sapu-6" class="input-col input-6 input-number" tipe="sapu">
+                                            <input type="text" id="sapu-7" class="input-col input-7 input-number" tipe="sapu">
+                                            <input type="text" id="sapu-8" class="input-col input-8 input-number" tipe="sapu">
+                                            <input type="text" id="sapu-9" class="input-col input-9 input-number" tipe="sapu">
                                             <span>
                                                 <input id="total-sapu" type="text" class="input-col total-col">
                                                 <button type="button" class="btn-col btn-total" tipe="sapu"><i class="fa fa-check"></i></button>
                                             </span>
                                         </div>
                                         <div id="sasa" class="satu box">
-                                            <input type="text" id="sasa-1" class="input-col input-1">
-                                            <input type="text" id="sasa-2" class="input-col input-2">
-                                            <input type="text" id="sasa-3" class="input-col input-3">
-                                            <input type="text" id="sasa-4" class="input-col input-4">
-                                            <input type="text" id="sasa-5" class="input-col input-5">
-                                            <input type="text" id="sasa-6" class="input-col input-6">
-                                            <input type="text" id="sasa-7" class="input-col input-7">
-                                            <input type="text" id="sasa-8" class="input-col input-8">
-                                            <input type="text" id="sasa-9" class="input-col input-9">
+                                            <input type="text" id="sasa-1" class="input-col input-1 input-number" tipe="sasa">
+                                            <input type="text" id="sasa-2" class="input-col input-2 input-number" tipe="sasa">
+                                            <input type="text" id="sasa-3" class="input-col input-3 input-number" tipe="sasa">
+                                            <input type="text" id="sasa-4" class="input-col input-4 input-number" tipe="sasa">
+                                            <input type="text" id="sasa-5" class="input-col input-5 input-number" tipe="sasa">
+                                            <input type="text" id="sasa-6" class="input-col input-6 input-number" tipe="sasa">
+                                            <input type="text" id="sasa-7" class="input-col input-7 input-number" tipe="sasa">
+                                            <input type="text" id="sasa-8" class="input-col input-8 input-number" tipe="sasa">
+                                            <input type="text" id="sasa-9" class="input-col input-9 input-number" tipe="sasa">
                                             <span>
                                                 <input id="total-sasa" type="text" class="input-col total-col">
                                                 <button type="button" class="btn-col btn-total" tipe="sasa"><i class="fa fa-check"></i></button>
@@ -223,7 +223,6 @@
                                         <hr class="hr_small"/>
                                     </div>
                                     <h3 id="hasil_total">
-                                        100000
                                     </h3>
                                 </div>
                             </td>

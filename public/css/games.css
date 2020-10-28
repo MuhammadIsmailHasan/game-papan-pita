@@ -204,7 +204,7 @@ main {
 	background-color:#000;
 }
 
-.first_dot:hover {cursor:crosshair;}
+.first_dot:hover {cursor:pointer;}
 
 
 @media screen and (max-width: 480px) {

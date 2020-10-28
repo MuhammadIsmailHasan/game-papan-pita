@@ -1,16 +1,31 @@
 $(document).ready(function() {
 	$('.btn-total').click(function (e) { 
 		let tipe = $(this).attr('tipe');
-		let number = $(`#total-${tipe}`).val();
-		let li = `<li>${number}</li>`;
+		let dataTotalNumber = $(`#total-${tipe}`).val();
+		let li = `<li data-number="${dataTotalNumber}">${dataTotalNumber}</li>`;
 		$('#hasil_number').append(li);
 		$(this).css('display', 'none');
+
+		// sum number
+		let listTotalNumber = Array.from($('[data-number]'));
+		let jml = listTotalNumber.map(number => parseInt(number.dataset.number))
+							.reduce((total, number) => {
+								return total += number;
+							});
+		$('#hasil_total').text(jml);
 	});
 
+	$('.input-number').change(function (e) { 
+		let dataNumber = parseInt($(this).val());
+		let tipe = $(this).attr('tipe');
+		let dataTotalNumber = $(`#total-${tipe}`).val() == "" ? 0 : parseInt($(`#total-${tipe}`).val());
+		let newDataTotal = dataTotalNumber + dataNumber;
+
+		$(`#total-${tipe}`).val(newDataTotal);
+	});
 
     let coords2 = [
     // BARIS
-        
         // ratusan
 		[
 			[0, 23], [1046, 23]
