@@ -10,6 +10,18 @@ body {
     margin: 0;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 main {
     padding: 10px;
     overflow: auto; /* untuk menghilangkan sifat float sehingga di anggap normal content*/
@@ -191,6 +203,11 @@ main {
     font-weight: bold;
 }
 
+.soal-card {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
 .header_row {
     height: 270px;
     background-color: gray;
