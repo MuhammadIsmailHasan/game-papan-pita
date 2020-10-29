@@ -50,14 +50,15 @@ class NilaiController extends Controller
 
         $data['sebutan'] = $this->SetSebutan($request->skor);
         $response = [
-            'sebutan' => $data['sebutan']
+            'sebutan' => $data['sebutan'],
+            'skor' => $request->skor
         ];
 
         DB::transaction(function () use (&$data, &$userId, $userService, $nilaiService){
-            if ($data['ronde'] == 1) {
-                $userService->updateUser(['status_ronde_1' => 1], $userId);
+            if ($data['level'] == 1) {
+                $userService->updateUser(['status_level_1' => 1], $userId);
             } else {
-                $userService->updateUser(['status_ronde_2' => 1], $userId);
+                $userService->updateUser(['status_level_2' => 1], $userId);
             }
 
             $data['user_id'] = $userId;

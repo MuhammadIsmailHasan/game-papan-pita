@@ -96,6 +96,75 @@ main {
     cursor: pointer;
 }
 
+/* CANVAS */
+#canvas {
+	width:1048px;
+	height:841px;
+	border:1px solid #ccc;
+	position:relative;
+	background-color:#fff;
+
+	display: flex;
+	flex-direction: column;
+}
+
+#flex-row {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+}
+
+.box {
+    flex-basis: 33.34%;
+    height: 280px;
+}
+
+.sepuluh-ribu {
+	background-color: blue;
+}
+
+.seribu {
+	background-color: green;
+}
+
+.seratus {
+	background-color: orange;
+}
+
+.sepuluh {
+	background-color: brown;
+}
+
+.satu {
+	background-color: yellow;
+}
+
+.column-input {
+    border-radius: 5px 0 0 5px;
+	margin: 4px 0px;
+	width: 50px;
+	border: 1px;
+	padding: 2px;
+	float: right;
+    clear: right;
+    text-align: center;
+}
+
+.column-jumlah {
+    margin: 10px 0 0 0;
+    width: 75px;
+}
+
+.btn-jumlah {
+    position: relative;
+    float: right;
+    margin: 9px 8px 0 0;
+    padding: 1px 3px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* PAPAN */
 #papan, #papan th, #papan td {
     border: 1px solid black;
 }
@@ -144,7 +213,7 @@ main {
     vertical-align: top;
 }
 
-#hasil_number {
+#hasil_jumlah {
     list-style-type: none;
     margin: 5px 5px 0 5px;
     text-align: right;
@@ -166,75 +235,6 @@ main {
     width: 100%;
     border: 2px solid black;
     margin-top: 0;
-}
-
-
-/* CANVAS */
-#canvas {
-	width:1048px;
-	height:841px;
-	border:1px solid #ccc;
-	position:relative;
-	background-color:#fff;
-
-	display: flex;
-	flex-direction: column;
-}
-
-#flex-row {
-	display: flex;
-	flex-direction: row;
-	flex-grow: 1;
-}
-
-.box {
-    flex-basis: 33.34%;
-    height: 280px;
-}
-
-.sepuluh-ribu {
-	background-color: blue;
-}
-
-.seribu {
-	background-color: green;
-}
-
-.seratus {
-	background-color: orange;
-}
-
-.sepuluh {
-	background-color: brown;
-}
-
-.satu {
-	background-color: yellow;
-}
-
-.input-col {
-    border-radius: 5px;
-	margin: 4px 0px;
-	width: 50px;
-	border: 1px;
-	padding: 2px;
-	float: right;
-    clear: right;
-    text-align: center;
-}
-
-.total-col {
-    margin: 10px 0 0 0;
-    width: 75px;
-}
-
-.btn-total {
-    position: relative;
-    float: right;
-    margin: 9px 8px 0 0;
-    padding: 1px 3px;
-    border-radius: 5px;
-    font-weight: bold;
 }
 
 

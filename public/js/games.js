@@ -30,6 +30,8 @@ $(document).ready(function() {
 		$(`.btn-total[tipe=${tipe}]`).css('display', 'block');
 	});
 
+
+
     let coords2 = [
     // BARIS
         // ratusan
@@ -212,22 +214,17 @@ $(document).ready(function() {
 
 	for (var a = 0; a < coords2.length; a++) {
 		for (var b = 0; b < coords2[a].length; b++){
-
 			let css = {
 				left: coords2[a][b][0]-6,
 				top: coords2[a][b][1]-17,
 			}
-
 			class_active = (b == 0) ? ' first_dot' : ' last_dot';
-		
 			div = $('<div id="dot_container_'+a+'_'+b+'" parent_value="'+a+'" order_value="'+b+'" class="dot_container'+class_active+'"><div class="dot"></div></div>').css(css);
-			
 			$('#canvas').append(div);
 		}	
 	}
 
 	$('.dot_container').click(function() {
-		
 		if ($(this).hasClass('first_dot')) {
 			let parent = parseInt($(this).attr('parent_value'));
 			let order = parseInt($(this).attr('order_value'));
@@ -247,9 +244,9 @@ $(document).ready(function() {
 
 				// the (css) transform angle depends on the direction of movement of the line
 				if (x2 >= x1){
-						transform = (360 + angle) % 360;
+					transform = (360 + angle) % 360;
 				} else {
-						transform = 180 + angle;
+					transform = 180 + angle;
 				}
 
 				// add the (currently invisible) line to the page
@@ -285,4 +282,5 @@ $(document).ready(function() {
 			$(`.line[dot_id=${dotLineId}]`).css('display', 'none');
 		}
 	});
+
 });
