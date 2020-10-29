@@ -51,13 +51,50 @@
                             <th colspan="5"><h1 style="margin: 5px;">PAPAN PITA PERKALIAN</h1></th>
                         </tr>
                         <tr class="first_row">
-                            <td class="first_column">0 x 0 : ...</td>
+                            <td class="first_column">
+                                <h2 id="soal" style="margin: 0;">0 x 0 :</h2>
+                            </td>
                             <td class="header_column">RATUSAN</td>
                             <td class="header_column">PULUHAN</td>
                             <td class="header_column">SATUAN</td>
                             <td rowspan="3" class="last_column">
-                                <button id="btn_selesai" type="button" class="btn-game btn-green"> SELESAI</button> 
-                                <button id="btn_reset" type="button" class="btn-game btn-chocolate"> RESET</button> 
+                                <h4 style="margin: 0;">KETERANGAN</h4>
+                                <hr class="hr_large">
+                                <div id="warna">
+                                    <div class="box-warna sepuluh-ribu">
+                                        <p class="warna-text">10.000</p>
+                                    </div>
+                                    <div class="box-warna seribu">
+                                        <p class="warna-text">1.000</p>
+                                    </div>
+                                    <div class="box-warna seratus">
+                                        <p class="warna-text">100</p>
+                                    </div>
+                                    <div class="box-warna sepuluh">
+                                        <p class="warna-text">10</p>
+                                    </div>
+                                    <div class="box-warna satu">
+                                        <p class="warna-text">1</p>
+                                    </div>
+                                </div>
+                                <div id="keterangan">
+                                    <div id="hl"></div>
+                                    <p style="margin: 0 0 2px 0; font-size: 12px;">PiDur (Pita Tidur)</p>
+                                    <div id="vl"></div>
+                                    <p style="margin: 1px 0 20px 0; display: inline-block; font-size: 12px;">PiRi (Pita berdiRi)</p>
+
+                                    <p class="ket-text">
+                                        ----- INGAT !! -----<br> 
+                                        a x b = c <br>
+                                        PiRI sebagai a <br>
+                                        PiDur sebagai b
+                                    </p>
+                                </div>
+                                
+                                <div style="border: 1px solid dimgray; border-radius: 3px; padding: 2px;">
+                                    <button id="btn_reset" type="button" class="btn-game btn-chocolate"> RESET</button> 
+                                    <button id="btn_selesai" type="button" class="btn-game btn-green"> SELESAI</button> 
+                                </div>
                             </td>
                         </tr>
                         <tr class="header_row">
@@ -257,23 +294,23 @@
 
             let questions = [
                 {
-                    question : "4 x 9 : ",
+                    question : "4 x 9",
                     answer : 36
                 },
                 {
-                    question : "6 x 123 : ",
+                    question : "6 x 123",
                     answer : 738
                 },
                 {
-                    question : "111 x 25 : ",
+                    question : "111 x 25",
                     answer : 2775
                 },
                 {
-                    question : "442 x 70 : ",
+                    question : "442 x 70",
                     answer : 30940
                 },
                 {
-                    question : "300 x 800 : ",
+                    question : "300 x 800",
                     answer : 240000
                 },
             ];
@@ -288,7 +325,7 @@
                 $('#questionCounter').text(`${questionCounter + 1}/${MAX_QUESTIONS}`);
                 currentQuestion = availableQuesions[questionCounter];
                     
-                $('.first_column').text(currentQuestion.question);
+                $('#soal').text(currentQuestion.question);
                 questionCounter++;
             }  
 
