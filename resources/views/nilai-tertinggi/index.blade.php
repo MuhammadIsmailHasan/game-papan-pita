@@ -38,23 +38,23 @@
                     <div class="custom-card">
                         <h4 class="header-title m-t-0 m-b-10">5 Nilai Tertinggi</h4>
                         <div class="table-responsive">
-                            <table id="datatable" class="table table-striped table-bordered dt-responsive nowrap ">
+                            <table id="datatable" class="table table-striped table-bordered dt-responsive nowrap">
                                 <thead>
                                     <tr>
                                         <th>No.</th>
                                         <th>Nama Siswa</th>
-                                        <th>Permainan</th>
+                                        <th>Quiz</th>
                                         <th>Skor</th>
-                                        <th>Sebutan</th>
+                                        <th>Sebutan Skor</th>
                                         <th>Tanggal</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @foreach($data as $value)
                                         <tr>
-                                            <td>{{ $loop->iteration }}</td>
-                                            <td>{{ $value->user->name }}</td>
-                                            <td>Ronde {{ $value->ronde }}</td>
+                                            <td width="5%">{{ $loop->iteration }}</td>
+                                            <td width="35%">{{ $value->user->name }}</td>
+                                            <td>Level {{ $value->level }}</td>
                                             <td>{{ $value->skor }}</td>
                                             <td>{{ $value->sebutan }}</td>
                                             <td>{{ $value->tanggal }}</td>

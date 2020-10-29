@@ -115,7 +115,7 @@
                                 confirmButtonText: 'Oke'
                             }).then((result) => {
                                 if (result.value) {
-                                    document.location.href = "{{ route('permainan.index', 1) }}"
+                                    document.location.href = "{{ route('materi.index', 2) }}"
                                 } else {
                                     document.location.href = "{{ route('home') }}"; 
                                 }

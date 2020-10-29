@@ -21,11 +21,11 @@ class NilaiController extends Controller
     {
         $filter = [];
 
-        $ronde = 0;
-        if ($request->has('search_ronde')) {
-            if ($request->search_ronde != 0) {
-                $filter['ronde'] = $request->search_ronde;
-                $ronde = $request->search_ronde;
+        $level = 0;
+        if ($request->has('search_level')) {
+            if ($request->search_level != 0) {
+                $filter['level'] = $request->search_level;
+                $level = $request->search_level;
             }
         }
 
@@ -33,12 +33,12 @@ class NilaiController extends Controller
         
         foreach ($nilai as $key => $value) {
             $value['tanggal'] = Carbon::createFromFormat('Y-m-d H:i:s', $value->created_at)
-            ->format('d-m-Y H:i:s');
+                        ->format('d-m-Y H:i');
         }
 
         return view($this->path . '.index', [
             'data' => $nilai,
-            'ronde_type' => $ronde
+            'level_type' => $level
         ]);
     }
 
@@ -111,18 +111,18 @@ class NilaiController extends Controller
     {
         $nilai = $nilaiService->update(['status' => 0], $id);
 
-        return Redirect::to($this->path)->withSuccess('Berhasil Menghapus Nilai');
+        return Redirect::to($this->path)->withSuccess('Berhasil Menonaktifkan Nilai');
     }
 
-    public function export($jenisRonde, nilaiService $nilaiService) 
+    public function export($jenisLevel, nilaiService $nilaiService) 
     {
         $date = Carbon::now()->format('d-m-Y');
         $filter = [
             'status' => 1
         ];
 
-        if ($jenisRonde != 0) {
-            $filter['ronde'] = $jenisRonde;
+        if ($jenisLevel != 0) {
+            $filter['level'] = $jenisLevel;
         }
 
         $nilai = $nilaiService->get($filter);

@@ -3,10 +3,10 @@
         <tr>
             <th>No.</th>
             <th>Nama Siswa</th>
-            <th>Permainan</th>
+            <th>Quiz</th>
             <th>Skor</th>
-            <th>Sebutan</th>
-            <th>Tanggal Main</th>
+            <th>Sebutan Skor</th>
+            <th>Tanggal Mengerjakan</th>
         </tr>
     </thead>
     <tbody>
@@ -14,7 +14,7 @@
             <tr>
                 <td>{{ $loop->iteration }}</td>
                 <td>{{ $item->user->name }}</td>
-                <td>{{ $item->ronde }}</td>
+                <td>Level {{ $item->level }}</td>
                 <td>{{ $item->skor }}</td>
                 <td>{{ $item->sebutan }}</td>
                 <td>{{ $item->tanggal }}</td>

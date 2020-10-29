@@ -169,7 +169,7 @@
                         if (response.status) {
                             Swal.fire({
                                 title: 'LANJUTKAN KE QUIZ ?',
-                                text: "Pilih Yes untuk Lanjut ke QUIZ LEVEL 1",
+                                text: "Tekan Yes untuk Lanjut ke QUIZ LEVEL 1",
                                 icon: 'warning',
                                 showCancelButton: true,
                                 confirmButtonColor: '#3085d6',

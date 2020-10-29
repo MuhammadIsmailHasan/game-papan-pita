@@ -13,12 +13,12 @@
                 <div class="col-lg-12">
                     {!! Form::open(['method' => 'GET', 'url' => 'nilai', 'class' => 'form-horizontal', 'id'=>'form_pencarian', 'role' => 'search'])  !!}
                         <div class="form-group">
-                            <label class="col-md-2 control-label">Berdasarkan Permainan</label>
+                            <label class="col-md-2 control-label">Berdasarkan Quiz</label>
                             <div class="col-md-3">
-                                <select name="search_ronde" id="search_ronde" class="form-control">
+                                <select name="search_level" id="search_level" class="form-control">
                                     <option value="0">All</option>
-                                    <option value="1">Ronde 1</option>
-                                    <option value="2">Ronde 2</option>
+                                    <option value="1">Level 1</option>
+                                    <option value="2">Level 2</option>
                                 </select>
                             </div>
                             <div class="col-md-6">
@@ -41,7 +41,7 @@
                                 <h4 class="header-title m-t-0 m-b-10">Daftar Nilai Siswa</h4>
                             </div>
                             <div class="col-md-2">
-                                <a href="{{ route('nilai-export', $ronde_type) }}" type="button" class="btn btn-success" style="float: right">
+                                <a href="{{ route('nilai-export', $level_type) }}" type="button" class="btn btn-success" style="float: right">
                                     <i class="fa fa-print"></i>  Export Excel
                                 </a>
                             </div>
@@ -53,9 +53,9 @@
                                     <tr>
                                         <th style="width: 5%;">No.</th>
                                         <th style="width: 35%;">Nama Siswa</th>
-                                        <th>Permainan</th>
+                                        <th>Quiz</th>
                                         <th>Skor</th>
-                                        <th>Sebutan</th>
+                                        <th>Sebutan Skor</th>
                                         <th>Tanggal</th>
                                         <th>Status</th>
                                         <th style="width: 2%;">Action</th>
@@ -67,7 +67,7 @@
                                             <tr>
                                                 <td>{{ $loop->iteration }}</td>
                                                 <td>{{ $value->user->name }}</td>
-                                                <td>Ronde {{ $value->ronde }}</td>
+                                                <td>Level {{ $value->level }}</td>
                                                 <td>{{ $value->skor }}</td>
                                                 <td>{{ $value->sebutan }}</td>
                                                 <td>{{ $value->tanggal }}</td>

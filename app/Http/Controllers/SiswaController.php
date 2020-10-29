@@ -29,7 +29,7 @@ class SiswaController extends Controller
         
         foreach ($siswa as $key => $value) {
             $value['tanggal'] = Carbon::createFromFormat('Y-m-d H:i:s', $value->created_at)
-                            ->format('d-m-Y');
+                            ->format('d-m-Y H:i');
         }
 
         return view($this->path . '.index', [
@@ -105,9 +105,10 @@ class SiswaController extends Controller
 
             $user = $userService->updateUser([
                 'status' => 0,
-                'status_materi' => 0,
-                'status_ronde_1' => 0,
-                'status_ronde_2' => 0
+                'status_materi_1' => 0,
+                'status_materi_2' => 0,
+                'status_level_1' => 0,
+                'status_level_2' => 0
             ], $id);
 
             foreach ($data->nilai as $key => $value) {
@@ -115,6 +116,6 @@ class SiswaController extends Controller
             }
         });
 
-        return Redirect::to($this->path)->withSuccess('Berhasil Menghapus Siswa, Akun dan Nilainya');
+        return Redirect::to($this->path)->withSuccess('Berhasil Menonaktifkan Siswa beserta Akun dan Nilainya');
     }
 }

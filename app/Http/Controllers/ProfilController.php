@@ -20,7 +20,7 @@ class ProfilController extends Controller
         $user = $userService->getUser(['id' => Auth::user()->id])->first();
         foreach ($user->nilai as $key => $value) {
             $value['tanggal'] = Carbon::createFromFormat('Y-m-d H:i:s', $value->created_at)
-                            ->format('d-m-Y');
+                            ->format('d-m-Y H:i');
         }
         
         return view($this->path . '.index', [
