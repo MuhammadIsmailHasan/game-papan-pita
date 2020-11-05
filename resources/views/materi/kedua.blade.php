@@ -24,7 +24,7 @@
                             </li>
                             <li>
                                 Berhitung perkalian pada media papan pita perkalian atau PaPi “x” menggunakan teknik persekutuan yakni 
-                                <b>membuat PiRi sebagai garis vertikal dan PiDur sebagai garis horizontal pada papan pita dengan jumlah PiRi dan PiDur sesuai faktor perkalian yang akan dihitung, kemudian menjumlahkan banyak titik pertemuan dari kedua pita tersebut dengan nilai titik temu setiap kotak tidak sama yang bertujuan</b> 
+                                <b>membuat garis vertikal sebagai PiRi dan membuat garis horizontal sebagai PiDur pada papan pita dengan jumlah PiRi dan PiDur sesuai faktor perkalian yang akan dihitung, kemudian menjumlahkan banyak titik pertemuan dari kedua pita tersebut dengan nilai titik temu setiap kotak tidak sama yang bertujuan</b> 
                                 untuk mendapatkan hasil kali dari perkalian dua bilangan cacah.
                             </li>
                         </ul>
@@ -55,8 +55,8 @@
                     <div class="card-body">
                         <h4 class="card-header">Tutorial penggunaan media</h4>
                         <ol class="card-text" style="font-size: 20px;">
-                            <li>Baca dan pahami tujuan pembelajaran dari pembelajaran matematika perkalian yang menggunakan media PaPi “x” pada menu tujuan pembelajaran.</li>
-                            <li>Baca dan pahami konsep-konsep perkalian pada menu materi perkalian untuk memudahkan kita dalam meningkatkan kemampuan berhitung perkalian.</li>
+                            <li>Baca dan pahami tujuan pembelajaran dengan mengklik tombol menu lalu pilih submenu kd ipk tujuan pembelajaran.</li>
+                            <li>Baca dan pahami konsep-konsep perkalian pada menu materi perkalian.</li>
                             <li>Buka menu papan pita perkalian untuk memahami bagian-bagian media, tutorial penggunaan media, dan latihan berhitung perkalian menggunakan media papan pita perkalian.</li>
                             <li>
                                 Mulai lakukan praktik berhitung perkalian dengan menggunakan media pembelajaran PaPi “x”.
