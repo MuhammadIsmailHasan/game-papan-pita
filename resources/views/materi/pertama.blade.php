@@ -22,7 +22,7 @@
                             <li>
                                 Sifat operasi hitung yang berlaku pada perkalian yakni <b>sifat asosiatif</b> atau <b>pengelompokan, sifat komutatif atau pertukaran,</b>
                                 dan <b>sifat distributif atau penyebaran</b>. Pada perkalian dua bilangan cacah hanya berlaku 
-                                <b>sifat pertukaran atau komutatif. <br>Contoh : 3 x 4 = 4+4+4 = 12 dan 4 x 3 = 3+3+3+4 jadi dapat dikatakan 3x4 = 4x3.</b>
+                                <b>sifat pertukaran atau komutatif. <br>Contoh : 3 x 4 = 4+4+4 = 12 dan 4 x 3 = 3+3+3+3 = 12 jadi dapat dikatakan 3x4 = 4x3 karena memiliki hasil yang sama yakni 12 namun bilangan yang berulang tidak sama sehingga proses berbeda.</b>
                             </li>
                         </ul>
                     </div>

@@ -21,7 +21,7 @@
                             </li>
                             <li>
                                 <p>
-                                    Menyelesaikan masalahyang melibatkan penggunaan sifat-sifat operasi hitung pada bilangan cacah.
+                                    Menyelesaikan masalahyang melibatkan penggunaan sifat-sifat-operasi hitung pada bilangan cacah.
                                 </p>
                             </li>
                         </ul>
@@ -35,22 +35,22 @@
                             </li>
                             <li>
                                 <p>
-                                    Membuat pertanyaan tentang perkalian yang melibatkan permasalahan sehari-hari.
+                                    Membuat pertanyaan tentang permasalahan sehari-hari yang melibatkan perkalian.
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    Menghitung perkalian dua bilangan cacah yang hasilnya sampai 6 digit bilangan menggunakan media papan pita perkalian.
+                                    Menghitung perkalian dua bilangan cacah menggunakan media pembelajaran papan pita perkalian.
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    Menyelesaikan persoalan matematika perkalian yang melibatkan permasalahan sehari-hari menggunakan media papan pita perkalian.
+                                    Menyelesaikan permasalahan sehari-hari yang melibatkan perkalian menggunakan media pembelajaran papan pita perkalian.
                                 </p>
                             </li>
                         </ul>
         
-                        <h4 class="header-title" style="margin-top: 40px;">Tujuan</h4>
+                        <h4 class="header-title" style="margin-top: 40px;">Tujuan Pembelajaran</h4>
                         <ul>
                             <li>
                                 <p>
@@ -59,17 +59,17 @@
                             </li>
                             <li>
                                 <p>
-                                    Siswa mampu membuat pertanyaan tentang perkalian yang melibatkan permasalahan sehari-hari dengan baik.
+                                    Siswa mampu membuat pertanyaan tentang permasalahan sehari-hari yang melibatkan perkalian dengan baik.
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    Siswa mampu menghitung perkalian dua bilangan cacah yang hasilnya sampai 6 digit bilangan menggunakan media papan pita perkalian dengan baik.
+                                    Siswa mampu menghitung perkalian dua bilangan cacah menggunakan media pembelajaran papan pita perkalian dengan baik.
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    Siswa mampu menyelesaikan persoalan matematika perkalian yang melibatkan permasalahan sehari-hari menggunakan media papan pita perkalian dengan benar.
+                                    Siswa mampu menyelesaikan permasalahan sehari-hari yang melibatkan perkalian menggunakan media pembelajaran papan pita perkalian dengan benar.
                                 </p>
                             </li>
                         </ul>

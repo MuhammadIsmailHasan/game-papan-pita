@@ -16,8 +16,10 @@ class MateriController extends Controller
     {
         if ($tipe == 1 ) {
             $this->path = $this->path . '.pertama';
-        } else {
+        } else if ($tipe == 2) {
             $this->path = $this->path . '.kedua';
+        } else if ($tipe == 3) {
+            $this->path = $this->path . '.praktek';
         }
 
         return view($this->path);

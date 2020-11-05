@@ -114,27 +114,21 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Contact Us</h3>
-                        <p><b>Email :</b><br>aaaaaaaaa@gmail.com</p>
+                    <div class="footer-col col-md-6">
+                        <h3>Contact Person</h3>
+                        <p><b>WhatsApp</b><br>085868778571</p>
                     </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Atau Informasi Lain</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Tentang Game</h3>
-                        <p>aaaaaaaaaaaaaaa</p>
+                    <div class="footer-col col-md-6">
+                        <h3>Tentang Papan Pita</h3>
+                        <p>
+                            Media pembelajaran untuk mata pelajaran matematika kelas 3 sekolah dasar khususnya 
+                            materi perkalian dua bilangan cacah dengan hasil kali hingga 6 digit bilangan atau 
+                            perkalian bilangan 1 hingga 999. <br>
+                            Berhitung perkalian pada media papan pita “x” 
+                            ini menggunakan teknik persekutuan yang berfokus pada titik pertemuan garis vertikal 
+                            dan horizontal dengan menjumlahkan banyak titik pertemuan tersebut 
+                            untuk mendapatkan hasil kali dari perkalian dua bilangan cacah.
+                        </p>
                     </div>
                 </div>
             </div>

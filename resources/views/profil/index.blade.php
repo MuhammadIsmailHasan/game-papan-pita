@@ -37,14 +37,14 @@
                                 <label class="col-md-4 control-label">Status Materi Perkalian</label>
                                 <div class="col-md-6">
                                     <input type="text" id="status_materi_1" name="status_materi_1" class="form-control"
-                                    value="{{ $data->materi_1 == 1 ? 'Sudah Selesai' : 'Belum Selesai'}}">
+                                    value="{{ $data->status_materi_1 == 1 ? 'Sudah Selesai' : 'Belum Selesai'}}">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label">Status Materi Papan Pita</label>
                                 <div class="col-md-6">
                                     <input type="text" id="status_materi_2" name="status_materi_2" class="form-control"
-                                    value="{{ $data->materi_2 == 1 ? 'Sudah Selesai' : 'Belum Selesai'}}">
+                                    value="{{ $data->status_materi_1 == 1 ? 'Sudah Selesai' : 'Belum Selesai'}}">
                                 </div>
                             </div>
                             <div class="form-group">
