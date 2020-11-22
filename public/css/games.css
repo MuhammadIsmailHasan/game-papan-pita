@@ -177,6 +177,11 @@ main {
     margin: 10px 0 0 0;
     width: 75px;
 }
+.column-hasil {
+    width: 100px;
+    height: 25px;
+    font-size: 20px;
+}
 
 .btn-jumlah {
     position: relative;
@@ -250,10 +255,10 @@ main {
     text-align: right;
 }
 
-#hasil_total {
+/* #hasil_total {
     float: right;
     margin: 0;
-}
+} */
 
 .hr_large {
     border: 3px solid black;

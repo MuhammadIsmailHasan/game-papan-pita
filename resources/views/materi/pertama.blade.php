@@ -13,17 +13,28 @@
                 <div class="card">
                     <div class="card-body">
                         <ul class="card-text" style="font-size: 20px;">
-                            <li>Perkalian adalah salah satu operasi hitung selain penjumlahan, pengurangan, dan pembagian yang <b>terjadi kelipatan pada bilangannya</b>.</li>
-                            <li>Perkalian diartikan juga sebagai <b>penjumlahan berulang</b> yakni menjumlahkan bilangan yang sama yang berulang sebanyak “n” kali.</li>
-                            <li>Misal 3 x 4 = 12 diperoleh dari 4 + 4 + 4 = 12, dapat disimpulkan bahwasannya pada perkalian, bilangan 4 berulang sebanyak 3 kali dan bilangan-bilangan 4 tersebut dijumlahkan semuanya sehingga diperoleh 12 sebagai hasil kali.</li>
-                            <li>Bilangan-bilangan yang melakukan operasi hitung perkalian baik yang mengalikan maupun yang dikalikan disebut <b>faktor perkalian.</b> </li>
+                            <img src="{{ asset('img/materi/3-1.png') }}" alt="diagram 1" 
+                                class="img-responsive img-bordered"
+                                style="width: 200px">
+                            <li>Perkalian disebut juga sebagai <b>penjumlahan berulang</b> yakni menjumlahkan bilangan “b” yang berulang sebanyak “a” kali.</li>
+                            <li>Bilangan pengali maupun bilangan yang dikali pada perkalian disebut <b>faktor perkalian.</b></li>
                             <li>Hasil yang diperoleh dari proses perhitungan perkalian disebut <b>hasil kali.</b></li>
-                            <li>Misal 5 x 6 = 30, dari perkalian tersebut yang disebut <b>faktor perkalian</b> adalah 5 x 6 dan yang disebut <b>hasil kali</b> adalah <b>30.</b></li>
-                            <li>
-                                Sifat operasi hitung yang berlaku pada perkalian yakni <b>sifat asosiatif</b> atau <b>pengelompokan, sifat komutatif atau pertukaran,</b>
-                                dan <b>sifat distributif atau penyebaran</b>. Pada perkalian dua bilangan cacah hanya berlaku 
-                                <b>sifat pertukaran atau komutatif. <br>Contoh : 3 x 4 = 4+4+4 = 12 dan 4 x 3 = 3+3+3+3 = 12 jadi dapat dikatakan 3x4 = 4x3 karena memiliki hasil yang sama yakni 12 namun bilangan yang berulang tidak sama sehingga proses berbeda.</b>
-                            </li>
+                            <li>Contoh :</li>
+                            <img src="{{ asset('img/materi/3-2.png') }}" alt="diagram 1" 
+                                class="img-responsive img-bordered"
+                                style="width: 900px">
+                            <li>Sifat operasi hitung yang berlaku pada perkalian yakni :</li>
+                            <img src="{{ asset('img/materi/3-3.png') }}" alt="diagram 1" 
+                                class="img-responsive img-bordered"
+                                style="width: 900px">
+                            <li>Sifat-sifat khusus perkalian :</li>
+                            <img src="{{ asset('img/materi/3-4.png') }}" alt="diagram 1" 
+                                class="img-responsive img-bordered"
+                                style="width: 900px">
+                            <li>Contoh permasalahan sehari-hari yang melibatkan perkalian adalah sebagai berikut :</li>
+                            <img src="{{ asset('img/materi/3-5.png') }}" alt="diagram 1" 
+                                class="img-responsive img-bordered"
+                                style="width: 900px">
                         </ul>
                     </div>
                 </div>
