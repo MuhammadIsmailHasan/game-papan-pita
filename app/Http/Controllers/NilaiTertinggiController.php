@@ -17,9 +17,9 @@ class NilaiTertinggiController extends Controller
     public function index(Request $request, NilaiService $nilaiService)
     {
         $filter = [];
-        if ($request->has('search_ronde')) {
-            if ($request->search_ronde != 0) {
-                $filter['ronde'] = $request->search_ronde;
+        if ($request->has('search_level')) {
+            if ($request->search_level != 0) {
+                $filter['level'] = $request->search_level;
             }
         }
 

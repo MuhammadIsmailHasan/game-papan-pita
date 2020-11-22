@@ -44,7 +44,7 @@
                                 <label class="col-md-4 control-label">Status Materi Papan Pita</label>
                                 <div class="col-md-6">
                                     <input type="text" id="status_materi_2" name="status_materi_2" class="form-control"
-                                    value="{{ $data->status_materi_1 == 1 ? 'Sudah Selesai' : 'Belum Selesai'}}">
+                                    value="{{ $data->status_materi_2 == 1 ? 'Sudah Selesai' : 'Belum Selesai'}}">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -80,7 +80,7 @@
                                     @foreach($data->nilai as $value)
                                         <tr>
                                             <td>{{ $loop->iteration }}</td>
-                                            <td>Level {{ $value->ronde }}</td>
+                                            <td>Level {{ $value->level }}</td>
                                             <td>{{ $value->skor }}</td>
                                             <td>{{ $value->sebutan }}</td>
                                             <td>{{ $value->tanggal }}</td>

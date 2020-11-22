@@ -13,12 +13,12 @@
                 <div class="col-lg-12">
                     {!! Form::open(['method' => 'GET', 'url' => 'nilai-tertinggi', 'class' => 'form-horizontal', 'id'=>'form_pencarian', 'role' => 'search'])  !!}
                         <div class="form-group">
-                            <label class="col-md-2 control-label">Berdasarkan Permainan</label>
+                            <label class="col-md-2 control-label">Berdasarkan Quiz</label>
                             <div class="col-md-3">
-                                <select name="search_ronde" id="search_ronde" class="form-control">
+                                <select name="search_level" id="search_level" class="form-control">
                                     <option value="0">All</option>
-                                    <option value="1">Ronde 1</option>
-                                    <option value="2">Ronde 2</option>
+                                    <option value="1">Level 1</option>
+                                    <option value="2">Level 2</option>
                                 </select>
                             </div>
                             <div class="col-md-6">
