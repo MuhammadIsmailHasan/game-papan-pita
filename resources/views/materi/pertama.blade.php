@@ -38,52 +38,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="success" id="about-2" style="padding: 30px;">
-        <div class="container">
-            <div class="row">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">Sifat-sifat khusus perkalian</h4>
-                        <ul class="card-text" style="font-size: 20px;">
-                            <li>Hasil kali perkalian bilangan 2 atau perkalian yang bilangan akhirnya 2 adalah <b>bilangan genap.</b> <br>Contoh : 7 x 2 = 14, 12 x 3 = 36, 122 x 4 = 488.</li>
-                            <li>Bilangan berapapun <b>jika dikalikan dengan 0 maka hasil kalinya juga 0.</b> <br>Contoh : 8 x 0 = 0, 45 x 0 = 0, 456 x 0 = 0.</li>
-                            <li>Pada operasi hitung campuran, kedudukan × dan ÷ lebih tinggi daripada + dan – sehingga didahulukan proses perhitungan × dan ÷. Kecuali, jika + dan – berada didalam kurung maka didahulukan operasi hitung yang ada didalam kurung. <br>Contoh : 4x9+2 = …didahulukan 4x9 yang diperoleh hasil 36 baru tambahkan 36 dengan 2 sehingga memperoleh hasil 38.</li>
-                        </ul>
-                        <br/>
-
-                        <h4 class="card-title">Bentuk perkalian dapat diilustrasikan dengan gambar sebagai berikut</h4>
-                        <p class="card-text" style="padding: 0;">1. &nbsp; 4 x 2 = 2 + 2 + 2 + 2 = <b>8</b></p>
-                        <img src="{{ asset('img/materi/1-1.jpg') }}" alt="diagram 1" class="img-responsive img-bordered">
-                        <br>
-                        <p class="card-text" style="padding: 0;">1. &nbsp; 5 x 3 = 3 + 3 + 3 + 3 + 3 = <b>15</b></p>
-                        <img src="{{ asset('img/materi/1-2.jpg') }}" alt="diagram 2" class="img-responsive img-bordered">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section style="padding: 30px;">
-        <div class="container">
-            <div class="row">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">Contoh perkalian yang melibatkan permasalahan sehari-hari</h4>
-                        <p class="card-text"><b>Soal</b></p>
-                        <p class="card-text">
-                            Kakak memelihara kelinci di belakang rumah. Terdapat 3 kandang tempat kelinci-kelinci tersebut berlindung. Masing-masing kandang terdiri dari 8 ekor kelinci. Jadi, ada berapa <b>banyak kelinci</b> yang dipelihara kakak?
-                        </p>
-                        <p class="card-text"><b>Jawaban</b></p>
-                        <p class="card-text">
-                            Terdapat 3 kandang dibelakang rumah yang berisi masing-masing <b>8 ekor kelinci</b> maka total kelinci yang dimiliki kakak adalah 8 + 8 + 8 yang ditulis dalam perkalian yakni 3x8 = 24. jadi, total kelinci yang dipelihara kakak berjumlah 24 ekor kelinci. (Fokus pada pertanyaan)
-                        </p>
-                    </div>
-                </div>
-                
                 <hr>
 
                 @can('materi_update')
