@@ -240,14 +240,14 @@
                             title: `${data.sebutan} (${data.skor})`,
                             text: 'Horee, Quiz Level 2 Telah di Selesaikan',
                             imageUrl: `{{ asset('img/sebutan/`+ data.sebutan +`.gif') }}`,
-                            imageWidth: 400,
+                            imageWidth: 600,
                             imageHeight: 200,
                             imageAlt: 'Custom image',
                         }).then((result) => {
                             document.location.href = "{{ route('profil.index') }}"; 
                         })
                     } else {
-                        alert("GAGAL");
+                        alert("GAGAL MENYIMPAN");
                     }
                     
                 }

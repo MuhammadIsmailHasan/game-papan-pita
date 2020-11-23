@@ -1,4 +1,4 @@
-@extends('layouts.frontend-game')
+@extends('layouts.frontend-game-papan')
 
 @section('content')
 <main>
@@ -253,44 +253,11 @@
     <!-- Modal content -->
     <div class="modal-content">
         <span class="close">&times;</span>
-        <h2 style="text-align: center; margin: 10px;">TUTORIAL</h2>
+        <h2 style="margin: 10px;">TUTORIAL</h2>
         <hr>
-        <ol class="card-text" type="a">
-            <li>
-                Ketahui nilai tempat dari bilangan-bilangan faktor perkalian. Misalkan 12 x 43 = ... <br>
-                <b>12 terdiri dari 1 puluhan dan 2 satuan sedangkan 43 terdiri dari 4 puluhan dan 3 satuan.</b>
-            </li>
-            <li>
-                Tentukan faktor perkalian mana yang menjadi PiDur dan PiRi dengan melihat kolom keterangan yakni a x b = c. <br>
-                <b>PiDur sebagai a dan PiRi sebagai b</b> sehingga untuk 12 x 43 <b>berarti 12 menjadi PiDur dan 43 menjadi PiRi.</b>
-            </li>
-            <li>
-                Buatlah PiDur dan  PiRi pada papan dengan caranya sebagai berikut : <br>
-                <b>Klik titik sebelah kiri</b> pada papan untuk <b>membuat PiDur</b> dan klik <b>titik sebelah kanan</b> pada papan untuk <b>menghapus PiDur.</b> <br>
-                <b>Klik titik sebelah atas</b> pada papan untuk <b>membuat PiRi</b> dan klik <b>klik titik sebelah bawah</b> pada papan untuk <b>menghapus PiRi.</b> <br>
-                <b>Jumlah pita sesuai nilai tempat bilangan</b> sehingga untuk faktor perkalian <b> 12 x 43 :</b> <br>
-                <b>12 sebagai PiDur</b> terdiri dari <b>1 puluhan dan 2 satuan</b> maka kalian harus <b>klik 1 titik sebelah kiri pada baris puluhan</b> dan <b>klik 2 titik sebelah kiri pada baris satuan.</b> <br>
-                <b>43 sebagai PiRi</b> terdiri dari <b>4 puluhan dan 3 satuan</b> maka kalian harus <b>klik 4 titik sebelah atas pada kolom puluhan</b> dan <b>klik 3 titik sebelah atas pada kolom satuan.</b> <br>
-                NB : jika bilangan 0 maka tidak perlu meletakkan pita di papan hitung, karena <b>0 berarti tidak ada.</b>
-            </li>
-            <li>
-                Hitung titik pertemuan kedua pita (titik temu) di setiap kotak dari kiri ke kanan dengan 
-                <b>ketentuan nilai titik temu masing-masing kotak sesuai warna kotak yang dijelaskan dalam kolom keterangan</b>, 
-                kemudian <b>tulis hasilnya di kolom sampingnya</b> maka muncul total di kolom bawahnya secara otomatis.
-            </li>
-            <li>
-                <b>Klik tanda centang di samping kolom bawah tersebut</b>, maka total nilai titik temu di kotak tersebut muncul di kolom hasil akhir.
-            </li>
-            <li>
-                <b>Lakukan langkah d dan e pada setiap kotak yang terdapat PiRi dan PiDur bertumpukan</b> yang menghasilkan titik pertemuan yang merupakan hasil kali.
-            </li>
-            <li>
-                Total nilai titik temu masing-masing kotak yang muncul di kolom hasil akhir akan <b>terjumlah secara otomatis.</b>
-            </li>
-            <li>
-                <b>Periksa kembali jawaban di kolom hasil akhir</b> kemudian <b>klik tombol selesai</b> untuk mengetahui jawaban benar atau salah.
-            </li>
-        </ol>
+        <img src="{{ asset('img/materi/4-2.png') }}" alt="diagram 1" 
+                                class="img-responsive img-bordered"
+                                style="width: 1000px">
     </div>
 </div>
 @endsection

@@ -69,7 +69,6 @@
                                 style="width: 1200px">
                             <li>Lanjutkan ke menu Quiz I dan Quiz II untuk mengetahui kemampuan berhitung perkalianmu. Apabila hasil quiz masih belum maksimal, dapat mengulang ke menu papan pita perkalian untuk latihan berhitung perkalian menggunakan media papan pita perkalian.</li>  
                         </ol>
-                        <p class="card-text">NB : Tombol reset pada papan untuk menghapus semua pita yang telah digambar pada papan.</p>
                     </div>
                 </div>
             </div>

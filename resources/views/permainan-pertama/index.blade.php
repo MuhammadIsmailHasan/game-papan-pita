@@ -262,7 +262,7 @@
                             });
                         })
                     } else {
-                        alert("GAGAL");
+                        alert("GAGAL MENYIMPAN");
                     }
                     
                 }
