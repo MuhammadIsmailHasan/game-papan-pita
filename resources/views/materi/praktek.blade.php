@@ -255,9 +255,9 @@
         <span class="close">&times;</span>
         <h2 style="margin: 10px;">TUTORIAL</h2>
         <hr>
-        <img src="{{ asset('img/materi/4-2.png') }}" alt="diagram 1" 
+        <img src="{{ asset('img/materi/4-3.png') }}" alt="diagram 1" 
                                 class="img-responsive img-bordered"
-                                style="width: 1000px">
+                                style="width: 800px">
     </div>
 </div>
 @endsection
