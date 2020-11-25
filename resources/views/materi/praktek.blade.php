@@ -4,19 +4,7 @@
 <main>
     <div id="content">
         <div id="game" class="card">
-            {{-- <h3 style="margin: 0">
-                Praktik Berhitung Perkalian dengan Media Pembelajaran Papan Pita Perkalian (PaPi “x”)
-            </h3> --}}
-            <div id="hud">
-                <div id="hud-item">
-                    <button id="btn_kembali" type="button" class="btn-game btn-blue"> KEMBALI</button>
-                </div>
-                <div id="hud-item">
-                    <h2 class="hud-main-text">
-                        Praktik Berhitung Perkalian dengan Media Pembelajaran Papan Pita Perkalian (PaPi “x”)
-                    </h2>
-                </div>
-            </div>
+            <h2 style="margin: 0;">Praktik Berhitung Perkalian <br>dengan Media Pembelajaran Papan Pita Perkalian</h2>
             <hr>
             
             <div id="header-game" class="text-center">
@@ -89,7 +77,16 @@
                                         <input type="number" id="rara-9" class="column-input input-9 input-number">
                                         <span data-tipe="rara">
                                             <input id="jumlah_rara" type="number" class="column-input column-jumlah">
-                                            <button type="button" class="btn-jumlah" style="display: none;" tipe="rara"><i class="fa fa-check"></i></button>
+                                            <div class="btn-jumlah" style="display: none;" tipe="rara">
+                                                <button type="button" class="btn-jumlah">
+                                                    <i class="fa fa-check"></i>
+                                                </button>
+                                                <div class="info">
+                                                    <span class="extra-info">
+                                                        Klik centang ini
+                                                    </span>
+                                                </div>
+                                            </div>
                                         </span>
                                         
                                     </div>
@@ -244,6 +241,17 @@
                     </tr>
                 </table>
             </div>
+
+            <hr>
+            <div style="overflow: auto;">
+                <div style="float: left;">
+                    <button id="btn_kembali" type="button" class="btn-game btn-blue"> KEMBALI</button>
+                </div>
+                <div style="float: right;">
+                    <a href="{{ route('permainan.index', 1) }}" type="button" class="btn-game btn-long btn-gray"> Lanjut Quiz 1</a>
+                </div>
+            </div>
+            
         </div>
     </div>
 </main>
@@ -257,7 +265,7 @@
         <hr>
         <img src="{{ asset('img/materi/4-3.png') }}" alt="diagram 1" 
                                 class="img-responsive img-bordered"
-                                style="width: 800px">
+                                style="width: 700px">
     </div>
 </div>
 @endsection
@@ -309,7 +317,7 @@
                     success: function (response) {
                         if (response.status) {
                             Swal.fire({
-                                title: 'LANJUTKAN KE QUIZ ?',
+                                title: 'JAWABAN BENAR {{ Auth::user()->name }}',
                                 text: "Tekan Yes untuk Lanjut ke QUIZ LEVEL 1",
                                 icon: 'warning',
                                 showCancelButton: true,
@@ -335,7 +343,7 @@
 
             Swal.fire({
                 icon: 'error',
-                title: 'JAWABAN SALAH !',
+                title: 'JAWABAN SALAH {{ Auth::user()->name }}',
                 text: 'Silahkan kerjakan lagi'
             });
         }

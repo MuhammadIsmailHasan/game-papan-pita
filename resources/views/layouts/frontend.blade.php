@@ -60,7 +60,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="{{ route('home') }}">HOME</a>
+                        <a href="{{ route('home') }}">HALAMAN UTAMA</a>
                     </li>
 
                     <li class="page-scroll">

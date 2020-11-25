@@ -64,6 +64,33 @@ main {
     margin: 5px 0;
 }
 
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-limapuluh {
+    flex-basis: 50%;
+}
+
+.extra-info {
+    display: block;
+    line-height: 30px;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+.info {
+    background-color: white;
+    font-size: 21px;
+    padding-left: 3px;
+    width: 200px;
+    border-radius: 15px;
+    text-align: left !important;
+}
+
 /* Elements */
 .btn-game {
     display:inline-block;
@@ -80,6 +107,10 @@ main {
     text-align:center;
     position:relative;
     width: 95px;
+}
+
+.btn-long {
+    width: 100px;
 }
 
 .btn-blue {
@@ -385,30 +416,30 @@ p.ket-text {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    text-align: center;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
+}
+
+/* Modal Content */
+.modal-content {
+background-color: #fefefe;
+margin: auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+text-align: center;
+}
+
+/* The Close Button */
+.close {
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
 

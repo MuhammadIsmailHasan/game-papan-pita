@@ -22,19 +22,19 @@
                             <li>Contoh :</li>
                             <img src="{{ asset('img/materi/3-2.png') }}" alt="diagram 1" 
                                 class="img-responsive img-bordered"
-                                style="width: 900px">
+                                style="width: 800px">
                             <li>Sifat operasi hitung yang berlaku pada perkalian yakni :</li>
                             <img src="{{ asset('img/materi/3-3.png') }}" alt="diagram 1" 
                                 class="img-responsive img-bordered"
-                                style="width: 900px">
+                                style="width: 800px">
                             <li>Sifat-sifat khusus perkalian :</li>
                             <img src="{{ asset('img/materi/3-4.png') }}" alt="diagram 1" 
                                 class="img-responsive img-bordered"
-                                style="width: 900px">
+                                style="width: 780px">
                             <li>Contoh permasalahan sehari-hari yang melibatkan perkalian adalah sebagai berikut :</li>
                             <img src="{{ asset('img/materi/3-5.png') }}" alt="diagram 1" 
                                 class="img-responsive img-bordered"
-                                style="width: 900px">
+                                style="width: 780px">
                         </ul>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                 @can('materi_update')
                     <div style="margin: 10px;">
                         <button type="button" id="btn_selesai" class="btn btn-success btn-lg btn-block" style="height: 80px;">
-                            SELESAI BACA MATERI
+                            SELESAI MEMBACA MATERI
                         </button>
                     </div>
                 @endcan

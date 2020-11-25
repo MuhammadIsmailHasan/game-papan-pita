@@ -30,7 +30,7 @@
         </div>
         <hr>
         <div id="game_header" class="text-center">
-            <h3>Pilihan Ganda, Jadi Pilihlah Jawaban yang Paling Tepat</h3>
+            <h3>Pilihlah jawaban yang paling tepat diantara jawaban-jawaban berikut!</h3>
             <h1>KLIK TOMBOL MULAI</h1>
         </div>
         <div id="game_question" style="display: none;">
@@ -72,44 +72,44 @@
 
         let questions = [
             {
-                question: "Ima pergi ke tukang sayur pagi-pagi untuk membeli sayur wortel. Dia mengambil 2  keranjang plastik yang masing-masing kerangjang berisi 3 buah wortel. Berapa banyak wortel yang didapatkan ima ?",
-                choice1: "5 buah wortel",
-                choice2: "6 buah wortel",
-                choice3: "9 buah wortel",
-                choice4: "4 buah wortel",
+                question: "Ima pergi ke tukang sayur pagi-pagi untuk membeli sayur wortel. Dia mengambil 2 keranjang plastik yang masing-masing keranjang berisi 3 wortel. Berapa banyak wortel yang didapatkan ima ?",
+                choice1: "9 wortel",
+                choice2: "6 wortel",
+                choice3: "5 wortel",
+                choice4: "4 wortel",
                 answer: 2
             },
             {
-                question: "Ibu sedang menghadiri acara tahlilan bersama warga RT. 20 di rumah ibu leli. Ibu leli menyiapkan 56 kotak kue untuk diberikan kepada warga yang menghadiri tahlilan. Dengan masing-masing kotak berisi  7 buah kue basah. Berapa banyak kue yang disiapkan ibu leli ?",
-                choice1: "413 kue",
-                choice2: "352 kue",
-                choice3: "402 kue",
-                choice4: "392 kue",
-                answer: 4
-            },
-            {
-                question: "Kakak bekerja di sebuah toko ikan hias yang memiliki 7 akuarium. Masing-masing akuarium berisi 120 ekor ikan koki. Berapa banyak ikan koki seluruhnya ?",
-                choice1: "840 ekor lele",
-                choice2: "220 ekor lele",
-                choice3: "740 ekor lele",
-                choice4: "714 ekor lele",
+                question: "Kakak bekerja di sebuah toko ikan hias yang memiliki 7 akuarium. Masing-masing akuarium berisi 120 ikan koki. Berapa banyak ikan koki seluruhnya ?",
+                choice1: "840 ikan koki",
+                choice2: "740 ikan koki",
+                choice3: "714 ikan koki",
+                choice4: "220 ikan koki",
                 answer: 1
             },
             {
-                question: "Di rumah sedang ada acara sunatan adek laki-laki ku. Ibu telah menyiapkan 850 tas kecil untuk diberikan kepada orang-orang yang datang ke acara. Setiap tas kecil berisi 2 buah souvenir. Berapa jumlah seluruh souvenir yang akan diberikan ?",
-                choice1: "2.600 buah souvenir",
-                choice2: "2.850 buah souvenir",
-                choice3: "1.700 buah souvenir",
-                choice4: "1.600 buah souvenir",
-                answer: 3
+                question: "Ibu sedang menghadiri acara peringatan maulid Nabi Muhammad SAW. di rumah ibu Leli. Ibu Leli menyiapkan 56 kotak kue untuk diberikan kepada warga yang menghadiri acara tersebut. Masing-masing kotak berisi  6 kue. Berapa banyak kue yang disiapkan ibu leli ?",
+                choice1: "566 kue",
+                choice2: "386 kue",
+                choice3: "366 kue",
+                choice4: "336 kue",
+                answer: 4
             },
             {
-                question: "Pak Edi seorang pedagang sayur tomat. Beliau menjual sayur 430 buah tomat dalam waktu satu minggu.  Berapa banyak tomat yang dijual Pak Edi dalam waktu 9 minggu ?",
-                choice1: "3.627 buah toma",
-                choice2: "3.870 buah toma",
-                choice3: "3.670 buah toma",
-                choice4: "3.620 buah toma",
-                answer: 2
+                question: "Pak Edi seorang pedagang sayur tomat. Beliau menjual 430 tomat dalam waktu satu minggu. Berapa banyak tomat yang dijual Pak Edi dalam waktu 9 minggu ?",
+                choice1: "3.870 tomat",
+                choice2: "3670 tomat",
+                choice3: "3.627 tomat",
+                choice4: "3620 tomat",
+                answer: 1
+            },
+            {
+                question: "Bu Nana mengadakan ada acara sunatan untuk anak laki-lakinya. Bu Nana telah menyiapkan 850 tas kecil untuk diberikan kepada orang-orang yang datang ke acara tersebut. Setiap tas kecil berisi 2 souvenir. Berapa jumlah seluruh souvenir yang disiapkan bu Nana ?",
+                choice1: "2.850 souvenir",
+                choice2: "2.600 souvenir",
+                choice3: "1.700 souvenir",
+                choice4: "1600 souvenir",
+                answer: 3
             },
         ];
 
@@ -129,7 +129,8 @@
             $('#progressText').text(`Soal Ke-${questionCounter} dari ${MAX_QUESTIONS}`);
             $('#progressBarFull').css('width', `${(questionCounter / MAX_QUESTIONS) * 100}%`);
 
-            const questionIndex = Math.floor(Math.random() * availableQuesions.length);
+            // const questionIndex = Math.floor(Math.random() * availableQuesions.length);
+            const questionIndex = 0;
             currentQuestion = availableQuesions[questionIndex];
             $('#question').text(currentQuestion.question);
 

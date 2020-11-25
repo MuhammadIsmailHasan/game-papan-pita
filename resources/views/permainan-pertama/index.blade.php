@@ -30,7 +30,7 @@
         </div>
         <hr>
         <div id="game_header" class="text-center">
-            <h3>Pilihan Ganda, Jadi Pilihlah Jawaban yang Paling Tepat</h3>
+            <h3>Pilihlah jawaban yang paling tepat diantara jawaban-jawaban berikut!</h3>
             <h1>KLIK TOMBOL MULAI</h1>
         </div>
         <div id="game_question" style="display: none;">
@@ -74,13 +74,13 @@
             {
                 question: "Pada perkalian 4 x 9 = 36, bilangan manakah yang disebut faktor perkalian ?",
                 choice1: "36",
-                choice2: "9 dan 36",
-                choice3: "4 dan 9",
+                choice2: "36 dan 9",
+                choice3: "9 dan 4",
                 choice4: "4 saja",
                 answer: 3
             },
             {
-                question: "Pada perkalian 8 x 9 = 72, bilangan manakan yang disebut hasil kali ?",
+                question: "Pada perkalian 8 x 9 = 72, bilangan manakah yang disebut hasil kali ?",
                 choice1: "89",
                 choice2: "72",
                 choice3: "9",
@@ -88,15 +88,15 @@
                 answer: 2
             },
             {
-                question: "6 x 123 = ...",
-                choice1: "738",
+                question: "Hasil dari 6 x 123 yaitu ...",
+                choice1: "849",
                 choice2: "768",
-                choice3: "849",
+                choice3: "738",
                 choice4: "628",
-                answer: 1
+                answer: 3
             },
             {
-                question: "111 x 25 = ...",
+                question: "Hasil dari 111 x 25 yakni ...",
                 choice1: "2.775",
                 choice2: "2.525",
                 choice3: "1.125",
@@ -104,12 +104,12 @@
                 answer: 1
             },
             {
-                question: "300 x  800 = ...",
-                choice1: "24.000",
-                choice2: "24",
+                question: "Hasil dari 300 x  800 adalah ...",
+                choice1: "240.000",
+                choice2: "24.000",
                 choice3: "2.400",
-                choice4: "240.000",
-                answer: 4
+                choice4: "24",
+                answer: 1
             },
         ];
 
@@ -129,7 +129,8 @@
             $('#progressText').text(`Soal Ke-${questionCounter} dari ${MAX_QUESTIONS}`);
             $('#progressBarFull').css('width', `${(questionCounter / MAX_QUESTIONS) * 100}%`);
 
-            const questionIndex = Math.floor(Math.random() * availableQuesions.length);
+            // const questionIndex = Math.floor(Math.random() * availableQuesions.length);
+            const questionIndex = 0;
             currentQuestion = availableQuesions[questionIndex];
             $('#question').text(currentQuestion.question);
 
