@@ -214,13 +214,30 @@ main {
     font-size: 20px;
 }
 
-.btn-jumlah {
+.btn-jumlah-group {
     position: relative;
     float: right;
+    left: -30px;
+}
+
+.btn-jumlah {
+    position: absolute;
     margin: 9px 8px 0 0;
     padding: 1px 3px;
     border-radius: 5px;
     font-weight: bold;
+}
+
+.tooltip {
+    position: absolute;
+    height: 16px;
+    width: 130px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 12px;
+    top: 30px;
+    left: -105px;
 }
 
 /* PAPAN */

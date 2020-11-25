@@ -77,18 +77,13 @@
                                         <input type="number" id="input-8-27" class="column-input input-number">
                                         <span data-tipe="rara">
                                             <input id="jumlah_rara" type="number" class="column-input column-jumlah">
-                                            <div class="btn-jumlah" style="display: none;" tipe="rara">
-                                                <button type="button" class="btn-jumlah">
-                                                    <i class="fa fa-check"></i>
-                                                </button>
-                                                <div class="info">
-                                                    <span class="extra-info">
-                                                        Klik centang ini
-                                                    </span>
+                                            <div class="btn-jumlah-group" style="display: none;">
+                                                <button type="button" class="btn-jumlah" tipe="rara"><i class="fa fa-check"></i></button>
+                                                <div class="tooltip">
+                                                    Klik tanda centang ini
                                                 </div>
                                             </div>
                                         </span>
-                                        
                                     </div>
                                     <div id="rapu" class="seribu box">
                                         <input type="number" id="input-0-36" class="column-input input-number">
@@ -102,7 +97,12 @@
                                         <input type="number" id="input-8-36" class="column-input input-number">
                                         <span data-tipe="rapu">
                                             <input id="jumlah_rapu" type="number" class="column-input column-jumlah">
-                                            <button type="button" class="btn-jumlah" style="display: none;" tipe="rapu"><i class="fa fa-check"></i></button>
+                                            <div class="btn-jumlah-group" style="display: none;">
+                                                <button type="button" class="btn-jumlah" tipe="rapu"><i class="fa fa-check"></i></button>
+                                                <div class="tooltip">
+                                                    Klik tanda centang ini
+                                                </div>
+                                            </div>
                                         </span>
                                     </div>
                                     <div id="rasa" class="seratus box">
@@ -117,7 +117,12 @@
                                         <input type="number" id="input-8-45" class="column-input input-number">
                                         <span data-tipe="rasa">
                                             <input id="jumlah_rasa" type="number" class="column-input column-jumlah">
-                                            <button type="button" class="btn-jumlah" style="display: none;" tipe="rasa"><i class="fa fa-check"></i></button>
+                                            <div class="btn-jumlah-group" style="display: none;">
+                                                <button type="button" class="btn-jumlah" tipe="rasa"><i class="fa fa-check"></i></button>
+                                                <div class="tooltip">
+                                                    Klik tanda centang ini
+                                                </div>
+                                            </div>
                                         </span>
                                     </div>
                                 </div>
@@ -135,7 +140,12 @@
                                         <input type="number" id="input-17-27" class="column-input input-number">
                                         <span data-tipe="pura">
                                             <input id="jumlah_pura" type="number" class="column-input column-jumlah">
-                                            <button type="button" class="btn-jumlah" style="display: none;" tipe="pura"><i class="fa fa-check"></i></button>
+                                            <div class="btn-jumlah-group" style="display: none;">
+                                                <button type="button" class="btn-jumlah" tipe="pura"><i class="fa fa-check"></i></button>
+                                                <div class="tooltip">
+                                                    Klik tanda centang ini
+                                                </div>
+                                            </div>
                                         </span>
                                     </div>
                                     <div id="pupu" class="seratus box">
@@ -150,7 +160,12 @@
                                         <input type="number" id="input-17-36" class="column-input input-number">
                                         <span data-tipe="pupu">
                                             <input id="jumlah_pupu" type="number" class="column-input column-jumlah">
-                                            <button type="button" class="btn-jumlah" style="display: none;" tipe="pupu"><i class="fa fa-check"></i></button>
+                                            <div class="btn-jumlah-group" style="display: none;">
+                                                <button type="button" class="btn-jumlah" tipe="pupu"><i class="fa fa-check"></i></button>
+                                                <div class="tooltip">
+                                                    Klik tanda centang ini
+                                                </div>
+                                            </div>
                                         </span>
                                     </div>
                                     <div id="pusa" class="sepuluh box">
@@ -165,7 +180,12 @@
                                         <input type="number" id="input-17-45" class="column-input input-number">
                                         <span data-tipe="pusa">
                                             <input id="jumlah_pusa" type="number" class="column-input column-jumlah">
-                                            <button type="button" class="btn-jumlah" style="display: none;" tipe="pusa"><i class="fa fa-check"></i></button>
+                                            <div class="btn-jumlah-group" style="display: none;">
+                                                <button type="button" class="btn-jumlah" tipe="pusa"><i class="fa fa-check"></i></button>
+                                                <div class="tooltip">
+                                                    Klik tanda centang ini
+                                                </div>
+                                            </div>
                                         </span>
                                     </div>
                                 </div>
@@ -183,7 +203,12 @@
                                         <input type="number" id="input-26-27" class="column-input input-number">
                                         <span data-tipe="sara">
                                             <input id="jumlah_sara" type="number" class="column-input column-jumlah">
-                                            <button type="button" class="btn-jumlah" style="display: none;" tipe="sara"><i class="fa fa-check"></i></button>
+                                            <div class="btn-jumlah-group" style="display: none;">
+                                                <button type="button" class="btn-jumlah" tipe="sara"><i class="fa fa-check"></i></button>
+                                                <div class="tooltip">
+                                                    Klik tanda centang ini
+                                                </div>
+                                            </div>
                                         </span>
                                     </div>
                                     <div id="sapu" class="sepuluh box">
@@ -198,7 +223,12 @@
                                         <input type="number" id="input-26-36" class="column-input input-number">
                                         <span data-tipe="sapu">
                                             <input id="jumlah_sapu" type="number" class="column-input column-jumlah">
-                                            <button type="button" class="btn-jumlah" style="display: none;" tipe="sapu"><i class="fa fa-check"></i></button>
+                                            <div class="btn-jumlah-group" style="display: none;">
+                                                <button type="button" class="btn-jumlah" tipe="sapu"><i class="fa fa-check"></i></button>
+                                                <div class="tooltip">
+                                                    Klik tanda centang ini
+                                                </div>
+                                            </div>
                                         </span>
                                     </div>
                                     <div id="sasa" class="satu box">
@@ -213,7 +243,12 @@
                                         <input type="number" id="input-26-45" class="column-input input-number">
                                         <span data-tipe="sasa">
                                             <input id="jumlah_sasa" type="number" class="column-input column-jumlah">
-                                            <button type="button" class="btn-jumlah" style="display: none;" tipe="sasa"><i class="fa fa-check"></i></button>
+                                            <div class="btn-jumlah-group" style="display: none;">
+                                                <button type="button" class="btn-jumlah" tipe="sasa"><i class="fa fa-check"></i></button>
+                                                <div class="tooltip">
+                                                    Klik tanda centang ini
+                                                </div>
+                                            </div>
                                         </span>
                                     </div>
                                 </div>
@@ -273,6 +308,7 @@
 @section('js')
 <script type="text/javascript">
     $(`.input-number`).attr(`disabled`, true);
+    // $(`.column-jumlah`).attr(`disabled`, true);
 
     // MODAL //
     $('#btn_tutorial').click(function (e) { 
@@ -289,7 +325,7 @@
     
     $('.column-jumlah').keyup(function (e) { 
         let tipe = e.target.parentElement.dataset['tipe'];
-        $(`.btn-jumlah[tipe=${tipe}]`).css('display', 'block');
+        $(this).next().css(`display`, `block`);
     });
 
     $('.btn-jumlah').click(function (e) { 
@@ -299,8 +335,13 @@
         let li = `<li data-jumlah="${dataInputJumlah}" tipe=${tipe}>${dataInputJumlah}</li>`;
         $('#hasil_jumlah').append(li);
         
-        $(this).css('display', 'none');
+        $(this).parent().css('display', 'none');
     });
+
+    // $(`.input-number`).keyup(function (e) { 
+    //     let tipe = $(this).siblings(`span`).data(`tipe`);
+    //     $(`#jumlah_${tipe}`).attr(`disabled`, false);
+    // });
 
     $('#btn_selesai').click(function (e) { 
         let selectedAnswer = $('#hasil_total').val();
@@ -357,9 +398,13 @@
     function resetPapan() {
         $('.line').remove();
         $('#papan input').val('');
-        $('.btn-jumlah').css('display', 'none');
+        $('.btn-jumlah-group').css('display', 'none');
         $('#hasil_jumlah').html('');
         $('#hasil_total').val('');
+
+        $(`.input-number`).attr(`disabled`, true);
+        dotVertical = [];
+        dotHorizontal = [];
     }
     
     
