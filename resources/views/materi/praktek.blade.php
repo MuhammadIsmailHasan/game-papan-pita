@@ -66,15 +66,15 @@
                             <div id="canvas">
                                 <div id="flex-row">
                                     <div id="rara" class="sepuluh-ribu box">
-                                        <input type="number" id="rara-1" class="column-input input-1 input-number">
-                                        <input type="number" id="rara-2" class="column-input input-2 input-number">
-                                        <input type="number" id="rara-3" class="column-input input-3 input-number">
-                                        <input type="number" id="rara-4" class="column-input input-4 input-number">
-                                        <input type="number" id="rara-5" class="column-input input-5 input-number">
-                                        <input type="number" id="rara-6" class="column-input input-6 input-number">
-                                        <input type="number" id="rara-7" class="column-input input-7 input-number">
-                                        <input type="number" id="rara-8" class="column-input input-8 input-number">
-                                        <input type="number" id="rara-9" class="column-input input-9 input-number">
+                                        <input type="number" id="input-0-27" class="column-input input-number">
+                                        <input type="number" id="input-1-27" class="column-input input-number">
+                                        <input type="number" id="input-2-27" class="column-input input-number">
+                                        <input type="number" id="input-3-27" class="column-input input-number">
+                                        <input type="number" id="input-4-27" class="column-input input-number">
+                                        <input type="number" id="input-5-27" class="column-input input-number">
+                                        <input type="number" id="input-6-27" class="column-input input-number">
+                                        <input type="number" id="input-7-27" class="column-input input-number">
+                                        <input type="number" id="input-8-27" class="column-input input-number">
                                         <span data-tipe="rara">
                                             <input id="jumlah_rara" type="number" class="column-input column-jumlah">
                                             <div class="btn-jumlah" style="display: none;" tipe="rara">
@@ -91,30 +91,30 @@
                                         
                                     </div>
                                     <div id="rapu" class="seribu box">
-                                        <input type="number" id="rapu-1" class="column-input input-1 input-number">
-                                        <input type="number" id="rapu-2" class="column-input input-2 input-number">
-                                        <input type="number" id="rapu-3" class="column-input input-3 input-number">
-                                        <input type="number" id="rapu-4" class="column-input input-4 input-number">
-                                        <input type="number" id="rapu-5" class="column-input input-5 input-number">
-                                        <input type="number" id="rapu-6" class="column-input input-6 input-number">
-                                        <input type="number" id="rapu-7" class="column-input input-7 input-number">
-                                        <input type="number" id="rapu-8" class="column-input input-8 input-number">
-                                        <input type="number" id="rapu-9" class="column-input input-9 input-number">
+                                        <input type="number" id="input-0-36" class="column-input input-number">
+                                        <input type="number" id="input-1-36" class="column-input input-number">
+                                        <input type="number" id="input-2-36" class="column-input input-number">
+                                        <input type="number" id="input-3-36" class="column-input input-number">
+                                        <input type="number" id="input-4-36" class="column-input input-number">
+                                        <input type="number" id="input-5-36" class="column-input input-number">
+                                        <input type="number" id="input-6-36" class="column-input input-number">
+                                        <input type="number" id="input-7-36" class="column-input input-number">
+                                        <input type="number" id="input-8-36" class="column-input input-number">
                                         <span data-tipe="rapu">
                                             <input id="jumlah_rapu" type="number" class="column-input column-jumlah">
                                             <button type="button" class="btn-jumlah" style="display: none;" tipe="rapu"><i class="fa fa-check"></i></button>
                                         </span>
                                     </div>
                                     <div id="rasa" class="seratus box">
-                                        <input type="number" id="rasa-1" class="column-input input-1 input-number">
-                                        <input type="number" id="rasa-2" class="column-input input-2 input-number">
-                                        <input type="number" id="rasa-3" class="column-input input-3 input-number">
-                                        <input type="number" id="rasa-4" class="column-input input-4 input-number">
-                                        <input type="number" id="rasa-5" class="column-input input-5 input-number">
-                                        <input type="number" id="rasa-6" class="column-input input-6 input-number">
-                                        <input type="number" id="rasa-7" class="column-input input-7 input-number">
-                                        <input type="number" id="rasa-8" class="column-input input-8 input-number">
-                                        <input type="number" id="rasa-9" class="column-input input-9 input-number">
+                                        <input type="number" id="input-0-45" class="column-input input-number">
+                                        <input type="number" id="input-1-45" class="column-input input-number">
+                                        <input type="number" id="input-2-45" class="column-input input-number">
+                                        <input type="number" id="input-3-45" class="column-input input-number">
+                                        <input type="number" id="input-4-45" class="column-input input-number">
+                                        <input type="number" id="input-5-45" class="column-input input-number">
+                                        <input type="number" id="input-6-45" class="column-input input-number">
+                                        <input type="number" id="input-7-45" class="column-input input-number">
+                                        <input type="number" id="input-8-45" class="column-input input-number">
                                         <span data-tipe="rasa">
                                             <input id="jumlah_rasa" type="number" class="column-input column-jumlah">
                                             <button type="button" class="btn-jumlah" style="display: none;" tipe="rasa"><i class="fa fa-check"></i></button>
@@ -124,45 +124,45 @@
 
                                 <div id="flex-row">
                                     <div id="pura" class="seribu box">
-                                        <input type="number" id="pura-1" class="column-input input-1 input-number">
-                                        <input type="number" id="pura-2" class="column-input input-2 input-number">
-                                        <input type="number" id="pura-3" class="column-input input-3 input-number">
-                                        <input type="number" id="pura-4" class="column-input input-4 input-number">
-                                        <input type="number" id="pura-5" class="column-input input-5 input-number">
-                                        <input type="number" id="pura-6" class="column-input input-6 input-number">
-                                        <input type="number" id="pura-7" class="column-input input-7 input-number">
-                                        <input type="number" id="pura-8" class="column-input input-8 input-number">
-                                        <input type="number" id="pura-9" class="column-input input-9 input-number">
+                                        <input type="number" id="input-9-27" class="column-input input-number">
+                                        <input type="number" id="input-10-27" class="column-input input-number">
+                                        <input type="number" id="input-11-27" class="column-input input-number">
+                                        <input type="number" id="input-12-27" class="column-input input-number">
+                                        <input type="number" id="input-13-27" class="column-input input-number">
+                                        <input type="number" id="input-14-27" class="column-input input-number">
+                                        <input type="number" id="input-15-27" class="column-input input-number">
+                                        <input type="number" id="input-16-27" class="column-input input-number">
+                                        <input type="number" id="input-17-27" class="column-input input-number">
                                         <span data-tipe="pura">
                                             <input id="jumlah_pura" type="number" class="column-input column-jumlah">
                                             <button type="button" class="btn-jumlah" style="display: none;" tipe="pura"><i class="fa fa-check"></i></button>
                                         </span>
                                     </div>
                                     <div id="pupu" class="seratus box">
-                                        <input type="number" id="pupu-1" class="column-input input-1 input-number">
-                                        <input type="number" id="pupu-2" class="column-input input-2 input-number">
-                                        <input type="number" id="pupu-3" class="column-input input-3 input-number">
-                                        <input type="number" id="pupu-4" class="column-input input-4 input-number">
-                                        <input type="number" id="pupu-5" class="column-input input-5 input-number">
-                                        <input type="number" id="pupu-6" class="column-input input-6 input-number">
-                                        <input type="number" id="pupu-7" class="column-input input-7 input-number">
-                                        <input type="number" id="pupu-8" class="column-input input-8 input-number">
-                                        <input type="number" id="pupu-9" class="column-input input-9 input-number">
+                                        <input type="number" id="input-9-36" class="column-input input-number">
+                                        <input type="number" id="input-10-36" class="column-input input-number">
+                                        <input type="number" id="input-11-36" class="column-input input-number">
+                                        <input type="number" id="input-12-36" class="column-input input-number">
+                                        <input type="number" id="input-13-36" class="column-input input-number">
+                                        <input type="number" id="input-14-36" class="column-input input-number">
+                                        <input type="number" id="input-15-36" class="column-input input-number">
+                                        <input type="number" id="input-16-36" class="column-input input-number">
+                                        <input type="number" id="input-17-36" class="column-input input-number">
                                         <span data-tipe="pupu">
                                             <input id="jumlah_pupu" type="number" class="column-input column-jumlah">
                                             <button type="button" class="btn-jumlah" style="display: none;" tipe="pupu"><i class="fa fa-check"></i></button>
                                         </span>
                                     </div>
                                     <div id="pusa" class="sepuluh box">
-                                        <input type="number" id="pusa-1" class="column-input input-1 input-number">
-                                        <input type="number" id="pusa-2" class="column-input input-2 input-number">
-                                        <input type="number" id="pusa-3" class="column-input input-3 input-number">
-                                        <input type="number" id="pusa-4" class="column-input input-4 input-number">
-                                        <input type="number" id="pusa-5" class="column-input input-5 input-number">
-                                        <input type="number" id="pusa-6" class="column-input input-6 input-number">
-                                        <input type="number" id="pusa-7" class="column-input input-7 input-number">
-                                        <input type="number" id="pusa-8" class="column-input input-8 input-number">
-                                        <input type="number" id="pusa-9" class="column-input input-9 input-number">
+                                        <input type="number" id="input-9-45" class="column-input input-number">
+                                        <input type="number" id="input-10-45" class="column-input input-number">
+                                        <input type="number" id="input-11-45" class="column-input input-number">
+                                        <input type="number" id="input-12-45" class="column-input input-number">
+                                        <input type="number" id="input-13-45" class="column-input input-number">
+                                        <input type="number" id="input-14-45" class="column-input input-number">
+                                        <input type="number" id="input-15-45" class="column-input input-number">
+                                        <input type="number" id="input-16-45" class="column-input input-number">
+                                        <input type="number" id="input-17-45" class="column-input input-number">
                                         <span data-tipe="pusa">
                                             <input id="jumlah_pusa" type="number" class="column-input column-jumlah">
                                             <button type="button" class="btn-jumlah" style="display: none;" tipe="pusa"><i class="fa fa-check"></i></button>
@@ -172,45 +172,45 @@
 
                                 <div id="flex-row">
                                     <div id="sara" class="seratus box">
-                                        <input type="number" id="sara-1" class="column-input input-1 input-number">
-                                        <input type="number" id="sara-2" class="column-input input-2 input-number">
-                                        <input type="number" id="sara-3" class="column-input input-3 input-number">
-                                        <input type="number" id="sara-4" class="column-input input-4 input-number">
-                                        <input type="number" id="sara-5" class="column-input input-5 input-number">
-                                        <input type="number" id="sara-6" class="column-input input-6 input-number">
-                                        <input type="number" id="sara-7" class="column-input input-7 input-number">
-                                        <input type="number" id="sara-8" class="column-input input-8 input-number">
-                                        <input type="number" id="sara-9" class="column-input input-9 input-number">
+                                        <input type="number" id="input-18-27" class="column-input input-number">
+                                        <input type="number" id="input-19-27" class="column-input input-number">
+                                        <input type="number" id="input-20-27" class="column-input input-number">
+                                        <input type="number" id="input-21-27" class="column-input input-number">
+                                        <input type="number" id="input-22-27" class="column-input input-number">
+                                        <input type="number" id="input-23-27" class="column-input input-number">
+                                        <input type="number" id="input-24-27" class="column-input input-number">
+                                        <input type="number" id="input-25-27" class="column-input input-number">
+                                        <input type="number" id="input-26-27" class="column-input input-number">
                                         <span data-tipe="sara">
                                             <input id="jumlah_sara" type="number" class="column-input column-jumlah">
                                             <button type="button" class="btn-jumlah" style="display: none;" tipe="sara"><i class="fa fa-check"></i></button>
                                         </span>
                                     </div>
                                     <div id="sapu" class="sepuluh box">
-                                        <input type="number" id="sapu-1" class="column-input input-1 input-number">
-                                        <input type="number" id="sapu-2" class="column-input input-2 input-number">
-                                        <input type="number" id="sapu-3" class="column-input input-3 input-number">
-                                        <input type="number" id="sapu-4" class="column-input input-4 input-number">
-                                        <input type="number" id="sapu-5" class="column-input input-5 input-number">
-                                        <input type="number" id="sapu-6" class="column-input input-6 input-number">
-                                        <input type="number" id="sapu-7" class="column-input input-7 input-number">
-                                        <input type="number" id="sapu-8" class="column-input input-8 input-number">
-                                        <input type="number" id="sapu-9" class="column-input input-9 input-number">
+                                        <input type="number" id="input-18-36" class="column-input input-number">
+                                        <input type="number" id="input-19-36" class="column-input input-number">
+                                        <input type="number" id="input-20-36" class="column-input input-number">
+                                        <input type="number" id="input-21-36" class="column-input input-number">
+                                        <input type="number" id="input-22-36" class="column-input input-number">
+                                        <input type="number" id="input-23-36" class="column-input input-number">
+                                        <input type="number" id="input-24-36" class="column-input input-number">
+                                        <input type="number" id="input-25-36" class="column-input input-number">
+                                        <input type="number" id="input-26-36" class="column-input input-number">
                                         <span data-tipe="sapu">
                                             <input id="jumlah_sapu" type="number" class="column-input column-jumlah">
                                             <button type="button" class="btn-jumlah" style="display: none;" tipe="sapu"><i class="fa fa-check"></i></button>
                                         </span>
                                     </div>
                                     <div id="sasa" class="satu box">
-                                        <input type="number" id="sasa-1" class="column-input input-1 input-number">
-                                        <input type="number" id="sasa-2" class="column-input input-2 input-number">
-                                        <input type="number" id="sasa-3" class="column-input input-3 input-number">
-                                        <input type="number" id="sasa-4" class="column-input input-4 input-number">
-                                        <input type="number" id="sasa-5" class="column-input input-5 input-number">
-                                        <input type="number" id="sasa-6" class="column-input input-6 input-number">
-                                        <input type="number" id="sasa-7" class="column-input input-7 input-number">
-                                        <input type="number" id="sasa-8" class="column-input input-8 input-number">
-                                        <input type="number" id="sasa-9" class="column-input input-9 input-number">
+                                        <input type="number" id="input-18-45" class="column-input input-number">
+                                        <input type="number" id="input-19-45" class="column-input input-number">
+                                        <input type="number" id="input-20-45" class="column-input input-number">
+                                        <input type="number" id="input-21-45" class="column-input input-number">
+                                        <input type="number" id="input-22-45" class="column-input input-number">
+                                        <input type="number" id="input-23-45" class="column-input input-number">
+                                        <input type="number" id="input-24-45" class="column-input input-number">
+                                        <input type="number" id="input-25-45" class="column-input input-number">
+                                        <input type="number" id="input-26-45" class="column-input input-number">
                                         <span data-tipe="sasa">
                                             <input id="jumlah_sasa" type="number" class="column-input column-jumlah">
                                             <button type="button" class="btn-jumlah" style="display: none;" tipe="sasa"><i class="fa fa-check"></i></button>
@@ -272,6 +272,7 @@
 
 @section('js')
 <script type="text/javascript">
+    $(`.input-number`).attr(`disabled`, true);
 
     // MODAL //
     $('#btn_tutorial').click(function (e) { 
@@ -361,6 +362,9 @@
         $('#hasil_total').val('');
     }
     
+    
+    let dotVertical = [];
+    let dotHorizontal = [];
 
     let coords2 = [
         // BARIS
@@ -555,10 +559,32 @@
     }
 
     $('.dot_container').click(function() {
+        let parent = parseInt($(this).attr('parent_value'));
+        let order = parseInt($(this).attr('order_value'));
+
         if ($(this).hasClass('first_dot')) {
-            let parent = parseInt($(this).attr('parent_value'));
-            let order = parseInt($(this).attr('order_value'));
             let dotId = `dot_container_${parent}_1`;		
+
+            if (parent < 27) {
+                dotVertical.push(parent);
+            }
+
+            if (parent >= 27 && parent < 36) {
+                // ratusan
+                dotHorizontal.push(27);
+            } else if (parent >= 36 && parent < 45) {
+                // puluhan
+                dotHorizontal.push(36);
+            } else if (parent >= 45 & parent < 54 ) {
+                // satuan
+                dotHorizontal.push(45);
+            }
+
+            $.each(dotHorizontal, function (i, v) { 
+                $.each(dotVertical, function (ii, vv) { 
+                    $(`#input-${vv}-${v}`).attr(`disabled`, false);
+                });
+            });
 
             for (let c = 0; c < coords2[parent].length; c++){
                 x1 = coords2[parent][c][0];
@@ -610,6 +636,34 @@
         } else {
             let dotLineId = $(this).attr('id')
             $(`.line[dot_id=${dotLineId}]`).remove();
+
+            if (parent >= 27 && parent < 36) {
+                // ratusan
+                parent = 27;
+            } else if (parent >= 36 && parent < 45) {
+                // puluhan
+                parent = 36;
+            } else if (parent >= 45 & parent < 54 ) {
+                // satuan
+                parent = 45;
+            }
+
+            if (parent < 27) {
+                dotVertical.splice(dotVertical.indexOf(parent), 1);
+
+                $.each(dotHorizontal, function (iii, vvv) { 
+                    $(`#input-${parent}-${vvv}`).attr(`disabled`, true);
+                });
+            } else {
+                dotHorizontal.splice(dotHorizontal.indexOf(parent), 1);
+
+                $.each(dotVertical, function (iiii, vvvv) { 
+                    let parentLength = dotHorizontal.filter(numHor => numHor == parent);
+                    if (parentLength == 0) {
+                        $(`#input-${vvvv}-${parent}`).attr(`disabled`, true);
+                    }
+                });
+            }
         }
     });
 </script>

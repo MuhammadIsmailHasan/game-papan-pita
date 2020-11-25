@@ -98,9 +98,9 @@
             {
                 question: "Pak Edi seorang pedagang sayur tomat. Beliau menjual 430 tomat dalam waktu satu minggu. Berapa banyak tomat yang dijual Pak Edi dalam waktu 9 minggu ?",
                 choice1: "3.870 tomat",
-                choice2: "3670 tomat",
+                choice2: "3.670 tomat",
                 choice3: "3.627 tomat",
-                choice4: "3620 tomat",
+                choice4: "3.620 tomat",
                 answer: 1
             },
             {
@@ -108,7 +108,7 @@
                 choice1: "2.850 souvenir",
                 choice2: "2.600 souvenir",
                 choice3: "1.700 souvenir",
-                choice4: "1600 souvenir",
+                choice4: "1.600 souvenir",
                 answer: 3
             },
         ];
