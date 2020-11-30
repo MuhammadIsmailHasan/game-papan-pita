@@ -15,7 +15,7 @@
                         <ul class="card-text" style="font-size: 20px;">
                             <img src="{{ asset('img/materi/3-1.png') }}" alt="diagram 1" 
                                 class="img-responsive img-bordered"
-                                style="width: 200px">
+                                style="width: 120px">
                             <li>Perkalian disebut juga sebagai <b>penjumlahan berulang</b> yakni menjumlahkan bilangan “b” yang berulang sebanyak “a” kali.</li>
                             <li>Bilangan pengali maupun bilangan yang dikali pada perkalian disebut <b>faktor perkalian.</b></li>
                             <li>Hasil yang diperoleh dari proses perhitungan perkalian disebut <b>hasil kali.</b></li>

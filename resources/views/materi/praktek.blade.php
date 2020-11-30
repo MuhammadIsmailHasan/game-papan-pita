@@ -15,7 +15,10 @@
                     </tr>
                     <tr class="first_row">
                         <td class="first_column">
-                            <h2 id="soal" style="margin: 0;">2 x 3 :</h2>
+                            <input type="number" id="awal" class="column-soal">
+                            x
+                            <input type="number" id="akhir" class="column-soal">
+                            {{-- <h2 id="soal" style="margin: 0;">2 x 3 :</h2> --}}
                         </td>
                         <td class="header_column">RATUSAN</td>
                         <td class="header_column">PULUHAN</td>
@@ -300,7 +303,7 @@
         <hr>
         <img src="{{ asset('img/materi/4-3.png') }}" alt="diagram 1" 
                                 class="img-responsive img-bordered"
-                                style="width: 700px">
+                                style="width: 550px">
     </div>
 </div>
 @endsection
@@ -338,14 +341,14 @@
         $(this).parent().css('display', 'none');
     });
 
-    // $(`.input-number`).keyup(function (e) { 
-    //     let tipe = $(this).siblings(`span`).data(`tipe`);
-    //     $(`#jumlah_${tipe}`).attr(`disabled`, false);
-    // });
-
     $('#btn_selesai').click(function (e) { 
         let selectedAnswer = $('#hasil_total').val();
-        if (selectedAnswer == 6) {
+        let firstNumber = $(`#awal`).val();
+        let secondNumber = $(`#akhir`).val();
+        let jawaban = parseInt(firstNumber) * parseInt(secondNumber);
+        let titleError = "Error";
+        if (!Number.isNaN(jawaban)) {
+            if (selectedAnswer == jawaban) {
             let userId = '{{ Auth::user()->id }}';
                 let url = "{{ route('user-api.update', 'replaceThis') }}";
                 
@@ -380,16 +383,25 @@
                     }
                 });
 
+            } else {
+                resetPapan();
+                titleError = 'JAWABAN SALAH {{ Auth::user()->name }}'
+                errorAnswar(titleError);
+            }
         } else {
-            resetPapan();
-
-            Swal.fire({
-                icon: 'error',
-                title: 'JAWABAN SALAH {{ Auth::user()->name }}',
-                text: 'Silahkan kerjakan lagi'
-            });
+                titleError = 'TULISKAN ANGKA SOAL DAHULU {{ Auth::user()->name }}'
+                errorAnswar(titleError);
         }
+        
     });
+
+    function errorAnswar(titleError) {
+        Swal.fire({
+            icon: 'error',
+            title: titleError,
+            text: 'Silahkan kerjakan lagi'
+        });
+    }
 
     $('#btn_kembali').click(function (e) { 
         document.location.href = "{{ route('materi.index', 2) }}";
@@ -397,7 +409,7 @@
 
     function resetPapan() {
         $('.line').remove();
-        $('#papan input').val('');
+        $('#papan .column-input').val('');
         $('.btn-jumlah-group').css('display', 'none');
         $('#hasil_jumlah').html('');
         $('#hasil_total').val('');

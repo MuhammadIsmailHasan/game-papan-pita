@@ -21,7 +21,7 @@
                             </li>
                             <li>
                                 <p>
-                                    Menyelesaikan masalahyang melibatkan penggunaan sifat-sifat-operasi hitung pada bilangan cacah.
+                                    Menyelesaikan masalah yang melibatkan penggunaan sifat-sifat-operasi hitung pada bilangan cacah.
                                 </p>
                             </li>
                         </ul>

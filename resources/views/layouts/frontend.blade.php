@@ -124,7 +124,7 @@
                             Media pembelajaran untuk mata pelajaran matematika kelas 3 sekolah dasar khususnya 
                             materi perkalian dua bilangan cacah dengan hasil kali hingga 6 digit bilangan atau 
                             perkalian bilangan 1 hingga 999. <br>
-                            Berhitung perkalian pada media papan pita “x” 
+                            Berhitung perkalian pada media papan pita perkalian
                             ini menggunakan teknik persekutuan yang berfokus pada titik pertemuan garis vertikal 
                             dan horizontal dengan menjumlahkan banyak titik pertemuan tersebut 
                             untuk mendapatkan hasil kali dari perkalian dua bilangan cacah.
