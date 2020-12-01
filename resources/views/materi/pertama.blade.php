@@ -80,11 +80,7 @@
                                 cancelButtonColor: '#d33',
                                 confirmButtonText: 'Oke'
                             }).then((result) => {
-                                if (result.value) {
-                                    document.location.href = "{{ route('materi.index', 2) }}"
-                                } else {
-                                    document.location.href = "{{ route('home') }}"; 
-                                }
+                                document.location.href = "{{ route('home') }}"; 
                             });
                         } else {
                             alert("GAGAL MELANJUTKAN KE MATERI PAPAN PITA");

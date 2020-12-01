@@ -31,22 +31,9 @@
             <div class="row">
                 <div class="card">
                     <div class="card-body">
-                        <ol class="card-text" style="font-size: 20px;">
-                            <li>Baca dan pahami kompetensi dasar (KD), indikator pembelajaran, dan tujuan pembelajaran pada <b>menu KD, IPK, dan tujuan.</b></li>
-                            <li>Baca dan pahami konsep-konsep perkalian pada <b>menu materi perkalian.</b></li>
-                            <li>
-                                Buka <b>menu papan pita perkalian</b> untuk memahami:
-                                <ol type="a">
-                                    <li>Bagian-bagian media</li>
-                                    <li>Deskripsi media</li>
-                                    <li>Manfaat penggunaan media pembelajaran papan pita perkalian</li>
-                                    <li>Petunjuk penggunaan papan pita perkalian</li>
-                                    <li>Contoh perkalian 1-999 menggunakan papan pita perkalian</li>
-                                </ol>
-                            </li>
-                            <li>Mulai lakukan praktik berhitung perkalian menggunakan papan pita perkalian dengan meng<b>klik tombol lanjut praktik berhitung.</b></li>
-                            <li>Lanjutkan ke <b>menu Quiz I dan Quiz II</b> untuk mengetahui kemampuan berhitung perkalianmu. Apabila hasil quiz masih belum maksimal, dapat mengulang ke menu papan pita perkalian untuk kembali latihan berhitung perkalian menggunakan papan pita perkalian.</li>
-                        </ol>
+                        <img src="{{ asset('img/materi/0-1.png') }}" alt="diagram 1" 
+                            class="img-responsive img-bordered"
+                            style="width: 700px; margin: 0 auto;">
                     </div>
                 </div>
             </div>
