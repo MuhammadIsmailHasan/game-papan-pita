@@ -54,7 +54,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
-                                <h3>Materi Perkalian</h3>
+                                <h3>Perkalian</h3>
                             </div>
                         </div>
                         <img src="{{ asset('frontend/img/portfolio/cabin.png') }}" class="img-responsive" alt="">
@@ -65,7 +65,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
-                                <h3>Materi Papan Pita Perkalian</h3>
+                                <h3>Papan Pita Perkalian</h3>
                             </div>
                         </div>
                         <img src="{{ asset('frontend/img/portfolio/safe.png') }}" class="img-responsive" alt="">

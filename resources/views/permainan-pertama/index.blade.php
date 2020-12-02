@@ -76,7 +76,7 @@
                 choice1: "36",
                 choice2: "36 dan 9",
                 choice3: "9 dan 4",
-                choice4: "4 saja",
+                choice4: "4",
                 answer: 3
             },
             {
