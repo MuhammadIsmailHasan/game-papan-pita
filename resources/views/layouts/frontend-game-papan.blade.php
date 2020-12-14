@@ -7,13 +7,18 @@
         <title>Papan Pita Perkalian</title>
 
         <link href="{{ asset('css/games.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/app-modal.css') }}" rel="stylesheet">
         <link href="{{ asset('frontend/vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+
+         <!-- Tour css -->
+        <link href="{{ asset('plugins/hopscotch/css/hopscotch.min.css') }}" rel="stylesheet" type="text/css" />
     </head>
     <body>
         @yield('content')
 
         <script src="{{ asset('frontend/vendor/jquery/jquery-3.4.1.min.js') }}"></script>
         <script src="{{ asset('frontend/vendor/sweetalert/sweetalert2.all.min.js') }}"></script>
+        <script src="{{ asset('plugins/hopscotch/js/hopscotch.min.js') }}"></script>
         
         @yield('js')
 </body>

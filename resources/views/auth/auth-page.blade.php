@@ -11,6 +11,12 @@
 
         <!-- Main css -->
         <link rel="stylesheet" href="{{ asset('auth/css/style.css') }}">
+
+        <!-- Tour css -->
+        <link href="{{ asset('plugins/hopscotch/css/hopscotch.min.css') }}" rel="stylesheet" type="text/css" />
+
+        @yield('css')
+
     </head>
     <body>
 
@@ -21,8 +27,12 @@
         <!-- JS -->
         <script src="{{ asset('auth/vendor/jquery/jquery.min.js') }}"></script>
         <script src="{{ asset('auth/js/main.js') }}"></script>
+
         <!-- Sweet Alert -->
         <script src="{{ asset('frontend/vendor/sweetalert/sweetalert2.all.min.js') }}"></script>
+
+        <script src="{{ asset('plugins/hopscotch/js/hopscotch.min.js') }}"></script>
+
         
         @if (Session::has('success'))
             <script type="text/javascript">
@@ -42,5 +52,8 @@
                     })
             </script>
         @endif
+
+        @yield('js')
+
     </body>
 </html>

@@ -294,6 +294,17 @@
     </div>
 </main>
 
+<div>
+    <div id="siswa-section" class="floating-siswa floating-right">
+        <span id="siswa-close" class="close">&times;</span>
+        <img src="{{ asset('img/siswa.png') }}" 
+            id="siswa-icon"
+            alt="siswa" 
+            class="img-responsive img-icon"
+            style="width: 150px">
+    </div>
+</div>
+
 <!-- The Modal -->
 <div id="modal_totorial" class="modal">
     <!-- Modal content -->
@@ -312,6 +323,43 @@
 <script type="text/javascript">
     $(`.input-number`).attr(`disabled`, true);
     // $(`.column-jumlah`).attr(`disabled`, true);
+
+    $('#siswa-close').click(function (e) { 
+        let siswaSection = $(this).parent();
+        $(siswaSection).css('display', 'none');
+    });
+
+    const nama = "{{ Auth::user()->name }}";
+    var placementRight = 'right';
+    var placementLeft = 'left';
+    var placementButtom = 'bottom';
+    var placementTop = 'top';
+
+    // Define the tour!
+    var tour = {
+        id: "intro-tour",
+        steps: [
+            {
+                target: `siswa-icon`,
+                title: `Ayo mulai berhitung perkalian! jangan bilang tidak bisa sebelum mencobanya.`,
+                placement: placementLeft,
+            },
+            {
+                target: `btn_tutorial`,
+                content: `${nama} juga dapat melihat tutorial pada papan, jika tidak ingat semua langkah-langkah penggunaannya.`,
+                placement: placementLeft,
+                yOffset: -18,
+            },
+            {
+                target: `siswa-close`,
+                content: `Klik ini untuk menghilangkan saya`,
+                placement: placementLeft,
+                yOffset: -18,
+            },
+        ],
+        showPrevButton: true
+    };
+    hopscotch.startTour(tour);
 
     // MODAL //
     $('#btn_tutorial').click(function (e) { 
@@ -362,8 +410,8 @@
                     success: function (response) {
                         if (response.status) {
                             Swal.fire({
-                                title: 'JAWABAN BENAR {{ Auth::user()->name }}',
-                                text: "Tekan Yes untuk Lanjut ke QUIZ LEVEL 1",
+                                title: '{{ Auth::user()->name }}, JAWABANMU BENAR',
+                                html: "Kamu hebat. <br>Tekan Yes untuk lanjut quiz level 1.",
                                 icon: 'warning',
                                 showCancelButton: true,
                                 confirmButtonColor: '#3085d6',
@@ -385,11 +433,11 @@
 
             } else {
                 resetPapan();
-                titleError = 'JAWABAN SALAH {{ Auth::user()->name }}'
+                titleError = '{{ Auth::user()->name }}, JAWABANMU SALAH '
                 errorAnswar(titleError);
             }
         } else {
-                titleError = 'TULISKAN ANGKA SOAL DAHULU {{ Auth::user()->name }}'
+                titleError = '{{ Auth::user()->name }}, TULISKAN ANGKA SOAL DAHULU'
                 errorAnswar(titleError);
         }
         
@@ -399,7 +447,7 @@
         Swal.fire({
             icon: 'error',
             title: titleError,
-            text: 'Silahkan kerjakan lagi'
+            text: 'Kamu dapat mengulang kembali pengerjaanmu.'
         });
     }
 

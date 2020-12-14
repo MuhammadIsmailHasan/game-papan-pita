@@ -30,7 +30,7 @@
         </div>
         <hr>
         <div id="game_header" class="text-center">
-            <h3>Pilihlah jawaban yang paling tepat diantara jawaban-jawaban berikut!</h3>
+            <h3>Pilihlah jawaban yang paling tepat di antara jawaban-jawaban berikut!</h3>
             <h1>KLIK TOMBOL MULAI</h1>
         </div>
         <div id="game_question" style="display: none;">
@@ -63,6 +63,7 @@
         var clickSimpan = false;
 
         let userId = '{{ Auth::user()->id }}';
+        let userName = '{{ Auth::user()->name }}';
         const choices = Array.from($('.choice-container'));        
         let currentQuestion = {};
         let acceptingAnswers = false;
@@ -72,7 +73,7 @@
 
         let questions = [
             {
-                question: "Pada perkalian 4 x 9 = 36, bilangan manakah yang disebut faktor perkalian ?",
+                question: "Bilangan yang disebut faktor perkalian pada perkalian 4 x 9 = 36 adalah ...",
                 choice1: "36",
                 choice2: "36 dan 9",
                 choice3: "9 dan 4",
@@ -80,7 +81,7 @@
                 answer: 3
             },
             {
-                question: "Pada perkalian 8 x 9 = 72, bilangan manakah yang disebut hasil kali ?",
+                question: "Bilangan yang disebut hasil kali pada perkalian 8 x 9 = 72 adalah ...",
                 choice1: "89",
                 choice2: "72",
                 choice3: "9",
@@ -88,7 +89,7 @@
                 answer: 2
             },
             {
-                question: "Hasil dari 6 x 123 yaitu ...",
+                question: "Hasil dari 123 x 6 adalah ...",
                 choice1: "849",
                 choice2: "768",
                 choice3: "738",
@@ -96,7 +97,7 @@
                 answer: 3
             },
             {
-                question: "Hasil dari 111 x 25 yakni ...",
+                question: "Hasil dari 111 x 25 adalah ...",
                 choice1: "2.775",
                 choice2: "2.525",
                 choice3: "1.125",
@@ -104,11 +105,11 @@
                 answer: 1
             },
             {
-                question: "Hasil dari 300 x  800 adalah ...",
-                choice1: "240.000",
-                choice2: "24.000",
-                choice3: "2.400",
-                choice4: "24",
+                question: "Hasil dari 809 x 347 adalah ...",
+                choice1: "280.723",
+                choice2: "279.696",
+                choice3: "278.363",
+                choice4: "277.123",
                 answer: 1
             },
         ];
@@ -238,16 +239,16 @@
                     
                     if (response.status) {
                         Swal.fire({
-                            title: `${data.sebutan} (${data.skor})`,
-                            text: 'Horee, Quiz Level 1 Telah di Selesaikan',
-                            imageUrl: `{{ asset('img/sebutan/`+ data.sebutan +`.gif') }}`,
+                            title: `HORE ${userName}, KAMU HEBAT.`,
+                            html: `Nilai kamu <b>${data.skor}</b>. <br>Quiz Level 1 Telah diselesaikan.`,
+                            imageUrl: `{{ asset('img/sebutan/luar_biasa.gif') }}`,
                             imageWidth: 400,
                             imageHeight: 200,
                             imageAlt: 'Custom image',
                         }).then((result) => {
                             Swal.fire({
                                 title: 'TETAP MAIN?',
-                                text: "Tekan Yes untuk Lanjut ke Quiz Level 2",
+                                html: "Tekan <b>Yes</b> untuk Lanjut ke Quiz Level 2",
                                 icon: 'warning',
                                 showCancelButton: true,
                                 confirmButtonColor: '#3085d6',

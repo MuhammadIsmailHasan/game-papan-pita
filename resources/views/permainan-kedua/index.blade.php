@@ -30,7 +30,7 @@
         </div>
         <hr>
         <div id="game_header" class="text-center">
-            <h3>Pilihlah jawaban yang paling tepat diantara jawaban-jawaban berikut!</h3>
+            <h3>Pilihlah jawaban yang paling tepat di antara jawaban-jawaban berikut!</h3>
             <h1>KLIK TOMBOL MULAI</h1>
         </div>
         <div id="game_question" style="display: none;">
@@ -63,6 +63,7 @@
         var clickSimpan = false;
 
         let userId = '{{ Auth::user()->id }}';
+        let userName = '{{ Auth::user()->name }}';
         const choices = Array.from($('.choice-container'));        
         let currentQuestion = {};
         let acceptingAnswers = false;
@@ -72,7 +73,7 @@
 
         let questions = [
             {
-                question: "Ima pergi ke tukang sayur pagi-pagi untuk membeli sayur wortel. Dia mengambil 2 keranjang plastik yang masing-masing keranjang berisi 3 wortel. Berapa banyak wortel yang didapatkan ima ?",
+                question: "Ima pergi ke tukang sayur pagi-pagi untuk membeli sayur wortel. Dia mengambil 2 keranjang plastik yang masing-masing keranjang berisi 3 wortel. Berapa banyak wortel yang didapatkan Ima?",
                 choice1: "9 wortel",
                 choice2: "6 wortel",
                 choice3: "5 wortel",
@@ -80,7 +81,7 @@
                 answer: 2
             },
             {
-                question: "Kakak bekerja di sebuah toko ikan hias yang memiliki 7 akuarium. Masing-masing akuarium berisi 120 ikan koki. Berapa banyak ikan koki seluruhnya ?",
+                question: "Kakak bekerja di toko ikan hias yang memiliki 7 akuarium. Masing-masing akuarium berisi 120 ikan koki. Berapa banyak ikan koki di toko tersebut?",
                 choice1: "840 ikan koki",
                 choice2: "740 ikan koki",
                 choice3: "714 ikan koki",
@@ -88,7 +89,7 @@
                 answer: 1
             },
             {
-                question: "Ibu sedang menghadiri acara peringatan maulid Nabi Muhammad SAW. di rumah ibu Leli. Ibu Leli menyiapkan 56 kotak kue untuk diberikan kepada warga yang menghadiri acara tersebut. Masing-masing kotak berisi  6 kue. Berapa banyak kue yang disiapkan ibu leli ?",
+                question: "Ibu sedang menghadiri acara peringatan maulid Nabi Muhammad SAW. di rumah bu Leli. Bu Leli menyiapkan 56 kotak kue untuk diberikan kepada warga yang menghadiri acara tersebut. Masing-masing kotak berisi 6 kue. Berapa banyak kue yang disiapkan bu Leli?",
                 choice1: "566 kue",
                 choice2: "386 kue",
                 choice3: "366 kue",
@@ -96,7 +97,7 @@
                 answer: 4
             },
             {
-                question: "Pak Edi seorang pedagang sayur tomat. Beliau menjual 430 tomat dalam waktu satu minggu. Berapa banyak tomat yang dijual Pak Edi dalam waktu 9 minggu ?",
+                question: "Pak Edi seorang pedagang sayur tomat. Pak Edi menjual 430 tomat dalam waktu satu minggu. Berapa banyak tomat yang dijual Pak Edi dalam waktu 9 minggu?",
                 choice1: "3.870 tomat",
                 choice2: "3.670 tomat",
                 choice3: "3.627 tomat",
@@ -104,7 +105,7 @@
                 answer: 1
             },
             {
-                question: "Bu Nana mengadakan ada acara sunatan untuk anak laki-lakinya. Bu Nana telah menyiapkan 850 tas kecil untuk diberikan kepada orang-orang yang datang ke acara tersebut. Setiap tas kecil berisi 2 souvenir. Berapa jumlah seluruh souvenir yang disiapkan bu Nana ?",
+                question: "Bu Nana mengadakan acara sunatan untuk anak laki-lakinya. Bu Nana telah menyiapkan 850 tas kecil untuk diberikan kepada orang-orang yang datang ke acara tersebut. Setiap tas kecil berisi 2 souvenir. Berapa jumlah seluruh souvenir yang disiapkan bu Nana?",
                 choice1: "2.850 souvenir",
                 choice2: "2.600 souvenir",
                 choice3: "1.700 souvenir",
@@ -238,9 +239,9 @@
                     
                     if (response.status) {
                         Swal.fire({
-                            title: `${data.sebutan} (${data.skor})`,
-                            text: 'Horee, Quiz Level 2 Telah di Selesaikan',
-                            imageUrl: `{{ asset('img/sebutan/`+ data.sebutan +`.gif') }}`,
+                            title: `HORE ${userName}, KAMU HEBAT.`,
+                            html: `Nilai kamu <b>${data.skor}</b>. <br>Quiz Level 2 Telah diselesaikan.`,
+                            imageUrl: `{{ asset('img/sebutan/luar_biasa.gif') }}`,
                             imageWidth: 600,
                             imageHeight: 200,
                             imageAlt: 'Custom image',

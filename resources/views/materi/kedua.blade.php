@@ -56,7 +56,7 @@
         <div class="container">
             <div class="row">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body" id="petunjuk-section">
                         <h4 class="card-header">Tutorial penggunaan media</h4>
                         <img src="{{ asset('img/materi/4-2.png') }}" alt="diagram 1" 
                             class="img-responsive img-bordered"
@@ -121,16 +121,67 @@
         </div>
     </section>
 
+    <div id="siswa-section" class="floating-siswa floating-right">
+        <span class="close">&times;</span>
+        <img src="{{ asset('img/siswa.png') }}" 
+            id="siswa-icon"
+            alt="siswa" 
+            class="img-responsive img-icon"
+            style="width: 150px">
+    </div>
+
 
 @endsection
 
 @section('js')
     <script type="text/javascript">
         $(document).ready(function() {
+            $('.close').click(function (e) { 
+                let siswaSection = $(this).parent();
+                $(siswaSection).css('display', 'none');
+            });
+
+            const nama = "{{ Auth::user()->name }}";
+            var placementRight = 'right';
+            var placementLeft = 'left';
+            var placementButtom = 'bottom';
+            var placementTop = 'top';
+
+            // Define the tour!
+            var tour = {
+                id: "intro-tour",
+                steps: [
+                    {
+                        target: `siswa-icon`,
+                        title: `Yuk kenali papan pita perkalian lebih dalam dengan membaca materi di bawah ini!`,
+                        placement: placementLeft,
+                    },
+                    {
+                        target: `petunjuk-section`,
+                        content: `${nama}, baca petunjuk penggunaaan papan pita perkalian terlebih dahulu ya, agar dapat menggunakannya dengan lebih mudah`,
+                        placement: placementTop,
+                        xOffset: 400
+                    },
+                    {
+                        target: `siswa-icon`,
+                        content: `oh iya, petunjuk tersebut juga dapat dilihat di papan pita loh!`,
+                        placement: placementLeft,
+                    },
+                    {
+                        target: `btn_selesai`,
+                        content: `${nama} dapat kembali membaca materi diatas jika belum paham, ${nama} dapat langsung klik tombol "lanjut ke praktik`,
+                        placement: placementButtom,
+                        xOffset: 400
+                    },
+                ],
+                showPrevButton: true
+            };
+            hopscotch.startTour(tour);
+
             $('#btn_selesai').click(function (e) { 
                 Swal.fire({
-                    title: 'Selesai',
-                    text: "Lanjut ke Praktik Berhitung dengan Media",
+                    title: `${nama}, BAGUS.`,
+                    text: "Sekarang lanjutkan ke praktik berhitung perkalian menggunakan papan pita perkalian.",
                     icon: 'success',
                     showCancelButton: false,
                     confirmButtonColor: '#3085d6',

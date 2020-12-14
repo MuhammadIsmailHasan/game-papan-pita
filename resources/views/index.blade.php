@@ -21,19 +21,48 @@
     </header>
 
     <section class="portfolio">
-        <div class="container">
+        <div class="container" id="petunjuk-container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Petunjuk Penggunaan Media Pembelajaran Papan Pita Perkalian</h2>
+                    <h2>Petunjuk Penggunaan <br>Media Pembelajaran Papan Pita Perkalian</h2>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
                 <div class="card">
-                    <div class="card-body">
-                        <img src="{{ asset('img/materi/0-1.png') }}" alt="diagram 1" 
-                            class="img-responsive img-bordered"
+                    <div class="card-body" id="petunjuk-card">
+                        <img src="{{ asset('img/materi/1.png') }}" alt="petunjuk" 
+                            class="img-responsive img-bordered img-petunjuk"
+                            data-number="1"
                             style="width: 700px; margin: 0 auto;">
+                        <img src="{{ asset('img/materi/2.png') }}" alt="petunjuk" 
+                            class="img-responsive img-bordered img-petunjuk"
+                            data-number="2"
+                            style="width: 700px; margin: 0 auto; margin-top: 5px;">
+                        <img src="{{ asset('img/materi/3.png') }}" alt="petunjuk" 
+                            class="img-responsive img-bordered img-petunjuk"
+                            data-number="3"
+                            style="width: 700px; margin: 0 auto; margin-top: 5px;">
+                        <img src="{{ asset('img/materi/4.png') }}" alt="petunjuk" 
+                            class="img-responsive img-bordered img-petunjuk"
+                            data-number="4"
+                            style="width: 700px; margin: 0 auto; margin-top: 5px;">
+                        <img src="{{ asset('img/materi/5.png') }}" alt="petunjuk" 
+                            class="img-responsive img-bordered img-petunjuk"
+                            data-number="5"
+                            style="width: 700px; margin: 0 auto; margin-top: 5px;">
+                        <img src="{{ asset('img/materi/6.png') }}" alt="petunjuk" 
+                            class="img-responsive img-bordered img-petunjuk"
+                            data-number="6"
+                            style="width: 700px; margin: 0 auto; margin-top: 5px;">
+                        <img src="{{ asset('img/materi/7.png') }}" alt="petunjuk" 
+                            class="img-responsive img-bordered img-petunjuk"
+                            data-number="7"
+                            style="width: 700px; margin: 0 auto; margin-top: 5px;">
+                        <img src="{{ asset('img/materi/8.png') }}" alt="petunjuk" 
+                            class="img-responsive img-bordered img-petunjuk"
+                            data-number="8"
+                            style="width: 700px; margin: 0 auto; margin-top: 5px;">
                     </div>
                 </div>
             </div>
@@ -49,7 +78,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 portfolio-item">
+                <div class="col-sm-6 portfolio-item" id="portofolio-card">
                     <a href="{{ route('materi.index', 1) }}" class="portfolio-link">
                         <div class="caption">
                             <div class="caption-content">
@@ -57,7 +86,7 @@
                                 <h3>Perkalian</h3>
                             </div>
                         </div>
-                        <img src="{{ asset('frontend/img/portfolio/cabin.png') }}" class="img-responsive" alt="">
+                        <img src="{{ asset('frontend/img/portfolio/perkalian.png') }}" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-6 portfolio-item">
@@ -68,7 +97,7 @@
                                 <h3>Papan Pita Perkalian</h3>
                             </div>
                         </div>
-                        <img src="{{ asset('frontend/img/portfolio/safe.png') }}" class="img-responsive" alt="">
+                        <img src="{{ asset('frontend/img/portfolio/papan.png') }}" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
@@ -92,7 +121,7 @@
                                 <h3>LEVEL 1</h3>
                             </div>
                         </div>
-                        <img src="{{ asset('frontend/img/portfolio/game.png') }}" class="img-responsive" alt="">
+                        <img src="{{ asset('frontend/img/portfolio/quiz.png') }}" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-6 portfolio-item">
@@ -110,11 +139,50 @@
         </div>
     </section>
 
+    <div>
+        <div id="floating-scroll">
+        </div>
+        <div class="floating-siswa floating-left">
+            <img src="{{ asset('img/siswa.png') }}" 
+                id="siswa-icon"
+                alt="siswa" 
+                class="img-responsive img-icon"
+                style="width: 150px">
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="modal_petunjuk" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="margin: 10px;">Penjelasan Petunjuk</h2>
+            <hr>
+            <div class="modal-petunjuk">
+                {{-- gambar dinamis --}}
+            </div>
+        </div>
+    </div>
+
 @endsection
 
 @section('js')
     <script type="text/javascript">
         $(document).ready(function() {
+            // MODAL //
+            $('.img-petunjuk').click(function (e) { 
+                let dataNumber = $(this).data('number');
+                $('.modal-petunjuk').html(`
+                    <img src="{{ asset('img/petunjuk/${dataNumber}.png') }}" alt="Penjelasan petunjuk" 
+                    class="img-responsive img-bordered"
+                    style="width: 800px; margin: 0 auto;">
+                `);
+                $('#modal_petunjuk').css('display', 'block');
+            });
+
+            $('.close').click(function (e) { 
+                $('#modal_petunjuk').css('display', 'none');
+            });
+
             $('#materi_kedua').click(function (e) { 
                 e.preventDefault();
                 const href = $(this).attr('href');
@@ -159,6 +227,66 @@
                     document.location.href = href;
                 }
             });
+
+            const nama = "{{ Auth::user()->name }}";
+            var placementRight = 'right';
+            var placementLeft = 'left';
+            var placementButtom = 'bottom';
+            var placementTop = 'top';
+
+            // Define the tour!
+            var tour = {
+                id: "intro-tour",
+                steps: [
+                    {
+                        target: `siswa-icon`,
+                        title: `Halo ${nama}, Selamat datang di Media Pembelajaran Papan Pita Perkalian.`,
+                        placement: placementRight,
+                    },
+                    {
+                        target: 'siswa-icon',
+                        title: `Mari belajar perkalian bersama.`,
+                        placement: placementRight,
+                        yOffset: 80
+                    },
+                    {
+                        target: `floating-scroll`,
+                        content: `Tarik Scroll ke bawah ya...`,
+                        placement: placementLeft,
+                        yOffset: -20,
+                        xOffset: 20
+                    },
+                    {
+                        target: `petunjuk-container`,
+                        content: `Sebelum menggunakan media, ${nama} membaca petunjuk penggunaan 
+                                    media pembelajaran papan pita perkalian dulu ya...`,
+                        placement: placementTop,
+                        xOffset: 400
+                    },
+                    {
+                        target: `petunjuk-card`,
+                        content: `Klik gambar-gambar ini untuk mengetahui langkah secara jelas.`,
+                        placement: placementTop,
+                        xOffset: 800
+                    },
+                    {
+                        target: `petunjuk-card`,
+                        content: `Sekarang, ${nama} mulai lakukan langkah-langkah tersebut satu persatu.`,
+                        placement: placementLeft,
+                        xOffset: 250
+                    },
+                    {
+                        target: `portofolio-card`,
+                        content: `Ingat!, pertama klik menu materi perkalian.`,
+                        placement: placementTop,
+                        xOffset: 100,
+                    },
+                ],
+                showPrevButton: true
+            };
+
+            // Start the tour!
+            hopscotch.startTour(tour);
         });
     </script>
 @endsection

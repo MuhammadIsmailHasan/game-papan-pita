@@ -34,6 +34,11 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Tour css -->
+    <link href="{{ asset('plugins/hopscotch/css/hopscotch.min.css') }}" rel="stylesheet" type="text/css" />
+
+    <link href="{{ asset('css/app-modal.css') }}" rel="stylesheet">
+
     @yield('css')
 
 </head>
@@ -50,7 +55,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="{{ route('home') }}">PAPAN PITA</a>
+                <a class="navbar-brand" href="{{ route('home') }}">PAPAN PITA PERKALIAN</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -119,7 +124,7 @@
                         <p><b>WhatsApp</b><br>085868778571</p>
                     </div>
                     <div class="footer-col col-md-6">
-                        <h3>Tentang Papan Pita</h3>
+                        <h3>Tentang Papan Pita Perkalian</h3>
                         <p>
                             Media pembelajaran untuk mata pelajaran matematika kelas 3 sekolah dasar khususnya 
                             materi perkalian dua bilangan cacah dengan hasil kali hingga 6 digit bilangan atau 
@@ -177,24 +182,13 @@
     {{-- Custom JS --}}
     <script src="{{ asset('js/custom-app.js') }}"></script>
 
+    <script src="{{ asset('plugins/hopscotch/js/hopscotch.min.js') }}"></script>
+
     <script>
         $('#logout').click(function (e) { 
             e.preventDefault();
             const href = $(this).attr('href');
             document.location.href = href;
-            // Swal.fire({
-            //     title: 'Apakah anda yakin?',
-            //     text: "Data ini akan dinonaktifkan!",
-            //     icon: 'warning',
-            //     showCancelButton: true,
-            //     confirmButtonColor: '#3085d6',
-            //     cancelButtonColor: '#d33',
-            //     cancelButtonText: 'Batal',
-            //     confirmButtonText: 'Ya, Nonaktifkan!'
-            // }).then((result) => {
-            //     if (result.value) {
-            //     }
-            // })
         });
     </script>
 

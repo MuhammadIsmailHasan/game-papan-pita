@@ -166,7 +166,7 @@ header .intro-text .skills {
     transition: padding 0.3s;
   }
   .navbar-custom .navbar-brand {
-    font-size: 2em;
+    font-size: 1.5em;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -582,6 +582,10 @@ sup {
   border-radius: 10px;
 }
 
+.img-icon {
+  margin: 0;
+}
+
 .text-bordered {
   width: 300px;
   margin-bottom: 5px;
@@ -591,5 +595,6 @@ sup {
 .after-img {
   margin-top: 10px;
 }
+
 
 

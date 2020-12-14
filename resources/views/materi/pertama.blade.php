@@ -36,6 +36,8 @@
                                 class="img-responsive img-bordered"
                                 style="width: 780px">
                         </ul>
+                        <div id="floating-x" style="float: right;">
+                        </div>
                     </div>
                 </div>
 
@@ -52,12 +54,54 @@
         </div>
     </section>
 
+    <div class="floating-siswa floating-right">
+        <img src="{{ asset('img/siswa.png') }}" 
+            id="siswa-icon"
+            alt="siswa" 
+            class="img-responsive img-icon"
+            style="width: 150px">
+    </div>
 
 @endsection
 
 @section('js')
     <script type="text/javascript">
         $(document).ready(function() {
+            const nama = "{{ Auth::user()->name }}";
+            var placementRight = 'right';
+            var placementLeft = 'left';
+            var placementButtom = 'bottom';
+            var placementTop = 'top';
+
+            // Define the tour!
+            var tour = {
+                id: "intro-tour",
+                steps: [
+                    {
+                        target: `siswa-icon`,
+                        title: `Ayo membaca materi dibawah ini agar kita lebih memahami konsep perkalian.`,
+                        placement: placementLeft,
+                    },
+                    {
+                        target: `floating-x`,
+                        content: `${nama} dapat membaca kembali materi perkalian jika masih ada konsep perkalian yang belum paham.`,
+                        placement: placementLeft,
+                        yOffset: -100,
+                        xOffset: -50
+                    },
+                    {
+                        target: `btn_selesai`,
+                        content: `Jika sudah paham, ${nama} langsung klik tombol "selesai membaca materi" untuk melanjutkan langkah berikutnya.`,
+                        placement: placementButtom,
+                        xOffset: 400
+                    },
+                ],
+                showPrevButton: true
+            };
+
+            // Start the tour!
+            hopscotch.startTour(tour);
+
             $('#btn_selesai').click(function (e) { 
                 let userId = '{{ Auth::user()->id }}';
                 let url = "{{ route('user-api.update', 'replaceThis') }}";
@@ -72,8 +116,8 @@
                     success: function (response) {
                         if (response.status) {
                             Swal.fire({
-                                title: 'Selesai',
-                                text: "Lanjut ke Materi Papan Pita Perkalian",
+                                title: `${nama}, BAGUS.`,
+                                text: "Sekarang lanjutkan ke menu papan pita perkalian.",
                                 icon: 'success',
                                 showCancelButton: false,
                                 confirmButtonColor: '#3085d6',
