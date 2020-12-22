@@ -56,7 +56,7 @@
                 steps: [
                     {
                         target: "salam-tour",
-                        title: "Ayo Belajar Perkalian dengan Media Pembelajaran Papan Pira Perkalian!",
+                        title: "Ayo Belajar Perkalian dengan Media Pembelajaran Papan Pita Perkalian!",
                         placement: placementLeft,
                         yOffset: 20
                     },
@@ -68,8 +68,7 @@
                     },
                     {
                         target: 'register-form',
-                        title: "Isilah kolom berikut :",
-                        content: "dengan Identitas diri adik! (nama, kelas dan sekolah)",
+                        content: "Isilah kolom berikut dengan identitas diri adik! (nama, kelas dan sekolah)",
                         placement: placementRight,
                         zindex: 999
                     },

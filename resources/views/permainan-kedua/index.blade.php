@@ -249,7 +249,7 @@
                                 ${userName} pasti bisa.`
                         }
                         Swal.fire({
-                            title: `Alhamdulillah, quiz level 2 telah diselesaikan.`,
+                            title: `Alhamdulillah, quiz level 2 telah diselesaikan. Nilai kamu ${data.skor}`,
                             html: info,
                             imageUrl: `{{ asset('img/sebutan/luar_biasa.gif') }}`,
                             imageWidth: 600,
