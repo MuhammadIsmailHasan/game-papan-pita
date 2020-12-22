@@ -143,11 +143,12 @@
         <div id="floating-scroll">
         </div>
         <div class="floating-siswa floating-left">
+            <span id="siswa-close" class="close">&times;</span>
             <img src="{{ asset('img/siswa.png') }}" 
                 id="siswa-icon"
                 alt="siswa" 
                 class="img-responsive img-icon"
-                style="width: 150px">
+                style="width: 100px">
         </div>
     </div>
 
@@ -177,6 +178,11 @@
                     style="width: 800px; margin: 0 auto;">
                 `);
                 $('#modal_petunjuk').css('display', 'block');
+            });
+
+            $('#siswa-close').click(function (e) { 
+                let siswaSection = $(this).parent();
+                $(siswaSection).css('display', 'none');
             });
 
             $('.close').click(function (e) { 
@@ -262,6 +268,12 @@
                                     media pembelajaran papan pita perkalian dulu ya...`,
                         placement: placementTop,
                         xOffset: 400
+                    },
+                    {
+                        target: `petunjuk-container`,
+                        content: `Mari membaca petunjuk penggunaan media di bawah ini agar kalian lebih mudah dalam menggunakannya!`,
+                        placement: placementTop,
+                        xOffset: 100
                     },
                     {
                         target: `petunjuk-card`,

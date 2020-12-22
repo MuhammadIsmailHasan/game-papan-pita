@@ -301,7 +301,7 @@
             id="siswa-icon"
             alt="siswa" 
             class="img-responsive img-icon"
-            style="width: 150px">
+            style="width: 100px">
     </div>
 </div>
 
@@ -341,7 +341,7 @@
         steps: [
             {
                 target: `siswa-icon`,
-                title: `Ayo mulai berhitung perkalian! jangan bilang tidak bisa sebelum mencobanya.`,
+                title: `Ayo mulai berhitung perkalian! ${nama} pasti bisa jika mau mencoba dan berusaha.`,
                 placement: placementLeft,
             },
             {

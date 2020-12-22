@@ -122,12 +122,12 @@
     </section>
 
     <div id="siswa-section" class="floating-siswa floating-right">
-        <span class="close">&times;</span>
+        <span id="siswa-close" class="close">&times;</span>
         <img src="{{ asset('img/siswa.png') }}" 
             id="siswa-icon"
             alt="siswa" 
             class="img-responsive img-icon"
-            style="width: 150px">
+            style="width: 100px">
     </div>
 
 
@@ -136,6 +136,11 @@
 @section('js')
     <script type="text/javascript">
         $(document).ready(function() {
+            $('#siswa-close').click(function (e) { 
+                let siswaSection = $(this).parent();
+                $(siswaSection).css('display', 'none');
+            });
+            
             $('.close').click(function (e) { 
                 let siswaSection = $(this).parent();
                 $(siswaSection).css('display', 'none');

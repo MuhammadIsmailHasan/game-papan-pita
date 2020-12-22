@@ -55,11 +55,12 @@
     </section>
 
     <div class="floating-siswa floating-right">
+        <span id="siswa-close" class="close">&times;</span>
         <img src="{{ asset('img/siswa.png') }}" 
             id="siswa-icon"
             alt="siswa" 
             class="img-responsive img-icon"
-            style="width: 150px">
+            style="width: 100px">
     </div>
 
 @endsection
@@ -67,6 +68,11 @@
 @section('js')
     <script type="text/javascript">
         $(document).ready(function() {
+            $('#siswa-close').click(function (e) { 
+                let siswaSection = $(this).parent();
+                $(siswaSection).css('display', 'none');
+            });
+            
             const nama = "{{ Auth::user()->name }}";
             var placementRight = 'right';
             var placementLeft = 'left';

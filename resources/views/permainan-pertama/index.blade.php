@@ -238,9 +238,19 @@
                     let data = response.data;
                     
                     if (response.status) {
+                        let info = "";
+                        if (data.skor <= 60) {
+                            info = `${userName} bagus, tetapi harus belajar lagi ya. <br>
+                                    Selalu semangat dan terus berusaha. <br>
+                                    ${userName} pasti bisa.`;
+                        } else {
+                            info = `${userName} hebat 👍🏻. <br>
+                                Terus belajar dan selalu semangat. <br>
+                                ${userName} pasti bisa.`
+                        }
                         Swal.fire({
-                            title: `HORE ${userName}, KAMU HEBAT.`,
-                            html: `Nilai kamu <b>${data.skor}</b>. <br>Quiz Level 1 Telah diselesaikan.`,
+                            title: `Alhamdulillah, quiz level 1 telah diselesaikan.`,
+                            html: info,
                             imageUrl: `{{ asset('img/sebutan/luar_biasa.gif') }}`,
                             imageWidth: 400,
                             imageHeight: 200,
