@@ -73,7 +73,7 @@
 
         let questions = [
             {
-                question: "Bilangan yang disebut faktor perkalian pada perkalian 4 x 9 = 36 adalah ...",
+                question: "Bilangan yang disebut faktor perkalian pada perkalian 4 x 9 = 36 adalah ....",
                 choice1: "36",
                 choice2: "36 dan 9",
                 choice3: "9 dan 4",
@@ -81,7 +81,7 @@
                 answer: 3
             },
             {
-                question: "Bilangan yang disebut hasil kali pada perkalian 8 x 9 = 72 adalah ...",
+                question: "Bilangan yang disebut hasil kali pada perkalian 8 x 9 = 72 adalah ....",
                 choice1: "89",
                 choice2: "72",
                 choice3: "9",
@@ -89,7 +89,7 @@
                 answer: 2
             },
             {
-                question: "Hasil dari 123 x 6 adalah ...",
+                question: "Hasil dari 123 x 6 adalah ....",
                 choice1: "849",
                 choice2: "768",
                 choice3: "738",
@@ -97,7 +97,7 @@
                 answer: 3
             },
             {
-                question: "Hasil dari 111 x 25 adalah ...",
+                question: "Hasil dari 111 x 25 adalah ....",
                 choice1: "2.775",
                 choice2: "2.525",
                 choice3: "1.125",
@@ -105,7 +105,7 @@
                 answer: 1
             },
             {
-                question: "Hasil dari 809 x 347 adalah ...",
+                question: "Hasil dari 809 x 347 adalah ....",
                 choice1: "280.723",
                 choice2: "279.696",
                 choice3: "278.363",
