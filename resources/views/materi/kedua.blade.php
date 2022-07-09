@@ -1,10 +1,10 @@
 @extends('layouts.frontend')
 
 @section('content')
-    <section id="materi-2" style="padding: 100px 30px 30px 30px;">
+    <section id="materi-2" style="padding: 120px 30px 30px 30px;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center" style="margin-top: 20px;">
+                <div class="col-lg-12 text-center" style="margin-top: 40px;">
                     <h2>Perkenalan Media Pembelajaran<br>Papan Pita Perkalian</h2>
                     <hr class="star-primary">
                 </div>
@@ -28,23 +28,27 @@
                         <h4 class="card-header">Deskripsi media</h4>
                         <ul class="card-text" style="font-size: 20px;">
                             <li>
-                                Media pembelajaran papan pita perkalian dirancang untuk digunakan dalam kegiatan pembelajaran 
-                                <b>matematika kelas 3 SD materi perkalian dua bilangan cacah dengan hasil kali hingga 6 digit bilangan atau perkalian bilangan 1 hingga 999.</b>
+                                Media pembelajaran papan pita perkalian dirancang untuk digunakan dalam kegiatan
+                                pembelajaran
+                                <b>matematika kelas 3 SD materi perkalian dua bilangan cacah dengan hasil kali hingga 6
+                                    digit bilangan atau perkalian bilangan 1 hingga 999.</b>
                             </li>
                             <li>
                                 Berhitung perkalian pada media papan pita perkalian menggunakan teknik persekutuan yakni :
                                 <ol class="card-text" style="font-size: 20px;">
-                                    <li><b>Membuat Pita Berdiri (PiRi) sebagai garis vertikal dan Pita Tidur (PiDur) sebagai garis horizontal pada papan pita</b></li>
-                                    <li><b>Jumlah Pita Berdiri (PiRi) dan Pita Tidur (PiDur) sesuai faktor perkalian yang akan dihitung</b></li>
+                                    <li><b>Membuat Pita Berdiri (PiRi) sebagai garis vertikal dan Pita Tidur (PiDur) sebagai
+                                            garis horizontal pada papan pita</b></li>
+                                    <li><b>Jumlah Pita Berdiri (PiRi) dan Pita Tidur (PiDur) sesuai faktor perkalian yang
+                                            akan dihitung</b></li>
                                     <li>
-                                        <b>Menjumlahkan banyak titik pertemuan dari kedua pita tersebut dengan masing-masing nilai titik temu berdasarkan warna kotak</b>
+                                        <b>Menjumlahkan banyak titik pertemuan dari kedua pita tersebut dengan masing-masing
+                                            nilai titik temu berdasarkan warna kotak</b>
                                         untuk mendapatkan hasil kali dari perkalian dua bilangan cacah
                                     </li>
                                 </ol>
                             </li>
-                            <img src="{{ asset('img/materi/4-1.png') }}" alt="diagram 1" 
-                                class="img-responsive img-bordered"
-                                style="width: 500px">
+                            <img src="{{ asset('img/materi/4-1.png') }}" alt="diagram 1"
+                                class="img-responsive img-bordered" style="width: 500px">
                         </ul>
                     </div>
                 </div>
@@ -58,8 +62,7 @@
                 <div class="card">
                     <div class="card-body" id="petunjuk-section">
                         <h4 class="card-header">Tutorial penggunaan media</h4>
-                        <img src="{{ asset('img/materi/4-2.png') }}" alt="diagram 1" 
-                            class="img-responsive img-bordered"
+                        <img src="{{ asset('img/materi/4-2.png') }}" alt="diagram 1" class="img-responsive img-bordered"
                             style="width: 1200px">
                     </div>
                 </div>
@@ -123,25 +126,20 @@
 
     <div id="siswa-section" class="floating-siswa floating-right">
         <span id="siswa-close" class="close">&times;</span>
-        <img src="{{ asset('img/siswa.png') }}" 
-            id="siswa-icon"
-            alt="siswa" 
-            class="img-responsive img-icon"
+        <img src="{{ asset('img/siswa.png') }}" id="siswa-icon" alt="siswa" class="img-responsive img-icon"
             style="width: 100px">
     </div>
-
-
 @endsection
 
 @section('js')
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#siswa-close').click(function (e) { 
+            $('#siswa-close').click(function(e) {
                 let siswaSection = $(this).parent();
                 $(siswaSection).css('display', 'none');
             });
-            
-            $('.close').click(function (e) { 
+
+            $('.close').click(function(e) {
                 let siswaSection = $(this).parent();
                 $(siswaSection).css('display', 'none');
             });
@@ -155,15 +153,14 @@
             // Define the tour!
             var tour = {
                 id: "intro-tour",
-                steps: [
-                    {
+                steps: [{
                         target: `siswa-icon`,
                         title: `Yuk kenali papan pita perkalian lebih dalam dengan membaca materi di bawah ini!`,
                         placement: placementLeft,
                     },
                     {
                         target: `petunjuk-section`,
-                        content: `${nama}, baca petunjuk penggunaaan papan pita perkalian terlebih dahulu ya, agar dapat menggunakannya dengan lebih mudah`,
+                        content: `${nama}, baca petunjuk penggunaan papan pita perkalian terlebih dahulu agar dapat menggunakannya dengan lebih mudah.`,
                         placement: placementTop,
                         xOffset: 400
                     },
@@ -174,7 +171,7 @@
                     },
                     {
                         target: `btn_selesai`,
-                        content: `${nama} dapat kembali membaca materi diatas jika belum paham, ${nama} dapat langsung klik tombol "lanjut ke praktik`,
+                        content: `${nama} dapat kembali membaca materi di atas jika belum paham atau dapat langsung klik tombol “lanjut praktik berhitung” jika sudah paham.`,
                         placement: placementButtom,
                         xOffset: 400
                     },
@@ -183,7 +180,7 @@
             };
             hopscotch.startTour(tour);
 
-            $('#btn_selesai').click(function (e) { 
+            $('#btn_selesai').click(function(e) {
                 Swal.fire({
                     title: `${nama}, BAGUS.`,
                     text: "Sekarang lanjutkan ke praktik berhitung perkalian menggunakan papan pita perkalian.",
@@ -196,7 +193,7 @@
                     if (result.value) {
                         document.location.href = "{{ route('materi.index', 3) }}"
                     } else {
-                        document.location.href = "{{ route('home') }}"; 
+                        document.location.href = "{{ route('home') }}";
                     }
                 });
             });

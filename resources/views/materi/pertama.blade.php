@@ -1,10 +1,10 @@
 @extends('layouts.frontend')
 
 @section('content')
-    <section style="padding: 100px 30px 30px 30px;">
+    <section style="padding: 120px 30px 30px 30px;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center" style="margin-top: 20px;">
+                <div class="col-lg-12 text-center" style="margin-top: 30px;">
                     <h2>MATERI PERKALIAN</h2>
                     <hr class="star-primary">
                 </div>
@@ -13,28 +13,25 @@
                 <div class="card">
                     <div class="card-body">
                         <ul class="card-text" style="font-size: 20px;">
-                            <img src="{{ asset('img/materi/3-1.png') }}" alt="diagram 1" 
-                                class="img-responsive img-bordered"
-                                style="width: 120px">
-                            <li>Perkalian disebut juga sebagai <b>penjumlahan berulang</b> yakni menjumlahkan bilangan “b” yang berulang sebanyak “a” kali.</li>
-                            <li>Bilangan pengali maupun bilangan yang dikali pada perkalian disebut <b>faktor perkalian.</b></li>
+                            <img src="{{ asset('img/materi/3-1.png') }}" alt="diagram 1"
+                                class="img-responsive img-bordered" style="width: 120px">
+                            <li>Perkalian disebut juga sebagai <b>penjumlahan berulang</b> yakni menjumlahkan bilangan “b”
+                                yang berulang sebanyak “a” kali.</li>
+                            <li>Bilangan pengali maupun bilangan yang dikali pada perkalian disebut <b>faktor perkalian.</b>
+                            </li>
                             <li>Hasil yang diperoleh dari proses perhitungan perkalian disebut <b>hasil kali.</b></li>
                             <li>Contoh :</li>
-                            <img src="{{ asset('img/materi/3-2.png') }}" alt="diagram 1" 
-                                class="img-responsive img-bordered"
-                                style="width: 800px">
+                            <img src="{{ asset('img/materi/3-2-2.png') }}" alt="diagram 1"
+                                class="img-responsive img-bordered" style="width: 800px">
                             <li>Sifat operasi hitung yang berlaku pada perkalian yakni :</li>
-                            <img src="{{ asset('img/materi/3-3.png') }}" alt="diagram 1" 
-                                class="img-responsive img-bordered"
-                                style="width: 800px">
+                            <img src="{{ asset('img/materi/3-3-2.png') }}" alt="diagram 1"
+                                class="img-responsive img-bordered" style="width: 800px">
                             <li>Sifat-sifat khusus perkalian :</li>
-                            <img src="{{ asset('img/materi/3-4.png') }}" alt="diagram 1" 
-                                class="img-responsive img-bordered"
-                                style="width: 780px">
+                            <img src="{{ asset('img/materi/3-4-2.png') }}" alt="diagram 1"
+                                class="img-responsive img-bordered" style="width: 780px">
                             <li>Contoh permasalahan sehari-hari yang melibatkan perkalian adalah sebagai berikut :</li>
-                            <img src="{{ asset('img/materi/3-5.png') }}" alt="diagram 1" 
-                                class="img-responsive img-bordered"
-                                style="width: 780px">
+                            <img src="{{ asset('img/materi/3-5-2.png') }}" alt="diagram 1"
+                                class="img-responsive img-bordered" style="width: 780px">
                         </ul>
                         <div id="floating-x" style="float: right;">
                         </div>
@@ -56,23 +53,19 @@
 
     <div class="floating-siswa floating-right">
         <span id="siswa-close" class="close">&times;</span>
-        <img src="{{ asset('img/siswa.png') }}" 
-            id="siswa-icon"
-            alt="siswa" 
-            class="img-responsive img-icon"
+        <img src="{{ asset('img/siswa.png') }}" id="siswa-icon" alt="siswa" class="img-responsive img-icon"
             style="width: 100px">
     </div>
-
 @endsection
 
 @section('js')
     <script type="text/javascript">
         $(document).ready(function() {
-            $('#siswa-close').click(function (e) { 
+            $('#siswa-close').click(function(e) {
                 let siswaSection = $(this).parent();
                 $(siswaSection).css('display', 'none');
             });
-            
+
             const nama = "{{ Auth::user()->name }}";
             var placementRight = 'right';
             var placementLeft = 'left';
@@ -82,8 +75,7 @@
             // Define the tour!
             var tour = {
                 id: "intro-tour",
-                steps: [
-                    {
+                steps: [{
                         target: `siswa-icon`,
                         title: `Ayo membaca materi dibawah ini agar kita lebih memahami konsep perkalian.`,
                         placement: placementLeft,
@@ -108,18 +100,18 @@
             // Start the tour!
             hopscotch.startTour(tour);
 
-            $('#btn_selesai').click(function (e) { 
+            $('#btn_selesai').click(function(e) {
                 let userId = '{{ Auth::user()->id }}';
                 let url = "{{ route('user-api.update', 'replaceThis') }}";
-                
+
                 $.ajax({
                     type: "POST",
                     url: url.replace('replaceThis', userId),
                     data: {
-                        "status_materi_1" : 1
+                        "status_materi_1": 1
                     },
                     dataType: "JSON",
-                    success: function (response) {
+                    success: function(response) {
                         if (response.status) {
                             Swal.fire({
                                 title: `${nama}, BAGUS.`,
@@ -130,7 +122,7 @@
                                 cancelButtonColor: '#d33',
                                 confirmButtonText: 'Oke'
                             }).then((result) => {
-                                document.location.href = "{{ route('home') }}"; 
+                                document.location.href = "{{ route('home') }}";
                             });
                         } else {
                             alert("GAGAL MELANJUTKAN KE MATERI PAPAN PITA");

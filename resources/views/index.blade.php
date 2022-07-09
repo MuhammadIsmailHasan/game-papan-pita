@@ -1,7 +1,6 @@
 @extends('layouts.frontend')
 
 @section('content')
-
     <!-- Header -->
     <header>
         <div class="container">
@@ -31,37 +30,29 @@
             <div class="row">
                 <div class="card">
                     <div class="card-body" id="petunjuk-card">
-                        <img src="{{ asset('img/materi/1.png') }}" alt="petunjuk" 
-                            class="img-responsive img-bordered img-petunjuk"
-                            data-number="1"
+                        <img src="{{ asset('img/materi/1.png') }}" alt="petunjuk"
+                            class="img-responsive img-bordered img-petunjuk" data-number="1"
                             style="width: 700px; margin: 0 auto;">
-                        <img src="{{ asset('img/materi/2.png') }}" alt="petunjuk" 
-                            class="img-responsive img-bordered img-petunjuk"
-                            data-number="2"
+                        <img src="{{ asset('img/materi/2.png') }}" alt="petunjuk"
+                            class="img-responsive img-bordered img-petunjuk" data-number="2"
                             style="width: 700px; margin: 0 auto; margin-top: 5px;">
-                        <img src="{{ asset('img/materi/3.png') }}" alt="petunjuk" 
-                            class="img-responsive img-bordered img-petunjuk"
-                            data-number="3"
+                        <img src="{{ asset('img/materi/3.png') }}" alt="petunjuk"
+                            class="img-responsive img-bordered img-petunjuk" data-number="3"
                             style="width: 700px; margin: 0 auto; margin-top: 5px;">
-                        <img src="{{ asset('img/materi/4.png') }}" alt="petunjuk" 
-                            class="img-responsive img-bordered img-petunjuk"
-                            data-number="4"
+                        <img src="{{ asset('img/materi/4.png') }}" alt="petunjuk"
+                            class="img-responsive img-bordered img-petunjuk" data-number="4"
                             style="width: 700px; margin: 0 auto; margin-top: 5px;">
-                        <img src="{{ asset('img/materi/5.png') }}" alt="petunjuk" 
-                            class="img-responsive img-bordered img-petunjuk"
-                            data-number="5"
+                        <img src="{{ asset('img/materi/5.png') }}" alt="petunjuk"
+                            class="img-responsive img-bordered img-petunjuk" data-number="5"
                             style="width: 700px; margin: 0 auto; margin-top: 5px;">
-                        <img src="{{ asset('img/materi/6.png') }}" alt="petunjuk" 
-                            class="img-responsive img-bordered img-petunjuk"
-                            data-number="6"
+                        <img src="{{ asset('img/materi/6.png') }}" alt="petunjuk"
+                            class="img-responsive img-bordered img-petunjuk" data-number="6"
                             style="width: 700px; margin: 0 auto; margin-top: 5px;">
-                        <img src="{{ asset('img/materi/7.png') }}" alt="petunjuk" 
-                            class="img-responsive img-bordered img-petunjuk"
-                            data-number="7"
+                        <img src="{{ asset('img/materi/7.png') }}" alt="petunjuk"
+                            class="img-responsive img-bordered img-petunjuk" data-number="7"
                             style="width: 700px; margin: 0 auto; margin-top: 5px;">
-                        <img src="{{ asset('img/materi/8.png') }}" alt="petunjuk" 
-                            class="img-responsive img-bordered img-petunjuk"
-                            data-number="8"
+                        <img src="{{ asset('img/materi/8.png') }}" alt="petunjuk"
+                            class="img-responsive img-bordered img-petunjuk" data-number="8"
                             style="width: 700px; margin: 0 auto; margin-top: 5px;">
                     </div>
                 </div>
@@ -114,7 +105,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-6 portfolio-item">
-                    <a href="{{ route('permainan.index', 1) }}" class="portfolio-link"  id="level_pertama">
+                    <a href="{{ route('permainan.index', 1) }}" class="portfolio-link" id="level_pertama">
                         <div class="caption portfolio-link">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -144,10 +135,7 @@
         </div>
         <div class="floating-siswa floating-left">
             <span id="siswa-close" class="close">&times;</span>
-            <img src="{{ asset('img/siswa.png') }}" 
-                id="siswa-icon"
-                alt="siswa" 
-                class="img-responsive img-icon"
+            <img src="{{ asset('img/siswa.png') }}" id="siswa-icon" alt="siswa" class="img-responsive img-icon"
                 style="width: 100px">
         </div>
     </div>
@@ -163,14 +151,13 @@
             </div>
         </div>
     </div>
-
 @endsection
 
 @section('js')
     <script type="text/javascript">
         $(document).ready(function() {
             // MODAL //
-            $('.img-petunjuk').click(function (e) { 
+            $('.img-petunjuk').click(function(e) {
                 let dataNumber = $(this).data('number');
                 $('.modal-petunjuk').html(`
                     <img src="{{ asset('img/petunjuk/${dataNumber}.png') }}" alt="Penjelasan petunjuk" 
@@ -180,16 +167,16 @@
                 $('#modal_petunjuk').css('display', 'block');
             });
 
-            $('#siswa-close').click(function (e) { 
+            $('#siswa-close').click(function(e) {
                 let siswaSection = $(this).parent();
                 $(siswaSection).css('display', 'none');
             });
 
-            $('.close').click(function (e) { 
+            $('.close').click(function(e) {
                 $('#modal_petunjuk').css('display', 'none');
             });
 
-            $('#materi_kedua').click(function (e) { 
+            $('#materi_kedua').click(function(e) {
                 e.preventDefault();
                 const href = $(this).attr('href');
 
@@ -197,14 +184,14 @@
                     Swal.fire({
                         icon: 'error',
                         title: 'GAGAL MEMULAI <br>MATERI PAPAN PITA',
-                        text: 'Silahkan Membaca dan Selesaikan Materi Perkalian Dahulu !',
-                        });
+                        text: 'Silahkan membaca dan selesaikan materi perkalian dahulu!',
+                    });
                 } else {
                     document.location.href = href;
                 }
             });
 
-            $('#level_pertama').click(function (e) { 
+            $('#level_pertama').click(function(e) {
                 e.preventDefault();
                 const href = $(this).attr('href');
 
@@ -212,14 +199,14 @@
                     Swal.fire({
                         icon: 'error',
                         title: 'GAGAL MEMULAI <br>QUIZ LEVEL 1',
-                        text: 'Silahkan Membaca dan Selesaikan Materi Papan Pita Perkalia Dahulu !',
-                        });
+                        text: 'Silahkan membaca dan selesaikan materi papan pita perkalian dahulu!',
+                    });
                 } else {
                     document.location.href = href;
                 }
             });
 
-            $('#level_kedua').click(function (e) { 
+            $('#level_kedua').click(function(e) {
                 e.preventDefault();
                 const href = $(this).attr('href');
 
@@ -228,7 +215,7 @@
                         icon: 'error',
                         title: 'GAGAL MEMULAI <br>QUIZ LEVEL 2',
                         text: 'Silahkan Selesaikan Quiz Level 1 Terlebih Dahulu',
-                        });
+                    });
                 } else {
                     document.location.href = href;
                 }
@@ -243,8 +230,7 @@
             // Define the tour!
             var tour = {
                 id: "intro-tour",
-                steps: [
-                    {
+                steps: [{
                         target: `siswa-icon`,
                         title: `Halo ${nama}, Selamat datang di Media Pembelajaran Papan Pita Perkalian.`,
                         placement: placementRight,
@@ -257,7 +243,7 @@
                     },
                     {
                         target: `floating-scroll`,
-                        content: `Tarik Scroll ke bawah ya...`,
+                        content: `Tarik scroll ke bawah ya ...`,
                         placement: placementLeft,
                         yOffset: -20,
                         xOffset: 20
@@ -289,7 +275,7 @@
                     },
                     {
                         target: `portofolio-card`,
-                        content: `Ingat!, pertama klik menu materi perkalian.`,
+                        content: `Ingat! pertama klik menu materi perkalian.`,
                         placement: placementTop,
                         xOffset: 100,
                     },
