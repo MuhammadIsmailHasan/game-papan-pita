@@ -5,7 +5,8 @@ namespace App\Libs\Traits;
 
 trait SetSebutan
 {
-    protected function SetSebutan (int $skor) {
+    protected function SetSebutan(int $skor)
+    {
         $sebutan = "";
 
         // if ($skor == 50 ) {
@@ -18,14 +19,27 @@ trait SetSebutan
         //     $sebutan = "Fail";
         // }
 
-        if ($skor >= 90 ) {
-            $sebutan = "Awesome";
+        // if ($skor >= 90 ) {
+        //     $sebutan = "Awesome";
+        // } elseif ($skor >= 70 && $skor <= 80) {
+        //     $sebutan = "Excellent";
+        // } elseif ($skor >= 50 && $skor <= 60) {
+        //     $sebutan = "Nice";
+        // } elseif ($skor <= 40) {
+        //     $sebutan = "Keep Hard Working";
+        // } else {
+        //     $sebutan = "Oops";
+        // }
+
+
+        if ($skor >= 90) {
+            $sebutan = "Hebat";
         } elseif ($skor >= 70 && $skor <= 80) {
-            $sebutan = "Excellent";
+            $sebutan = "Sempurna";
         } elseif ($skor >= 50 && $skor <= 60) {
-            $sebutan = "Nice";
+            $sebutan = "Bagus";
         } elseif ($skor <= 40) {
-            $sebutan = "Keep Hard Working";
+            $sebutan = "Berusaha Lebih Keras";
         } else {
             $sebutan = "Oops";
         }
