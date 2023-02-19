@@ -13,7 +13,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Bagian-bagian Media</h4>
-                        <img src="{{ asset('img/materi/2-1.jpg') }}" alt="diagram 1" class="img-responsive img-bordered">
+                        <img src="{{ asset('img/materi/update1/perkenalan.png') }}" alt="diagram 1" class="img-responsive img-bordered">
                     </div>
                 </div>
             </div>
@@ -41,8 +41,8 @@
                                     <li><b>Jumlah Pita Berdiri (PiRi) dan Pita Tidur (PiDur) sesuai faktor perkalian yang
                                             akan dihitung</b></li>
                                     <li>
-                                        <b>Menjumlahkan banyak titik pertemuan dari kedua pita tersebut dengan masing-masing
-                                            nilai titik temu berdasarkan warna kotak</b>
+                                        <b>Menjumlahkan banyak titik perpotongan dari kedua pita tersebut dengan masing-masing
+                                            nilai titik potong berdasarkan warna kotak</b>
                                         untuk mendapatkan hasil kali dari perkalian dua bilangan cacah
                                     </li>
                                 </ol>
@@ -62,7 +62,7 @@
                 <div class="card">
                     <div class="card-body" id="petunjuk-section">
                         <h4 class="card-header">Tutorial penggunaan media</h4>
-                        <img src="{{ asset('img/materi/4-2.png') }}" alt="diagram 1" class="img-responsive img-bordered"
+                        <img src="{{ asset('img/materi/update1/tutorial.png') }}" alt="diagram 1" class="img-responsive img-bordered"
                             style="width: 1200px">
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Contoh Bentuk Perkalian 1-10 Menggunakan papan pita perkalian</h4>
-                        <img src="{{ asset('img/materi/2-2.jpg') }}" alt="diagram 1" class="img-responsive img-bordered">
+                        <img src="{{ asset('img/materi/update1/perkalian1-10.png') }}" alt="diagram 1" class="img-responsive img-bordered">
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Contoh Bentuk Perkalian 11-100 Menggunakan papan pita perkalian</h4>
-                        <img src="{{ asset('img/materi/2-3.jpg') }}" alt="diagram 1" class="img-responsive img-bordered">
+                        <img src="{{ asset('img/materi/update1/perkalian11-100.png') }}" alt="diagram 1" class="img-responsive img-bordered">
                     </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Contoh Bentuk Perkalian 101-999 Menggunakan papan pita perkalian</h4>
-                        <img src="{{ asset('img/materi/2-4.jpg') }}" alt="diagram 1" class="img-responsive img-bordered">
+                        <img src="{{ asset('img/materi/update1/perkalian101-999.png') }}" alt="diagram 1" class="img-responsive img-bordered">
                     </div>
                 </div>
             </div>

@@ -65,7 +65,11 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="{{ route('home') }}">HALAMAN UTAMA</a>
+                        <a href="{{ route('materi.index', 1) }}">PERKALIAN</a>
+                    </li>
+
+                    <li class="page-scroll">
+                        <a href="{{ route('materi.index', 2) }}">PAPAN PITA</a>
                     </li>
 
                     <li class="page-scroll">
@@ -92,7 +96,7 @@
 
                     @can('profil_read')
                         <li class="page-scroll">
-                            <a href={{ route('profil.index') }}>PROFIL {{ Auth::user()->name }}</a>
+                            <a href={{ route('profil.index') }}>PROFIL</a>
                         </li>
                     @endcan
 
@@ -130,8 +134,8 @@
                             materi perkalian dua bilangan cacah dengan hasil kali hingga 6 digit bilangan atau 
                             perkalian bilangan 1 hingga 999. <br>
                             Berhitung perkalian pada media papan pita perkalian
-                            ini menggunakan teknik persekutuan yang berfokus pada titik pertemuan garis vertikal 
-                            dan horizontal dengan menjumlahkan banyak titik pertemuan tersebut 
+                            ini menggunakan teknik persekutuan yang berfokus pada titik perpotongan garis vertikal 
+                            dan horizontal dengan menjumlahkan banyak titik perpotongan tersebut 
                             untuk mendapatkan hasil kali dari perkalian dua bilangan cacah.
                         </p>
                     </div>
@@ -142,7 +146,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy;  <a href="http://www.fortinity.net" target="_blank">Fortinity</a> 2020
+                        Copyright &copy; Amrina Rosyada. 2020
                     </div>
                 </div>
             </div>

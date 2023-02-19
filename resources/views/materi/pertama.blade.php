@@ -13,6 +13,14 @@
                 <div class="card">
                     <div class="card-body">
                         <ul class="card-text" style="font-size: 20px;">
+                            <b>Aku memiliki 2 keranjang berisi 4 buah jeruk pada setiap keranjangnya.</b>
+                            <img src="{{ asset('img/materi/update1/perkalian1.png') }}" alt="diagram 1"
+                                class="img-responsive img-bordered" style="width: 800px">
+                            <b>Buah jeruk milikku seluruhnya ada 8 buah.</b>
+                            <img src="{{ asset('img/materi/update1/perkalian2.png') }}" alt="diagram 1"
+                                class="img-responsive img-bordered" style="width: 800px">
+
+                            <h3>KONSEP PERKALIAN</h3>
                             <img src="{{ asset('img/materi/3-1.png') }}" alt="diagram 1"
                                 class="img-responsive img-bordered" style="width: 120px">
                             <li>Perkalian disebut juga sebagai <b>penjumlahan berulang</b> yakni menjumlahkan bilangan “b”
@@ -20,17 +28,15 @@
                             <li>Bilangan pengali maupun bilangan yang dikali pada perkalian disebut <b>faktor perkalian.</b>
                             </li>
                             <li>Hasil yang diperoleh dari proses perhitungan perkalian disebut <b>hasil kali.</b></li>
-                            <li>Contoh :</li>
-                            <img src="{{ asset('img/materi/3-2-2.png') }}" alt="diagram 1"
-                                class="img-responsive img-bordered" style="width: 800px">
+                            
                             <li>Sifat operasi hitung yang berlaku pada perkalian yakni :</li>
-                            <img src="{{ asset('img/materi/3-3-2.png') }}" alt="diagram 1"
+                            <img src="{{ asset('img/materi/update1/perkalian3.png') }}" alt="diagram 1"
                                 class="img-responsive img-bordered" style="width: 800px">
                             <li>Sifat-sifat khusus perkalian :</li>
-                            <img src="{{ asset('img/materi/3-4-2.png') }}" alt="diagram 1"
+                            <img src="{{ asset('img/materi/update1/perkalian4.png') }}" alt="diagram 1"
                                 class="img-responsive img-bordered" style="width: 780px">
                             <li>Contoh permasalahan sehari-hari yang melibatkan perkalian adalah sebagai berikut :</li>
-                            <img src="{{ asset('img/materi/3-5-2.png') }}" alt="diagram 1"
+                            <img src="{{ asset('img/materi/update1/perkalian5.png') }}" alt="diagram 1"
                                 class="img-responsive img-bordered" style="width: 780px">
                         </ul>
                         <div id="floating-x" style="float: right;">
